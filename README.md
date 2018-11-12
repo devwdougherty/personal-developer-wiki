@@ -1,13 +1,13 @@
 # personal-developer-wiki
 
 * [Cloud](Cloud/Index.md)
-* [Computer Science](ComputerScience/Index.md)
+* [Computer Science](Computer%20Science/Index.md)
 * [Databases](Databases/Index.md)
-* [Development Architecture](DevelopmentArchitecture/Index.md)
-* [Operational System](OperationalSystem/Index.md)
-* [Programming Languages](ProgrammingLanguages/Index.md)
-* [Project Management](ProjectManagement/Index.md)
+* [Development Architecture](Development%20Architecture/Index.md)
+* [Operational System](Operational%20System/Index.md)
+* [Programming Languages](Programming%20Languages/Index.md)
+* [Project Management](Project%20Management/Index.md)
 * [Servers](Servers/Index.md)
-* [Software Testing](SoftwareTesting/Index.md)
-* [Web Architecture](WebArchitecture/Index.md)
+* [Software Testing](Software%20Testing/Index.md)
+* [Web Architecture](Web%20Architecture/Index.md)
 
