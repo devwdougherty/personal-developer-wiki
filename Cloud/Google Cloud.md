@@ -41,7 +41,7 @@ indexes:
     direction: asc 
   - name: product 
     direction: asc 
-  - name: environmentalIndex 
+  - name: quantity 
     direction: desc
 ```
 2. Run on command line
@@ -58,3 +58,20 @@ $ gcloud datastore indexes list
 
 ## Bibliography
 
+### Building with Google Cloud
+#### Bookshelf App – Java
+https://cloud.google.com/java/getting-started/tutorial-app?hl=pt-br 
+https://github.com/GoogleCloudPlatform/getting-started-java.git
+
+### Storage
+#### Download objects from Google Cloud Storage
+https://cloud.google.com/storage/docs/downloading-objects 
+https://cloud.google.com/storage/docs/access-control/create-signed-urls-program
+
+### Datastore
+#### Best Practices
+https://cloud.google.com/datastore/docs/best-practices
+
+### Repositories
+#### Google APIs
+https://github.com/googleapis
