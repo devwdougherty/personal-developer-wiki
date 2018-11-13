@@ -15,9 +15,9 @@ $ gcloud auth application-default login
 ```
 $ gcloud config list
 ```
-### Setting  your project
+### Setting your project
 ```
-$gcloud config set project [YOUR_PROJECT_ID]
+$ gcloud config set project [YOUR_PROJECT_ID]
 ```
 ### List your GCC projects
 ```
