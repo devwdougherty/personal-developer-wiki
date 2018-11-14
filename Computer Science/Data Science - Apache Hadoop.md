@@ -64,8 +64,9 @@ Flow
 
 #### 2 Operaçoes Principais:
 
-**Operação 1:** Mapeamento (map). Os dados são separados em pares (key-value pairs), transformados e filtrados. Após isso, são distribuiídos para os nodes e processados.
-**Operação 2:** Redução (reduce). Os dados são agregados em datasets menores.  Os dados resultantes do processo de redução são transformados no formato padrão chave-valor (key-value), onde a chave (key) funciona como o identificador do registro e o valor (value) é o dado (conteúdo) que é identificado pela chave. 
+- **Operação 1:** Mapeamento (map). Os dados são separados em pares (key-value pairs), transformados e filtrados. Após isso, são distribuiídos para os nodes e processados.
+
+- **Operação 2:** Redução (reduce). Os dados são agregados em datasets menores.  Os dados resultantes do processo de redução são transformados no formato padrão chave-valor (key-value), onde a chave (key) funciona como o identificador do registro e o valor (value) é o dado (conteúdo) que é identificado pela chave. 
 
 ![alt text](https://github.com/devwdougherty/personal-developer-wiki/blob/master/Computer%20Science/arquiteturaHadoop-10.png)
 
