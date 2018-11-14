@@ -1,4 +1,4 @@
-# personal-developer-wiki
+# Personal Developer Wiki
 
 * [Cloud](Cloud/Index.md)
 * [Computer Science](Computer%20Science/Index.md)
@@ -11,3 +11,6 @@
 * [Software Testing](Software%20Testing/Index.md)
 * [Web Architecture](Web%20Architecture/Index.md)
 
+# About me
+
+- **Linkedin:** https://www.linkedin.com/in/willian-dougherty-n-barbosa/
