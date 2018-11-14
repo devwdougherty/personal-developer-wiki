@@ -7,4 +7,4 @@ Para contribuir faça um Fork e submeta para Pull Request!
 
 ## Cluster
 
-* [haddop](/arquiteturaHadoop-01.png)
+* [haddop](arquiteturaHadoop-01.png)
