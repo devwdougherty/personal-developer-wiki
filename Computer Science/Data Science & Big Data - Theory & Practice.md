@@ -31,9 +31,9 @@ Registro -> atributos, características, comportamentos ou resultados.
 * Não estruturados (Dados externos/internos)
 
 _Exemplos:_
-**Estruturado:** Banco de dados relacional
-**Semi estruturado:** E-mail
-**Não estruturado:** Tweets
+- **Estruturado:** Banco de dados relacional
+- **Semi estruturado:** E-mail
+- **Não estruturado:** Tweets
 
 _Exemplos - DataScience Academy__
 
