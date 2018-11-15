@@ -1,4 +1,4 @@
-Para contribuir faça um Fork e submeta para Pull Request!
+Para contribuir faça um Fork e submeta um Pull Request!
 
 # Arquitetura Hadoop
 
