@@ -10,4 +10,4 @@ https://www.edx.org/microsoft-professional-program-big-data?utm_source=sailthru&
 
 # Repositories
 
-### ttps://github.com/bulutyazilim/awesome-datascience
+#### https://github.com/bulutyazilim/awesome-datascience
