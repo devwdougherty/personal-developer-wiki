@@ -6,14 +6,14 @@ Help it with Fork and Pull Request!
 
   _Key Words: Docker Compose_
   
-  - #### [RabbitMQ com Docker: conhecendo o Admin](https://imasters.com.br/back-end/rabbitmq-com-docker-conhecendo-o-admin)
+- #### [RabbitMQ com Docker: conhecendo o Admin](https://imasters.com.br/back-end/rabbitmq-com-docker-conhecendo-o-admin)
 
   _Key Words: Docker, RabbitMQ Admin_
   
-  - #### [DockerHub RabbitMQ](https://hub.docker.com/r/bitnami/rabbitmq/)
+- #### [DockerHub RabbitMQ](https://hub.docker.com/r/bitnami/rabbitmq/)
 
   _Key Words: Docker Compose, RabbitMQ_
   
-  - #### [CI com microsserviços](https://imasters.com.br/cloud/ci-com-microsservicos)
+- #### [CI com microsserviços](https://imasters.com.br/cloud/ci-com-microsservicos)
 
   _Key Words: Kubernetes, Wercker, Microservices, RabbitMQ_
