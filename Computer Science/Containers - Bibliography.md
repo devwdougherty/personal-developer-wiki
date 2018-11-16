@@ -30,5 +30,5 @@ _Key Words: Dockerfile
 
 # Repositories
 
-- https://github.com/veggiemonk/awesome-docker?fbclid=IwAR0ry_mP_JRDGlEShPBTk-ZLJCcZQTszxWNF-5mkmn3b0AL227Zxa8HTKhs - Awesome Docker
+- https://github.com/veggiemonk/awesome-docker - Awesome Docker
 
