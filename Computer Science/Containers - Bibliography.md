@@ -22,11 +22,11 @@ Help it with Fork and Pull Request!
 
 - #### [Containers - As Primeiras Pedras](https://medium.com/trainingcenter/containers-as-primeiras-pedras-b4b5efa49d88?fbclid=IwAR3vX0IEyF-EaJEWEaVr_ftILUlP5NRXBBJDGKu1QWQYMlsyMonax0reUbs)
 
-_Key Words: Container Architecture, Docker, Docker Compose, Docker Swarm, Kubernetes, Docker Hub
+_Key Words: Container Architecture, Docker, Docker Compose, Docker Swarm, Kubernetes, Docker Hub_
 
 - #### [Using Docker for Experimenting with Code](https://programmingliftoff.com/using-docker-for-experimenting-with-code/)
 
-_Key Words: Dockerfile
+_Key Words: Dockerfile_
 
 # Repositories
 
