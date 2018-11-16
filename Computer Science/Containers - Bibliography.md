@@ -17,3 +17,18 @@ Help it with Fork and Pull Request!
 - #### [CI com microsserviços](https://imasters.com.br/cloud/ci-com-microsservicos)
 
   _Key Words: Kubernetes, Wercker, Microservices, RabbitMQ_
+
+# Introduction
+
+- #### [Containers - As Primeiras Pedras](https://medium.com/trainingcenter/containers-as-primeiras-pedras-b4b5efa49d88?fbclid=IwAR3vX0IEyF-EaJEWEaVr_ftILUlP5NRXBBJDGKu1QWQYMlsyMonax0reUbs)
+
+_Key Words: Container Architecture, Docker, Docker Compose, Docker Swarm, Kubernetes, Docker Hub
+
+- #### [Using Docker for Experimenting with Code](https://programmingliftoff.com/using-docker-for-experimenting-with-code/)
+
+_Key Words: Dockerfile
+
+# Repositories
+
+- https://github.com/veggiemonk/awesome-docker?fbclid=IwAR0ry_mP_JRDGlEShPBTk-ZLJCcZQTszxWNF-5mkmn3b0AL227Zxa8HTKhs - Awesome Docker
+
