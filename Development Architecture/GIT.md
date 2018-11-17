@@ -217,7 +217,7 @@ k -> Upside line by line
 
 # Bibiliografia
 
-## Articles
+## Artigos e Tutoriais
 - GIT em Equipe - http://joepreludian.github.io/tutorial/2014/10/01/git-em-equipe.html
 - SSH no GIT - https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-728138079.html#SetupanSSHkey-ssh1
 - SSH Keys - https://confluence.atlassian.com/bitbucket/ssh-keys-935365775.html	
