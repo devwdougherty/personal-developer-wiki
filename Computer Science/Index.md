@@ -6,3 +6,4 @@
 * [Data Science - Bibliography](Data%20Science%20-%20Bibliography.md)
 * [Roteiro de Estudos para a Profissão](Roteiro%20de%20Estudos%20para%20a%20Profissão.md)
 * [Containers - Bibliography](Containers%20-%20Bibliography.md)
+* [Estatística - Bibliografia](Estatística%20-%20Bibliografia.md)
