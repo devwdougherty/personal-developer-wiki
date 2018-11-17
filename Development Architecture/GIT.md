@@ -18,7 +18,7 @@ Shift + Insert
 
 Clonar repositório
 ```
-$ git clone https://saowibar@bitbucket.org/saowibar/baan-iv.git
+$ git clone https://willian-dougherty@bitbucket.org/barbosa/java-aw.git
 ```
 Criar um repositório
 ```
@@ -71,6 +71,7 @@ $ git branch -d nome-branch
 $ git diff
 ```
 Se referir a tudo no git (código, parâmetro, etc)
+```
 $ .
 ```
 Para voltar um commit para o topo da árvore
