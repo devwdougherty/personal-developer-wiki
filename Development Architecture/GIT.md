@@ -187,11 +187,13 @@ _It merge your new alteration inside your last pull request ._
 $ git add .
 $ git commit --amend
 ```
-
+####Local branch and remote branch conflict tags:
+```
 <<<<<<<< HEAD -> *Your Code/Branch*
 >>>>>>>> e592fa8391d8a0f25f7e887d2071b7da2ffa9e95 -> *The Code/Branch that you are merging*
+```
 
-*Basic Conflict Workflow*
+#### Basic Conflict Workflow
 1. Resolve Conflict
 2. Add and commit just the files that have been in conflict
 3. Push it
