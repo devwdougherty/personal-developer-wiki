@@ -1,7 +1,7 @@
 # Personal Developer Wiki
 
-* [Cloud](Cloud/Index.md)
-* [Computer Science](Computer%20Science/Index.md)
+* [Cloud](Cloud/README.md)
+* [Computer Science](Computer%20Science/README.md)
 * [Databases](Databases/Index.md)
 * [Development Architecture](Development%20Architecture/Index.md)
 * [Operational System](Operational%20System/Index.md)
