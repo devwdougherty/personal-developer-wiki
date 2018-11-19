@@ -22,3 +22,16 @@ _Jquery.stringify()_
 ```javascript
 JSON.stringify(javascriptObject)
 ```
+
+### Ajax
+#### To setup every Ajax requisiton on the file to allow Cross Domain and Credentials
+```javascript
+$.ajaxSetup({
+      //dataSrc: '',
+      crossDomain: true,
+      xhrFields: {
+      withCredentials: true
+      }
+});
+```
+
