@@ -9,7 +9,7 @@ In a database transaction between two tables/entities, LAZY will load just the r
 ## CascadeType
 ALL: All cascade operations will be applied to the parent entity’s related entity. All is equivalent to specifying cascade={DETACH, MERGE, PERSIST, REFRESH, REMOVE}
 
-# Data Structures
+# Data Structures and It Operations
 
 ## General notes
 **Vector instead ArrayList:**
@@ -39,5 +39,26 @@ for (Map.Entry<Integer, List<String>> element : cursorList.entrySet()) {
 _Elements for_
 ```java
 for(NeedForm needFormIterator : needFormListOpportunity) {
+}
+```
+## List
+
+**For each loop on List**
+
+```java
+List<String> someList = new ArrayList<String>();
+// add "monkey", "donkey", "skeleton key" to someList
+for (String item : someList) 
+{
+   System.out.println(item);
+}
+```
+
+**For each with Elements**
+```java
+for (Iterator<String> i = someIterable.iterator(); i.hasNext();) 
+{
+	String item = i.next();
+	System.out.println(item);
 }
 ```
