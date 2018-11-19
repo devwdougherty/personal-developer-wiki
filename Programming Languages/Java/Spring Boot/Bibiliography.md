@@ -9,7 +9,7 @@ Help it with Fork and Pull Request!
 - [Spring Validation Example](http://www.bbenson.co/post/spring-validations-with-examples/)
 - [Spring REST API Validation](https://www.mkyong.com/spring-mvc/spring-rest-api-validation/)
 - [Implementing Validation for RESTful Services With Spring Boot](https://dzone.com/articles/implementing-validation-for-restful-services-with)
-- [Spring Boot REST – Request Validation (INTERESTING)](https://lmonkiewicz.com/programming/get-noticed-2017/spring-boot-rest-request-validation/) (interesting)
+- [Spring Boot REST – Request Validation (INTERESTING)](https://lmonkiewicz.com/programming/get-noticed-2017/spring-boot-rest-request-validation/)
 - [Spring MVC Custom Validation (RECOMMENDED)](https://www.baeldung.com/spring-mvc-custom-validator)
 
 ## HTTP Request
