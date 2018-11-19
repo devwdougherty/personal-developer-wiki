@@ -61,7 +61,9 @@ $('#CustomerId input:checked').each(function(){
 ```
 ### Events
 **.click**
-_Event is on when the element is clicked._
+
+Event is on when the element is clicked.
+
 Ex: 
 ```javascript
 $("#activeCheck").click(function () {
@@ -70,14 +72,28 @@ $("#activeCheck").click(function () {
 ```
 
 **.change()**
+
 Change event determines for Javascript, that something happens on field (So, what the script has to do after button change, will happen).
+
 Ex: 
 ```javascript
 $('#ClienteId').change();
 ```
 
+**.bind()**
+
+To handle an event with element
+```javascript
+$(document).bind('click', function(e){
+	var target = $(e.target); 
+});
+```
+_Parameter 1: event type_
+_Parameter 2: handler (function that executes each time that event is triggered)._
+
 ### Field Properties
 **.prop('propertie')** and **.removeAttr('attribute')**
+
 Use to handle some propertie/attribute of a input/output field/element.
 Ex:
 ```javascript
