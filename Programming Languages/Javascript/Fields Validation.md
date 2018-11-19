@@ -7,17 +7,17 @@ Help it with Fork and Pull Request!
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
 ```
 
-## Javascript
-### Handling Fields and it properties
+# Javascript
+## Handling Fields and it properties
 **Setting a ID**
 ```javascript
 <input type="button" id="myButton">
 ```
 The same approach to: value, class, events, etc. Complete list: https://www.w3schools.com/tags/att_input_type.asp
 
-## jQuery
-### Handling Fields and it properties
-#### Selectors
+# jQuery
+## Handling Fields and it properties
+### Selectors
 **Reference a ID's Field**
 id. Ex: 
 ```javascript
@@ -31,7 +31,7 @@ html element. Ex:
 ```javascript
 :button
 ```
-#### Values
+### Values
 **Getting Value (input fields) and Text (spam fields)**
 Ex:
 ```javascript
@@ -59,7 +59,7 @@ $('#CustomerId input:checked').each(function(){
     doorArray.push(currentValue);
 });
 ```
-#### Events
+### Events
 **.click**
 _Event is on when the element is clicked._
 Ex: 
@@ -76,7 +76,7 @@ Ex:
 $('#ClienteId').change();
 ```
 
-#### Field Properties
+### Field Properties
 **.prop('propertie')** and **.removeAttr('attribute')**
 Use to handle some propertie/attribute of a input/output field/element.
 Ex:
@@ -126,7 +126,7 @@ function validateActiveRegisterBool() {
 ```
 
 
-### jQuery Ajax
+## jQuery Ajax
 
 **Getting a value from a AjaxObject (List)**
 Ex:
