@@ -16,7 +16,7 @@ Help it with Fork and Pull Request!
 - [CORS on Spring](https://stackoverflow.com/questions/36809528/spring-boot-cors-filter-cors-preflight-channel-did-not-succeed)
 
 ## HTTP Method
-- [Patch] (https://github.com/countrogue/spring-http-patch-example/blob/master/src/main/java/com/countrogue/spring/business/asset/controller/AssetController.java)
+- [Patch](https://github.com/countrogue/spring-http-patch-example/blob/master/src/main/java/com/countrogue/spring/business/asset/controller/AssetController.java)
 
 ## JPA and Hibernate
 - [The best way to map a @OneToOne relationship with JPA and Hibernate](https://vladmihalcea.com/the-best-way-to-map-a-onetoone-relationship-with-jpa-and-hibernate/)
