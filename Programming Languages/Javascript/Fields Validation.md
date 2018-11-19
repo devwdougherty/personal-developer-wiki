@@ -98,6 +98,34 @@ $("#activeCheck").click(function () {
 });
 ```
 
+Handling Javacript variables that received HTML elements.
+Ex:
+```javascript
+function validateActiveRegister() {
+    if ($('#activeCheck').prop('checked')) {
+        recordButton.disabled = false;
+        playButton.disabled = false;
+        downloadButton.disabled = false;
+        replaceTraining.prop('disabled', false);
+    } else {
+        recordButton.disabled = true;
+        playButton.disabled = true;
+        downloadButton.disabled = true;
+        replaceTraining.prop('disabled', true);
+        replaceTraining.prop('checked', false);
+    }
+}
+
+function validateActiveRegisterBool() {
+    if ($('#activeCheck').prop('checked')) {
+        return true;
+    } else {
+        return false;
+    }
+}
+```
+
+
 ### jQuery Ajax
 
 **Getting a value from a AjaxObject (List)**
@@ -123,3 +151,43 @@ $("#btnGetPhrases").click(function() {
 });
 ```
 
+**GET Example**
+```javascript
+$.ajax({
+    type: 'GET',
+    url: 'http://localhost:8080/api/v1/phrases/' + numberPhrases,
+
+    success: function(data) {
+	alert("Done!");
+	$('#resultPhrases').text("200");
+
+	for (var i = 0; i < numberPhrases; i++) {
+	    var phraseGetList = data[i].phrase;
+	    console.log("Iteraço: " + i + " Frase: " + phraseGetList);
+	    $("#phrasesList").append("<p align='center'>" + phraseGetList + "</p>");            
+	}
+    },
+    error: function() {
+	$('#resultPhrases').text("There was an error processing your request. Please try again.");
+    }
+});
+```
+
+**Post Example**
+```javascript
+$.ajax({
+    type: 'POST',
+    url: 'http://localhost:8080/api/v1/cats',
+    data: JSON.stringify(ajaxObj),
+    dataType: "json",
+    contentType: "application/json;charset=UTF-8",
+
+    success: function(data) {
+	alert("Done!");
+	$('#result').text("200");
+    },
+    error: function() {
+	$('#result').text("There was an error processing your request. Please try again.");
+    }
+});
+```
