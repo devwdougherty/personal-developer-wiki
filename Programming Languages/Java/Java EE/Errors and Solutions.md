@@ -14,4 +14,8 @@ Help it with Fork and Pull Request!
 
 **Error:** unhandled exception type ParseException
 
-**Solution:** You need add a try { } catch (java.text.ParseException e) { } on your method call. Similar cases could be resolved using the same approach.
+**Solution:** You need add a 
+```java
+try { } catch (java.text.ParseException e) { }
+```
+on your method call. Similar cases could be resolved using the same approach.
