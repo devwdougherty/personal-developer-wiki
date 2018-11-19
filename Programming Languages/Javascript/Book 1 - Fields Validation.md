@@ -19,21 +19,21 @@ The same approach to: value, class, events, etc. Complete list: https://www.w3sc
 ## Handling Fields and it properties
 ### Selectors
 **Reference a ID's Field**
-id. Ex: 
+id. e.g.: 
 ```javascript
 $("#activeCheck")
 ```
-class. Ex: 
+class. e.g.: 
 ```javascript
 $(".activeCheck")
 ```
-html element. Ex:
+html element. e.g.:
 ```javascript
 :button
 ```
 ### Values
 **Getting Value (input fields) and Text (spam fields)**
-Ex:
+e.g.:
 ```javascript
 console.log($("#StoreId").val());
 ```
@@ -44,13 +44,13 @@ console.log($("textPortaria").html());
 ```
 
 **Setting value on input field**
-Ex:
+e.g.:
 ```javascript
 console.log($("#StoreId").val(366));
 ```
 
 **Using for loop to get 'checked' values on a checkbox list**
-Ex:
+e.g.:
 ```javascript
 $('#CustomerId input:checked').each(function(){
     var el = $(this),
@@ -64,7 +64,7 @@ $('#CustomerId input:checked').each(function(){
 
 Event is on when the element is clicked.
 
-Ex: 
+e.g.: 
 ```javascript
 $("#activeCheck").click(function () {
 	alert("activeCheck clicked");
@@ -75,7 +75,7 @@ $("#activeCheck").click(function () {
 
 Change event determines for Javascript, that something happens on field (So, what the script has to do after button change, will happen).
 
-Ex: 
+e.g.: 
 ```javascript
 $('#ClienteId').change();
 ```
@@ -95,7 +95,7 @@ _Parameter 2: handler (function that executes each time that event is triggered)
 **.prop('propertie')** and **.removeAttr('attribute')**
 
 Use to handle some propertie/attribute of a input/output field/element.
-Ex:
+e.g.:
 ```javascript
 $("#activeCheck").click(function () {
     if ($('#activeCheck').prop('checked')) {
@@ -115,7 +115,7 @@ $("#activeCheck").click(function () {
 ```
 
 Handling Javacript variables that received HTML elements.
-Ex:
+e.g.:
 ```javascript
 function validateActiveRegister() {
     if ($('#activeCheck').prop('checked')) {
@@ -145,7 +145,7 @@ function validateActiveRegisterBool() {
 ## jQuery Ajax
 
 **Getting a value from a AjaxObject (List)**
-Ex:
+e.g.:
 ```javascript
 $("#btnGetPhrases").click(function() {
     $.ajax({
