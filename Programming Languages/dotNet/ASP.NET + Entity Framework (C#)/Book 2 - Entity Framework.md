@@ -98,6 +98,38 @@ TODO
 ## About Model relationship with Database on Add/Update application page
 TODO
 
+## About Scaffolding
+
+### About Scaffolding Bugs at VS
+
+• You must drop your database before scaffolding.
+• At your ProjectClassDatabaseInitializer (Generally on Services Folder) change the Initializer Method to: DropCreateDatabaseAlways
+• If your database is not initializing with your application and it is triggering error on scaffolding do that: At Global class of your project, instantiate your ContextClass:
+```c#
+try { var db = new ClassContext() } catch (Exception ex) { Console.Out.WriteLine (ex.Message) }
+```
+
+### Doing a Scaffolding
+
+Step 1: Create your model
+Step 2: At VS Project -> Add a new scaffolder item
+Step 3: Choose 'MVC 5 Controller with views, using Entity Framework'
+Step 4: Select the model
+Step 5: Select the context
+Step 6: Select the standard layout (Generally at Shared Folder)
+Step 7: Rename the name to: YourEntityController
+
+### Hiding a Field of Scaffold
+
+At class properties, add that attribute:
+```c#
+[ScaffoldColumn(false)] 
+```
+or
+```c#
+[Display(AutoGenerateField=false)]
+```
+
 
 
 
