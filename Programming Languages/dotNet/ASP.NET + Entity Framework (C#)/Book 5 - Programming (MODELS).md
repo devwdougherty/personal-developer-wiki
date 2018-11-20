@@ -1,5 +1,7 @@
 Help it with Fork and Pull Request!
 
+Model .cs
+
 # ViewModel
 **When use the ViewModel?**
 
