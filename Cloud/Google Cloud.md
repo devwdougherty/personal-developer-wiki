@@ -30,18 +30,19 @@ $ gcloud projects list
 ### How to create a custom/composite Index at your Project/Datastore
 
 1. Create your index.yaml file
-Ex:
-```
-indexes: 
-- kind: NeedForm 
-  properties: 
-  - name: businessAction 
-    direction: asc 
-  - name: businessType 
-    direction: asc 
-  - name: product 
-    direction: asc 
-  - name: quantity 
+
+The following is an example of an index.yaml file: **(Be aware with indentation of YAML file: indexes > kind-ancestor-properties > name > direction)**
+```yaml
+indexes:
+
+- kind: NeedForm
+  ancestor: no
+  properties:
+  - name: businessAction
+  - name: businessType
+  - name: product
+    direction: asc
+  - name: environmentalIndex
     direction: desc
 ```
 2. Run on command line
@@ -50,10 +51,12 @@ $ gcloud datastore create-indexes index.yaml (or: gcloud datastore indexes creat
 ```
 3. Done.
 
-### List your indexes
+### Basic Index Commands (List, Create, Cleanup)
 
 ```
 $ gcloud datastore indexes list
+$ gcloud datastore indexes cleanup index.yaml
+gcloud datastore indexes create index.yaml
 ```
 
 ## Bibliography
