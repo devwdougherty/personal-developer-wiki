@@ -56,7 +56,7 @@ $ gcloud datastore create-indexes index.yaml (or: gcloud datastore indexes creat
 ```
 $ gcloud datastore indexes list
 $ gcloud datastore indexes cleanup index.yaml
-gcloud datastore indexes create index.yaml
+$ gcloud datastore indexes create index.yaml
 ```
 
 ## Bibliography
