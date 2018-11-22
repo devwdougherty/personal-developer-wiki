@@ -35,16 +35,42 @@ The following is an example of an index.yaml file: **(Be aware with indentation
 ```yaml
 indexes:
 
-- kind: NeedForm
+- kind: Store
   ancestor: no
   properties:
   - name: businessAction
   - name: businessType
   - name: product
     direction: asc
-  - name: environmentalIndex
+  - name: priceIndex
     direction: desc
 ```
+
+**Attention!**
+
+Composite filters with multiple property values could encumber your performance and results in high storage costs!
+
+The example above refactor the previous index leaving with a better execution and lower cost:
+
+```yaml
+indexes:
+
+- kind: Store
+  properties:
+  - name: businessAction
+  - name: priceIndex
+    direction: desc
+
+- kind: Store
+  properties:
+  - name: businessType
+  - name: product
+  - name: priceIndex
+    direction: desc
+```
+
+_Google Cloud Datastore works joining those simple indexes when it is necessary._
+
 2. Run on command line
 ```
 $ gcloud datastore create-indexes index.yaml (or: gcloud datastore indexes create index.yaml) 
