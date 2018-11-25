@@ -13,6 +13,13 @@ Paste
 ```
 Shift + Insert
 ```
+## Environment
+
+Change the git core editor
+e.g.: (nano or vi)
+```
+git config --global core.editor "nano"
+```
 
 ## Command Line
 
