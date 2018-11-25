@@ -52,7 +52,7 @@ $ source .bashrc
 $ ./file-name.sh 
 ```
  
-###Directory Commands 
+### Directory Commands 
 ```
 $ pwd currently directory 
 
