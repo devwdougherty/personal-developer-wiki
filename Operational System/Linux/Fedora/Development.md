@@ -15,6 +15,6 @@ $ sudo systemctl start postgresql
 
 See more: https://fedoraproject.org/wiki/PostgreSQL
 
-## Installing pgAdmin
+## Installing pgAdmin and pgAdminDesktop
 
 - [Installing pgAdmin4 3.X on RHEL / CentOS 7 and Fedora 27](https://people.planetpostgresql.org/devrim/index.php?/archives/96-Installing-pgAdmin4-3.X-on-RHEL-CentOS-7-and-Fedora-27.html)
