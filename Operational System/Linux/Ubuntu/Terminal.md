@@ -148,9 +148,16 @@ $ a ->
 $ source 'file or it extension' 
 ```
 
-## Kill Servers on a Port 
+## Connectins 
+
+### Kill Servers on a Port 
 ```
 $ sudo kill $(sudo lsof -t -i:8080) 
+```
+
+### Check Listening Ports
+```
+$ sudo netstat -plnt
 ```
  
 # Ubuntu Install and Update
