@@ -63,17 +63,24 @@ e.g.:
 @PersistenceContext
 private EntityManager em;
 ```
+
 **Explanation:** @PersistenceContext Expresses a dependency on a container-managed EntityManager and its associated persistence context.
+
 _To do custom queries on Spring Boot JPA we need the EntityManager with it context__
 
 
 ## Custom queries
 
 1 - Create a custom repository (Interface)
+
 2 - Create a custom implementation (Class)
-3 - Extends your custom interface-repository for the main interface-repositoy
+
+3 - Extends your custom interface-repository for the main interface-repository
+
 4 - Declare your custom methods on your interface
+
 5 - Implement your custom methods on your implementation class (Declare and use EntityManager)
+
 6 - Custom queries e.g.:
 ```java 
 public Negotiation getNegotiationWithStatusFinish(String negotiationId) {
