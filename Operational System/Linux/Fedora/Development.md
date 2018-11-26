@@ -12,6 +12,13 @@ You can start the postgresql server only when necessary as follows.
 ```
 $ sudo systemctl start postgresql
 ```
+## Basic LSB actions (start, stop, restart, try-restart, reload, force-reload, status)
+
+**Status**
+```
+$ service postgresql status
+```
+
 
 See more: https://fedoraproject.org/wiki/PostgreSQL
 
