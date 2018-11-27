@@ -71,3 +71,10 @@ justify-content: center;
 **wrap** -> fit the content on the page
 
 **center** -> center the contet of div
+
+## Position
+
+_Definition: property used to position HTML elements in exact locations on a webpage._
+
+**relative** -> TODO
+
