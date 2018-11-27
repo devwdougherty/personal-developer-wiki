@@ -33,28 +33,14 @@ margin-left
 margin-right
 ```
 
-# Page Layout
+# Page and Element Layout
 
 ## Display
 
 ### Block and Inline
 ![alt text](https://github.com/devwdougherty/personal-developer-wiki/blob/master/Programming%20Languages/CSS/css-flow-02.png)
 
-## Float
-
-**Float elements left or right.**
-
-```css
-.logo {
-	float: left;
-}
-
-#search-bar {
-	float: right;
-}
-```
-
-## Flex
+### Flex
 ![alt text](https://github.com/devwdougherty/personal-developer-wiki/blob/master/Programming%20Languages/CSS/css-flow-03.png)
 
 __On CSS:__
@@ -72,7 +58,23 @@ justify-content: center;
 
 **center** -> center the contet of div
 
-## Position
+## Basic
+
+### Float
+
+**Float elements left or right.**
+
+```css
+.logo {
+	float: left;
+}
+
+#search-bar {
+	float: right;
+}
+```
+
+### Position
 
 _Definition: property used to position HTML elements in exact locations on a webpage._
 
