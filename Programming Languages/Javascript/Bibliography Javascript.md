@@ -35,3 +35,7 @@ _Key words: Voice recorder, speech recognition_
 - https://github.com/julianburr/js-audiorecorder - JS-AudioRecorder
 
 _Key words: Voice/Audio recorder, HTML5, plugin_
+
+- https://github.com/trekhleb/javascript-algorithms - JavaScript Algorithms and Data Structures
+
+_Key words: Javascript Algorithms, Data Structures, Tree, Graphs, Linked Lists, Cryptography_
