@@ -2,6 +2,10 @@ Help it with Fork and Pull Request!
 
 # Interesting Links and Tools
 - [Start Spring](http://start.spring.io/)
+- [Central Maven Repository](https://search.maven.org/)
+
+# Setup
+- [Spring Boot, PostgreSQL, JPA, Hibernate RESTful CRUD API Example](https://www.callicoder.com/spring-boot-jpa-hibernate-postgresql-restful-crud-api-example/)
 
 # General
 - [O que é o Spring Boot?](http://blog.algaworks.com/spring-boot/)
@@ -23,7 +27,7 @@ Help it with Fork and Pull Request!
 
 ## Spring Security
 
-- [RESTful authentication using Spring Security on Spring Boot, and jQuery as a web client](https://www.codesandnotes.be/2014/10/31/restful-authentication-using-spring-security-on-spring-boot-and-jquery-as-a-web-client/)
+- [RESTful authentication using Spring Security on Spring Boot, and jQuery as a web client](https://www.codesandnotes.be/2014/10/31/restful-authentication-using-spring-security-on-spring-boot-and-jquery-as-a-web-client/)https://www.callicoder.com/spring-boot-jpa-hibernate-postgresql-restful-crud-api-example/
 
 ## Spring Cloud GCP
 - [What's new in Spring Cloud GCP 1.0.0 Milestone 3](https://spring.io/blog/2018/04/16/what-s-new-in-spring-cloud-gcp-1-0-0-milestone-3)
