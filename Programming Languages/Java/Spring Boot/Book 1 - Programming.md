@@ -39,6 +39,25 @@ It validate a model after binding user input to it.Used: On controllers class.
       </executions>
 </plugin>
 ```
+# Errors and Solutions
 
+## Beans Dependencies Cycle
 
+e.g.:
+```java
+Problem: The dependencies of some of the beans in the application context form a cycle
+
+┌─────┐
+|  purchaseService defined in file [/home/user/Documents/git/store-online/target/store-online-1.0.0/WEB-INF/classes/br/com/usr/store/services/PurchaseService.class]
+↑     ↓
+|  negotiationService defined in file [/home/user/Documents/git/store-online/target/store-online-1.0.0/WEB-INF/classes/br/com/usr/store/services/services/NegotiationService.class]
+└─────┘
+```
+### About:
+- [Beans Dependency Resolution](http://docs.spring.io/spring/docs/4.3.10.RELEASE/spring-framework-reference/htmlsingle/#beans-dependency-resolution)
+- [Beans Setter Injection](https://docs.spring.io/spring/docs/4.3.10.RELEASE/spring-framework-reference/htmlsingle/#beans-setter-injection) _(Solution)_
+- [2.2. Setter Injection](https://www.baeldung.com/spring-annotations-resource-inject-autowire) _(Solution)_
+
+Use @Resource
+How to use SI (Setter Injection) instead Dependency Injection
 
