@@ -13,7 +13,9 @@ For controller, e.g:
 ```
 
 ## About @Valid
-It validate a model after binding user input to it.Used: On controllers class.
+It validate a model after binding user input to it.
+
+Used: On controllers class.
 
 ## To making JAR file executable
 - [Maven Shade Plugin](https://maven.apache.org/plugins/maven-shade-plugin/)
@@ -58,6 +60,15 @@ Problem: The dependencies of some of the beans in the application context form a
 - [Beans Setter Injection](https://docs.spring.io/spring/docs/4.3.10.RELEASE/spring-framework-reference/htmlsingle/#beans-setter-injection) _(Solution)_
 - [2.2. Setter Injection](https://www.baeldung.com/spring-annotations-resource-inject-autowire) _(Solution)_
 
+**Solution**
+Use SI (Setter Injection) instead Dependency Injection: Declare, build a set method with @Resource annotation
 Use @Resource
-How to use SI (Setter Injection) instead Dependency Injection
+```java
+private NegotiationService negotiationService;
 
+@Resource(name="negotiationService")
+public void setNegotiationService(NegotiationService negotiationService) {
+    this.negotiationService = negotiationService;
+}
+```
+_Explanation: @Resource annotation forces Spring initialize the class service with it dependecy._
