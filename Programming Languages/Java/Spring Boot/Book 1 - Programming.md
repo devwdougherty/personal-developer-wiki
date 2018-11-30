@@ -64,11 +64,11 @@ Problem: The dependencies of some of the beans in the application context form a
 Use SI (Setter Injection) instead Dependency Injection: Declare, build a set method with @Resource annotation
 Use @Resource
 ```java
-private NegotiationService negotiationService;
+private PurchaseService purchaseService;
 
-@Resource(name="negotiationService")
-public void setNegotiationService(NegotiationService negotiationService) {
-    this.negotiationService = negotiationService;
+@Resource(name="purchaseService")
+public void setPurchaseService(PurchaseService purchaseService) {
+    this.purchaseService = purchaseService;
 }
 ```
 _Explanation: @Resource annotation forces Spring initialize the class service with it dependecy._
