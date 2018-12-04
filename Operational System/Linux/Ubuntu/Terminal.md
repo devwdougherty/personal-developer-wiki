@@ -6,6 +6,9 @@ Help it with Fork and Pull Request!
 ```
 $ tar -xvzf package_java.targz 
 ```
+_Optional:_ You can put the directory that has chosen for application directly at end of decompress line
+e.g: $ tar -xvzf package_java.targz **/opt/**
+
 _Explanation:_
 
 **f:** this must be the last flag of the command, and the tar file must be immediately after. It tells tar the name and path of the compressed file. 
@@ -113,7 +116,7 @@ $ java -version
 **Explanation:**
 
 /opt - Location of your installed applications 
-/bin - Where the executable files are in 
+/bin - Where the execchoosenutable files are in 
 /etc - ? 
 
 _What I'm doing? - We defined the Application and PATH Environmental Variables _
