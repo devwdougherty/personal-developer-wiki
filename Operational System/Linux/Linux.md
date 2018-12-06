@@ -14,3 +14,8 @@ _Key words: Root, ssh connection, basic firewall_
 - [How To Install the Apache Web Server on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04)
 
 _Key words: Web server, apache_
+
+- [UFW Essentials: Common Firewall Rules and Commands](https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands)
+
+_Key words: Linux firewall_
+
