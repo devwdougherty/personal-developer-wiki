@@ -19,3 +19,13 @@ _Key words: Web server, apache_
 
 _Key words: Linux firewall_
 
+# User and Privileges Management
+
+**Log as root&**
+```
+$ sudo su
+```
+**Transfer the ownership of a session to any other user**
+```
+$ su nameuser
+```
