@@ -98,6 +98,10 @@ Mudar de usuário no git
 ```
 $ git config --global user.email "myemail@gmail.com"
 ```
+Salvar suas credenciais (password)
+```
+git config credential.helper store
+```
 Para forçar um push no server (branch específica)
 ```
 $ git push -f origin nome-branch
