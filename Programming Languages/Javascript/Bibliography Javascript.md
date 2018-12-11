@@ -2,7 +2,7 @@ Help it with Fork and Pull Request!
 
 # Native
 
-# Introduction
+## Introduction
 - [JavaScript for impatient programmers (beta)](http://exploringjs.com/impatient-js/toc.html])
 
 ## General Functions and Functionalities
