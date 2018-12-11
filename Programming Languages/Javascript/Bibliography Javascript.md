@@ -23,6 +23,12 @@ _Key words: Voice recorder, speech recognition_
 
 _Key words: Record audio, Export audio output, Web Audio API_
 
+## Tools
+
+### Learn
+- [JavaScript Visualizer](https://tylermcginnis.com/javascript-visualizer/)
+
+
 # jQuery
 - [Jquery - Everything](https://www.w3schools.com/jquery/default.asp)
 - [Add HTML elements with JQuery](http://api.jquery.com/append/)
