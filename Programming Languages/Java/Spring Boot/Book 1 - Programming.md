@@ -71,4 +71,4 @@ public void setPurchaseService(PurchaseService purchaseService) {
     this.purchaseService = purchaseService;
 }
 ```
-_Explanation: @Resource annotation forces Spring initialize the class service with it dependecy._
+_Explanation: @Resource annotation forces Spring initialize the class service with it dependecy. Don't forget that your @Resource component is still a @Service class._
