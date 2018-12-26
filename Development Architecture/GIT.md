@@ -85,6 +85,10 @@ Para voltar um commit para o topo da árvore
 ```
 $ git cherry-pick commit-code
 ```
+Retornar a versão do código para um commit específico
+```
+$ git checkout commit_code
+```
 Atualizar (hard) a branch origin com a dev local
 ```
 $ git push -u -f origin
