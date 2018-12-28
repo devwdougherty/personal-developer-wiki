@@ -39,3 +39,15 @@ this.myFormGroup.patchValue({
   // formControlName2: myValue2 (can be omitted)
 });
 ```
+# Field Validation
+
+## Regex Expression
+e.g:
+```typescript
+var regexp = new RegExp('^\d{6}-\d{2}-\d{6}-\d{1}$');
+
+if (!regexp.test(yourField)) {
+  console.log("Error!");
+}
+```
+
