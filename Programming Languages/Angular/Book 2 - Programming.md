@@ -10,8 +10,10 @@ import { FormGroup, FormBuilder, Validators, FormControl, FormArray } from '@ang
 ```
 
 **HTML Declaration**
-<form [formGroup]="newAssetForm" role="form">
+```html
+<form [formGroup]="newCustomerForm" role="form">
 </form>
+```
 
 **In typescript class:**
 ```typescript
