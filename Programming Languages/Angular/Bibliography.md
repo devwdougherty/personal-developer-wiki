@@ -6,6 +6,11 @@ Help it with Fork and Pull Request!
 
 _Key words: Material2, Prime NG, NG Bootstrap, Vaadin Components, NG2 Charts_
 
+# How To
+
+## Datatables
+- [How to create custom ordering](https://datatables.net/plug-ins/sorting/)
+
 # Blogs
 - [Jason Watmore's Blog - A Web Developer in Sidney](http://jasonwatmore.com/)
 
