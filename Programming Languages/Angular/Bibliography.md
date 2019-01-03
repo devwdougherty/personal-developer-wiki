@@ -14,3 +14,7 @@ _Key words: Tutorial, Angular, Nodejs, Heroku, Authorization, .NET_
 # Repositories
 
 https://github.com/algaworks - Algaworks
+
+# Libraries
+
+- [Moment.js](http://momentjs.com/) - Parse, validate, manipulate, and display dates and times in JavaScript
