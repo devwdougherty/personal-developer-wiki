@@ -9,7 +9,7 @@ _Key words: Material2, Prime NG, NG Bootstrap, Vaadin Components, NG2 Charts_
 # Blogs
 - [Jason Watmore's Blog - A Web Developer in Sidney](http://jasonwatmore.com/)
 
-_Key words: Tutorial, Angular, Nodejs, Heroku, Authorization, .NET+
+_Key words: Tutorial, Angular, Nodejs, Heroku, Authorization, .NET_
 
 # Repositories
 
