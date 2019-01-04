@@ -12,7 +12,7 @@ _Key words: Material2, Prime NG, NG Bootstrap, Vaadin Components, NG2 Charts_
 - [How to create custom ordering](https://datatables.net/plug-ins/sorting/)
 
 ## Field Validation
-- [How to create custom input mask](https://www.npmjs.com/package/angular2-text-mask)
+- [How to create a custom input mask](https://www.npmjs.com/package/angular2-text-mask)
 
 _Obs: Import the TaskMaskModule on your Component Module script and at your main Manage Module Script_
 
