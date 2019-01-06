@@ -16,10 +16,13 @@ Help it with Fork and Pull Request!
 - [Spring Boot REST – Request Validation (INTERESTING)](https://lmonkiewicz.com/programming/get-noticed-2017/spring-boot-rest-request-validation/)
 - [Spring MVC Custom Validation (RECOMMENDED)](https://www.baeldung.com/spring-mvc-custom-validator)
 
-## HTTP Request
-- [CORS on Spring](https://stackoverflow.com/questions/36809528/spring-boot-cors-filter-cors-preflight-channel-did-not-succeed)
+## HTTP 
 
-## HTTP Method
+### Request
+- [CORS on Spring](https://stackoverflow.com/questions/36809528/spring-boot-cors-filter-cors-preflight-channel-did-not-succeed)
+- [CORS with Spring](https://www.baeldung.com/spring-cors)
+
+### HTTP Methods
 - [Patch](https://github.com/countrogue/spring-http-patch-example/blob/master/src/main/java/com/countrogue/spring/business/asset/controller/AssetController.java)
 
 ## JPA and Hibernate
