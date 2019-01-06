@@ -19,8 +19,10 @@ ALL: All cascade operations will be applied to the parent entity’s related ent
 **LinkedList instead ArrayList:**
 	• Better performance on add and remove methods.
 	• Worst performance on get and set methods.
-	
-## MAP<dataType, dataType>
+
+## Data interaction ways
+
+### MAP<dataType, dataType>
 
 **Initializing a map**
 ```java
@@ -41,7 +43,7 @@ _Elements for_
 for(NeedForm needFormIterator : needFormListOpportunity) {
 }
 ```
-## List
+### For each loop
 
 **For each loop on List**
 
@@ -61,6 +63,14 @@ for (Iterator<String> i = someIterable.iterator(); i.hasNext();)
 	String item = i.next();
 	System.out.println(item);
 }
+```
+
+**For each with lambda**
+```java
+sell.getItemList().forEach(i -> {
+            i.setSell(sell);
+            i.setProduct(productRepository.findById(i.getProduct().getId()).get());
+        });
 ```
 
 # Quick Tips
