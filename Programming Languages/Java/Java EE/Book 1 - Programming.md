@@ -76,3 +76,5 @@ sell.getItemList().forEach(i -> {
 # Quick Tips
 
 **Handle with Optional<T> request? :** Use get() instead handle with not found exception.
+	
+**Why use stream API? :** It helps in using data in a declarative way (and functional programming style); Good use of multi-core architectures (Parallel processing); Built to be fastest as for-loop.
