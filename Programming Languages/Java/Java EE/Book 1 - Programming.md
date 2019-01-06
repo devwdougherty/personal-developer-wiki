@@ -62,3 +62,7 @@ for (Iterator<String> i = someIterable.iterator(); i.hasNext();)
 	System.out.println(item);
 }
 ```
+
+# Quick Tips
+
+**Handle with Optional<T> request? :** Use get() instead handle with not found exception.
