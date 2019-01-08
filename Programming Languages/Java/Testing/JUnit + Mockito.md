@@ -45,7 +45,7 @@ verify(productDO).insertProduct(1, screenProducts.get(0));
 
 **@Mock(name="somename")** - Use a name parameter when you need to use more than one mock for the same service, repository or controller. 
 
-_Obs: your object must have the same name. _
+_Obs: your object must have the same name._
 
 **@InjectMocks** – It uses the previous defined @Mock to inject dependencies where is needed (E.g: controller class). 
 
@@ -102,14 +102,12 @@ _Explanation: With this approach, the unit test will test only the desired metho
 
 ## How to do a Partial Mock with Mockito 
 
-First Option: Use thenCallRealMethod() at your method that you don't want a mock. 
+**First Option:** Use thenCallRealMethod() at your method that you don't want a mock. 
 
-Second Option: Use a Spy() at your class. 
-
- 
+**Second Option:** Use a Spy() at your class. 
 
 ## How to get a private method to test 
-
+```java
 Class<SellService> sellServiceClass = SellService.class; 
 
 Method checkIsAvailable = sellServiceClass .getDeclaredMethod("checkIsAvailable ", Sell.class, Sell.class); 
@@ -117,3 +115,4 @@ Method checkIsAvailable = sellServiceClass .getDeclaredMethod("checkIsAvailable 
 checkIsAvailable .setAccessible(true); 
 
 assertThat(checkIsAvailable .invoke(sellService, persistedSell, updateSell)).isEqualTo(true); 
+```
