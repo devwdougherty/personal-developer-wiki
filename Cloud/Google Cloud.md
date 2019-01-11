@@ -77,6 +77,14 @@ $ gcloud datastore create-indexes index.yaml (or: gcloud datastore indexes creat
 ```
 3. Done.
 
+### GQL
+
+**Select a property-list that has - at your property-name**
+e.g.:
+```sql
+select `txt-quantity` from yourEntityForm
+```
+
 ### Basic Index Commands (List, Create, Cleanup)
 
 ```
