@@ -16,9 +16,10 @@ $ npm start
 $ ng new nome-project
 ```
 
-#### To create a new component
+#### To create a new component / service
 ```
-$ ng generate component 'name'
+$ ng generate component 'nameComponent'
+$ ng generate service 'nameService'
 ```
 _Example: $ ng generate component navbar_
 
