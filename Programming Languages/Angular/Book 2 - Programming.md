@@ -74,7 +74,7 @@ providers: [
   ],
 ```
 At your **page.html**: (Date and Value examples)
-```
+```html
 <td class="col-data">{{ venda.dataCadastro | date: 'dd/MM/yyyy' }}</td>
 <td class="col-numero">{{ venda.valorTotal | number: '1.2-2' }}</td>
 ```
