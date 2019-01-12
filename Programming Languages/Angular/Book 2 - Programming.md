@@ -53,3 +53,29 @@ if (!regexp.test(yourField)) {
 }
 ```
 
+# How To
+
+## How to configure the local of your application properties
+_Portuguese_
+
+At your **app.module.ts**:
+```typescript
+/* Local configuration */
+import { LOCALE_ID } from '@angular/core';
+import localePt from '@angular/common/locales/pt';
+import { registerLocaleData } from '@angular/common';
+
+registerLocaleData(localePt);
+
+providers: [
+    {
+      provide : LOCALE_ID, useValue: 'pt'
+    }
+  ],
+```
+At your **page.html**: (Date and Value examples)
+```
+<td class="col-data">{{ venda.dataCadastro | date: 'dd/MM/yyyy' }}</td>
+<td class="col-numero">{{ venda.valorTotal | number: '1.2-2' }}</td>
+```
+
