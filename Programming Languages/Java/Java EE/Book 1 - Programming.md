@@ -49,13 +49,14 @@ if (sortOrder.toUpperCase().equals("ASC")) {
 
             if (request1.getDetails().get("txt-price") != request2.getDetails().get("txt-price")) {
 
-                // Handling double/currency values with local
+                // Handling double/currency/bigdecimal values with local
                 Locale pt_ID = new Locale("pt", "BR");
                 DecimalFormat nf = (DecimalFormat) NumberFormat.getInstance(pt_ID);
                 nf.setParseBigDecimal(true);
                 BigDecimal value1 = (BigDecimal)nf.parse(request1.getDetails().get("txt-price").get(0), new ParsePosition(0));
                 BigDecimal value2 = (BigDecimal)nf.parse(request2.getDetails().get("txt-price").get(0), new ParsePosition(0));
 
+		// Special comparators with BigDecimal values. With primite: < > <= >= ==
                 if (value1.compareTo(value2) == -1) {
                     comparatorValue = 1;
                 } else {
