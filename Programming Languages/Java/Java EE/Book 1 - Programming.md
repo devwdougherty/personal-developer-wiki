@@ -38,7 +38,7 @@ for (Map.Entry<Integer, List<String>> element : cursorList.entrySet()) {
 }
 ```
 
-**Sorting a Map manually
+**Sorting a Map manually**
 ```java
 if (sortOrder.toUpperCase().equals("ASC")) {
 
