@@ -37,6 +37,41 @@ for (Map.Entry<Integer, List<String>> element : cursorList.entrySet()) {
 	Element.getValue();
 }
 ```
+
+**Sorting a Map manually
+```java
+if (sortOrder.toUpperCase().equals("ASC")) {
+
+    Collections.sort(requestsList, new Comparator<Request>() {
+        public int compare(Request request1, Request request2) {
+
+            int comparatorValue = 0;
+
+            if (request1.getDetails().get("txt-price") != request2.getDetails().get("txt-price")) {
+
+                // Handling double/currency values with local
+                Locale pt_ID = new Locale("pt", "BR");
+                DecimalFormat nf = (DecimalFormat) NumberFormat.getInstance(pt_ID);
+                nf.setParseBigDecimal(true);
+                BigDecimal value1 = (BigDecimal)nf.parse(request1.getDetails().get("txt-price").get(0), new ParsePosition(0));
+                BigDecimal value2 = (BigDecimal)nf.parse(request2.getDetails().get("txt-price").get(0), new ParsePosition(0));
+
+                if (value1.compareTo(value2) == -1) {
+                    comparatorValue = 1;
+                } else {
+                    comparatorValue = -2;
+                }
+            }
+
+            return comparatorValue;
+        }
+    });
+
+} else if (sortOrder.toUpperCase().equals("DESC")) {
+    requestsList.sort(Comparator.comparing(Request::getSIndex).reversed());
+}
+```
+
 **Interactions**
 _Elements for_
 ```java
