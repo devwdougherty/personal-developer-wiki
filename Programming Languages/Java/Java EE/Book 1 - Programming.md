@@ -22,6 +22,17 @@ ALL: All cascade operations will be applied to the parent entity’s related ent
 
 ## Data interaction ways
 
+### List<?> - Unknown Objects
+In this case, getList will return a String list with unknown properties.
+```java
+List<?> rawDetails = cloudEntity.getList(detail);
+ArrayList valueList = new ArrayList<>();
+
+for (Object valueDetail : rawDetails) {
+    valueList.add(StringValue.of(((StringValue) valueDetail).get()));
+}
+```
+
 ### MAP<dataType, dataType>
 
 **Initializing a map**
