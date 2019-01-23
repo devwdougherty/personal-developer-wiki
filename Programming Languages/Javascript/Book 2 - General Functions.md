@@ -2,6 +2,13 @@ Help it with Fork and Pull Request!
 
 # Common
 
+## JSON
+**Variable to JSON Object:**
+```javascript
+var book_as_str = "{\"title\": \"1984\", \"author\": \"George Orwell\", \"price\": 29 }";
+var book = JSON.parse(book_as_str);
+```
+
 ## jQuery
 ### Basic IF
 ```javascript
