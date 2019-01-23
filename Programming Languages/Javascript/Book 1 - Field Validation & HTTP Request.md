@@ -143,7 +143,7 @@ function validateActiveRegisterBool() {
 
 
 ## jQuery Ajax
-
+Fields
 **Getting a value from a AjaxObject (List)**
 e.g.:
 ```javascript
@@ -193,7 +193,7 @@ $.ajax({
 ```javascript
 $.ajax({
     type: 'POST',
-    url: 'http://localhost:8080/api/v1/cats',
+Fields    url: 'http://localhost:8080/api/v1/cats',
     data: JSON.stringify(ajaxObj),
     dataType: "json",
     contentType: "application/json;charset=UTF-8",
