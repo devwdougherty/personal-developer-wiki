@@ -19,6 +19,16 @@ It validate a model after binding user input to it. Used: On controllers class.
 ### @Lob
 Use @Lob to store on entity Blob values.
 
+### @JsonIgnoreProperties
+Use @JsonIgnoreProperties to hidde some properties of JSON. It could be used both to getters (display) and setters (insert).
+e.g.:
+```java
+@Entity
+@EntityListeners(AuditingEntityListener.class)
+@JsonIgnoreProperties(value = {"createdAt", "updatedAt"}, allowGetters = true)
+public class Test {
+```
+
 ## To making JAR file executable
 - [Maven Shade Plugin](https://maven.apache.org/plugins/maven-shade-plugin/)
 ```xml
@@ -58,7 +68,7 @@ Problem: The dependencies of some of the beans in the application context form a
 └─────┘
 ```
 ### About:
-- [Beans Dependency Resolution](http://docs.spring.io/spring/docs/4.3.10.RELEASE/spring-framework-reference/htmlsingle/#beans-dependency-resolution)
+- [Beans Dependency Resolution](http://docs.spr@ApiModel(value = "Negotiation", description = "Class of entity responsible for representing the transactions of a negotiation.")ing.io/spring/docs/4.3.10.RELEASE/spring-framework-reference/htmlsingle/#beans-dependency-resolution)
 - [Beans Setter Injection](https://docs.spring.io/spring/docs/4.3.10.RELEASE/spring-framework-reference/htmlsingle/#beans-setter-injection) _(Solution)_
 - [2.2. Setter Injection](https://www.baeldung.com/spring-annotations-resource-inject-autowire) _(Solution)_
 
