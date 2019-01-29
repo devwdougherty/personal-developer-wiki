@@ -15,6 +15,10 @@ For controller, e.g:
 ## About @Valid
 It validate a model after binding user input to it.
 
+## About Fields Notations
+### @Lob
+Use @Lob to store on entity Blob values.
+
 Used: On controllers class.
 
 ## To making JAR file executable
