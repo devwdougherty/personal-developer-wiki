@@ -13,13 +13,11 @@ For controller, e.g:
 ```
 
 ## About @Valid
-It validate a model after binding user input to it.
+It validate a model after binding user input to it. Used: On controllers class.
 
 ## About Fields Notations
 ### @Lob
 Use @Lob to store on entity Blob values.
-
-Used: On controllers class.
 
 ## To making JAR file executable
 - [Maven Shade Plugin](https://maven.apache.org/plugins/maven-shade-plugin/)
