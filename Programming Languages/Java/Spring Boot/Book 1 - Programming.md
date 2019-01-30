@@ -29,6 +29,14 @@ e.g.:
 public class Test {
 ```
 
+### @JsonProperty
+Use @JsonIgnoreProperties to hidde some properties of JSON directly on a field. It could be used both to WRITE or READ the field.
+e.g.:
+```java
+@JsonProperty(access = JsonProperty.Access.READ_ONLY)
+private Store store;
+```
+
 ## To making JAR file executable
 - [Maven Shade Plugin](https://maven.apache.org/plugins/maven-shade-plugin/)
 ```xml
