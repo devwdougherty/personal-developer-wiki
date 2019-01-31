@@ -100,3 +100,5 @@ public Negotiation getNegotiationWithStatusFinish(String negotiationId) {
 	}
 }
 ```
+
+# Q&A
