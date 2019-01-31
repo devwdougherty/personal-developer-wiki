@@ -27,9 +27,11 @@ Help it with Fork and Pull Request!
 
 ## JPA and Hibernate
 - [The best way to map a @OneToOne relationship with JPA and Hibernate](https://vladmihalcea.com/the-best-way-to-map-a-onetoone-relationship-with-jpa-and-hibernate/)
+- [Jackson – Bidirectional Relationships](https://www.baeldung.com/jackson-bidirectional-relationships-and-infinite-recursion)
 
 ## JSON
 - [Persist a JSON Object Using Hibernate](https://www.baeldung.com/hibernate-persist-json-object)
+
 _e.g: A MapObject_
 
 ## Spring Security
@@ -42,7 +44,7 @@ _e.g: A MapObject_
 
 # Video Content
 - [Spring Framework Tutorial | Spring Tutorial For Beginners With Examples | Java Framework | Edureka](https://www.youtube.com/watch?v=rMLP-NEPgnM)
-
+Jackson – Bidirectional Relationships
 # Repositories
 - https://github.com/eugenp/tutorials - Eugen
 - https://github.com/in28minutes/spring-boot-examples - 28Minutes
