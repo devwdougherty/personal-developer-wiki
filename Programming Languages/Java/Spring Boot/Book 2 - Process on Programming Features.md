@@ -2,30 +2,28 @@ Help it with Fork and Pull Request!
 
 # Database Relations
 
-## To Build a Relationship OneToMany – ManytoOne between 2 classes
+## To Build a Relationship OneToMany – ManytoOne
 
-Inside first Entity/model class:
+Inside first Entity/Model class:
 ```java
-@OneToMany
-Private Set<AnotherClass> anotherclass;
+@OneToMany(mappedBy = "store", cascade = CascadeType.ALL, fetch = FetchType.LAZY, targetEntity = Certificate.class)
+private List<Product> productList = new ArrayList<>();
 
+// CascadeType.ALL -> Every operation will be replicated on this relationship.
+// fetch = FetchType.LAZY -> Only data that is directly requested.
 ```
-+ Constructor
-+ Get & Set
++ Get & Set methods
 
 Inside second entity/model class:
 ```java
-@ManyToOne(targetEntity = FirstClass.class)
-Private Set<FirstClass> firstclass;
-
-public Constructor () {
-     super();   
+@ManyToOne(fetch = FetchType.LAZY)
+@JoinColumn(name = "company_id", nullable = false)
+private Store store;
 }
 ```
-+ Constructor
-+ Get & Set
++ Get & Set methods
 
-## To Build a Relationship OneToOne – OneToOne between 2 classes
+## To Build a Relationship OneToOne – OneToOne
 
 _Be careful with infinite loop class appoint to another recursively, to deal with that:_
 [Jackson – Bidirectional Relationships](https://www.baeldung.com/jackson-bidirectional-relationships-and-infinite-recursion)
