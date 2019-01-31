@@ -4,7 +4,7 @@ Help it with Fork and Pull Request!
 
 ## To Build a Relationship OneToMany – ManytoOne
 
-Inside first Entity/Model class:
+**Inside first Entity/Model class:**
 ```java
 /* Store.class */
 @OneToMany(mappedBy = "store", cascade = CascadeType.ALL, fetch = FetchType.LAZY, targetEntity = Certificate.class)
@@ -13,9 +13,9 @@ private List<Product> productList = new ArrayList<>();
 // CascadeType.ALL -> Every operation will be replicated on this relationship.
 // fetch = FetchType.LAZY -> Only data that is directly requested.
 ```
-+ Get & Set methods
++ +Get & Set methods
 
-Inside second Entity/Model class:
+**Inside second Entity/Model class:**
 ```java
 /* Product.class */
 @ManyToOne(fetch = FetchType.LAZY)
@@ -23,7 +23,7 @@ Inside second Entity/Model class:
 private Store store;
 
 ```
-+ Get & Set methods
++ +Get & Set methods
 
 ## To Build a Relationship OneToOne – OneToOne
 
