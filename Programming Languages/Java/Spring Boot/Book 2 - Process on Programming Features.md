@@ -6,6 +6,7 @@ Help it with Fork and Pull Request!
 
 Inside first Entity/Model class:
 ```java
+/* Store.class */
 @OneToMany(mappedBy = "store", cascade = CascadeType.ALL, fetch = FetchType.LAZY, targetEntity = Certificate.class)
 private List<Product> productList = new ArrayList<>();
 
@@ -14,12 +15,13 @@ private List<Product> productList = new ArrayList<>();
 ```
 + Get & Set methods
 
-Inside second entity/model class:
+Inside second Entity/Model class:
 ```java
+/* Product.class */
 @ManyToOne(fetch = FetchType.LAZY)
 @JoinColumn(name = "company_id", nullable = false)
 private Store store;
-}
+
 ```
 + Get & Set methods
 
