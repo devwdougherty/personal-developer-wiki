@@ -28,6 +28,10 @@ Help it with Fork and Pull Request!
 ## JPA and Hibernate
 - [The best way to map a @OneToOne relationship with JPA and Hibernate](https://vladmihalcea.com/the-best-way-to-map-a-onetoone-relationship-with-jpa-and-hibernate/)
 
+## JSON
+- [Persist a JSON Object Using Hibernate](https://www.baeldung.com/hibernate-persist-json-object)
+_e.g: A MapObject_
+
 ## Spring Security
 
 - [RESTful authentication using Spring Security on Spring Boot, and jQuery as a web client](https://www.codesandnotes.be/2014/10/31/restful-authentication-using-spring-security-on-spring-boot-and-jquery-as-a-web-client/)https://www.callicoder.com/spring-boot-jpa-hibernate-postgresql-restful-crud-api-example/
