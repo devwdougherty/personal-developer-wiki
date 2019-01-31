@@ -27,7 +27,8 @@ public Constructor () {
 
 ## To Build a Relationship OneToOne – OneToOne between 2 classes
 
-_[be careful with infinite loop class appoint to another recursively:](https://pt.stackoverflow.com/questions/242288/infinite-recursion-stackoverflowerror-erro-ao-listar-produtos-com-categorias)_
+_Be careful with infinite loop class appoint to another recursively, to deal with that:
+[Jackson – Bidirectional Relationships](https://www.baeldung.com/jackson-bidirectional-relationships-and-infinite-recursion)
 
 # Interface and Implementation
 
