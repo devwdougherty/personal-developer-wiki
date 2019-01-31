@@ -27,7 +27,7 @@ public Constructor () {
 
 ## To Build a Relationship OneToOne – OneToOne between 2 classes
 
-_Be careful with infinite loop class appoint to another recursively, to deal with that:
+_Be careful with infinite loop class appoint to another recursively, to deal with that:_
 [Jackson – Bidirectional Relationships](https://www.baeldung.com/jackson-bidirectional-relationships-and-infinite-recursion)
 
 # Interface and Implementation
