@@ -15,9 +15,9 @@ _pom.xml:_
   </dependency>
 ```
 
-### Store a object on Storage. 
+## Store a object on Storage. 
 
-#### PDF File
+### PDF File
 
 **Environment: Java, Maven, API Client Library**
 
@@ -32,7 +32,7 @@ BlobInfo blobInfo = BlobInfo.newBuilder(blobId).setContentType("application/pdf"
 Blob blob = storage.create(blobInfo, byteArrayYourPDF.getValue()); //Object as byte[]
 ```
 
-#### Image file (.png, jpeg) - Handling extension properties
+### Image file (.png, jpeg) - Handling extension properties
 
 **Environment: Java, Maven, API Client Library**
 
