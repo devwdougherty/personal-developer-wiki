@@ -4,9 +4,9 @@ Help it with Fork and Pull Request!
 
 # Storage
 
-Store a object on Storage. In this case a pdf file.
+## Store a object on Storage. In this case a pdf file.
 
-Environment: Java, Maven, API Client Library
+**Environment: Java, Maven, API Client Library**
 
 e.g:
 
