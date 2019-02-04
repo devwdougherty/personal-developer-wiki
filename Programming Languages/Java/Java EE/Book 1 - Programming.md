@@ -49,14 +49,14 @@ for (Map.Entry<Integer, List<String>> element : cursorList.entrySet()) {
 }
 ```
 
-_Displaying only the keys:_
+**Displaying only the keys:**
 ```java
  Map<TypeEnum, String> customerInfo;
  
  System.out.println(customerInfo.keySet());
 ```
 
-_Rename a key:_
+**Rename a key:**
 ```java
  Map<TypeEnum, String> customerInfo;
  
@@ -118,7 +118,7 @@ List<String> someList = new ArrayList<String>();
 for (String item : someList) 
 {
    System.out.println(item);
-}
+}_
 ```
 
 **For each with Elements**
