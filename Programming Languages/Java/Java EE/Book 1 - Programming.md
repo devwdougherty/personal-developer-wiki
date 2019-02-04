@@ -49,6 +49,24 @@ for (Map.Entry<Integer, List<String>> element : cursorList.entrySet()) {
 }
 ```
 
+_Displaying only the keys:_
+```java
+ Map<TypeEnum, String> customerInfo;
+ 
+ System.out.println(customerInfo.keySet());
+```
+
+_Rename a key:_
+```java
+ Map<TypeEnum, String> customerInfo;
+ 
+/* Try to remove the element and put it again with the new name. Assuming the keys in your map are String, it could be // achieved that way: */
+
+Object obj = customerInfo.remove("oldKey");
+customerInfo.put("newKey", obj);
+```
+
+
 **Sorting a Map manually**
 ```java
 if (sortOrder.toUpperCase().equals("ASC")) {
