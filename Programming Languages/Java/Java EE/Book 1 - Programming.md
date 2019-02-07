@@ -160,6 +160,18 @@ sell.getItemList().forEach(i -> {
         });
 ```
 
+### Files (byte[] format)
+**Get the mimeType**
+```java
+String mimeType = "";
+
+String fileName = "documet-identify.pdf";
+
+mimeType = URLConnection.guessContentTypeFromName(fileName);
+
+// mimeType output: application/pdf
+```
+
 # Q&A
 
 **Handle with Optional<T> request? :** Use get() instead handle with not found exception.
