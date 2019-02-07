@@ -24,6 +24,7 @@ ALL: All cascade operations will be applied to the parent entity’s related ent
 
 ### String
 **Comparing two strings -> equally with Case Sensitive or not**
+
 _.equals & .equalsIgnoreCase_
 ```java
 "blablabla".equals("Blablabla") //Retorna FALSE
@@ -119,6 +120,8 @@ if (sortOrder.toUpperCase().equals("ASC")) {
                 if (value1.compareTo(value2) == -1) {
                     comparatorValue = 1;
                 } else {
+27
+```java
                     comparatorValue = -2;
                 }
             }
