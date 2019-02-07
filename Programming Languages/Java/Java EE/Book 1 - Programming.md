@@ -188,3 +188,5 @@ mimeType = URLConnection.guessContentTypeFromName(fileName);
 **Handle with Optional<T> request? :** Use get() instead handle with not found exception.
 	
 **Why use stream API? :** It helps in using data in a declarative way (and functional programming style); Good use of multi-core architectures (Parallel processing); Built to be fastest as for-loop.
+
+**Need to compare two dates quickly? :** Use date1.compareTo(date2): If > 0 = Date1 after Date 2; If < 0 = Date1 before Date 2; If == 00 = Date1 equal Date2 
