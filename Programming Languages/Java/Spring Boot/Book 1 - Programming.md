@@ -37,6 +37,14 @@ e.g.:
 private Store store;
 ```
 
+### @Temporal
+Use @Temporal to refers to Date/Calendar field, it works to determine the type of datetime.
+```java
+@Temporal(TemporalType.DATE)
+@Temporal(TemporalType.TIME)
+@Temporal(TemporalType.TIMESTAMP)
+```
+
 ## To making JAR file executable
 - [Maven Shade Plugin](https://maven.apache.org/plugins/maven-shade-plugin/)
 ```xml
