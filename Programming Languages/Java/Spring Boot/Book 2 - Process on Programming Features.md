@@ -103,6 +103,7 @@ public Negotiation getNegotiationWithStatusFinish(String negotiationId) {
 # JSON
 ## Implementing a custom JSON deserializer (Jackson)
 _In this example, our custom deserializer method works removing blank spaces inside JSON body fields._
+
 e.g:
 ```java
 import com.fasterxml.jackson.core.JsonParser;
