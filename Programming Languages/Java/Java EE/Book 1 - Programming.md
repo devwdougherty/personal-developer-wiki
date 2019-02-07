@@ -23,7 +23,9 @@ ALL: All cascade operations will be applied to the parent entity’s related ent
 ## Data interaction ways
 
 ### List<?> - Unknown Objects
-In this case, getList will return a String list with unknown properties.
+**List with unknow objects**
+
+_In this case, getList will return a String list with unknown properties._
 ```java
 List<?> rawDetails = cloudEntity.getList(detail);
 ArrayList valueList = new ArrayList<>();
@@ -32,6 +34,26 @@ for (Object valueDetail : rawDetails) {
     valueList.add(StringValue.of(((StringValue) valueDetail).get()));
 }
 ```
+**Distinct filter on a List using stream() and predicate.**
+```java
+// List -> List<Door> doorList
+List<Door> distinctListDoor = doorList.stream()
+                .filter(distinctByKey(o -> o.getDoorMaterialEnum())).collect(Collectors.toList());
+		
+// Distinct filter method
+/**
+* Auxiliary method to filter duplicate values in a list.
+*
+* @param keyExtractor Key parameter to be filtered
+* @param <T> T Object
+* @return Predicate filter
+*/
+public static <T> Predicate<T> distinctByKey(Function<? super T,Object> keyExtractor) {
+	Map<Object,Boolean> seen = new ConcurrentHashMap<>();
+	return t -> seen.putIfAbsent(keyExtractor.apply(t), Boolean.TRUE) == null;
+}
+```
+
 
 ### MAP<dataType, dataType>
 
