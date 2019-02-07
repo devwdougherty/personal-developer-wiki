@@ -100,5 +100,42 @@ public Negotiation getNegotiationWithStatusFinish(String negotiationId) {
 	}
 }
 ```
+# JSON
+## Implementing a custom JSON deserializer (Jackson)
+_In this example, our custom deserializer method works removing blank spaces inside JSON body fields._
+e.g:
+```java
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.JsonToken;
+import com.fasterxml.jackson.databind.DeserializationContext;
+import com.fasterxml.jackson.databind.JsonDeserializer;
+import org.springframework.boot.jackson.JsonComponent;
+
+import java.io.IOException;
+
+/**
+ * Custom Json component to handle blank spaces at the end and at the start of strings on deserialization process.
+ *
+ */
+@JsonComponent
+public class CustomJsonDeserializer extends JsonDeserializer<String> {
+
+    /**
+     * Method that can be called to ask implementation to deserialize JSON content into the value type this serializer handles.
+     *
+     * @param p Base class that defines public API for reading JSON content.
+     * @param ctxt Context for the process of deserialization a single root-level value.
+     * @return A json string value trimmed.
+     * @throws IOException
+     * @throws JsonProcessingException
+     */
+    @Override
+    public String deserialize(JsonParser p, DeserializationContext ctxt) throws IOException, JsonProcessingException {
+
+        return p.hasToken(JsonToken.VALUE_STRING) ? p.getText().trim() : null;
+    }
+}
+```
 
 # Q&A
