@@ -22,6 +22,14 @@ ALL: All cascade operations will be applied to the parent entity’s related ent
 
 ## Data interaction ways
 
+### String
+**Comparing two strings -> equally with Case Sensitive or not**
+_.equals & .equalsIgnoreCase_
+```java
+"blablabla".equals("Blablabla") //Retorna FALSE
+"blablabla".equalsIgnoreCase("Blablabla") //Retorna TRUE
+```
+
 ### List<?> - Unknown Objects
 **List with unknow objects**
 
