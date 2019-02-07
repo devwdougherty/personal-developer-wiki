@@ -84,7 +84,7 @@ assertThat(result.getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND);
 
 _Example: Mocking a service class:_
 ```java
-scanService mockService = Mockito.mock(ScanService.class); 
+ScanService mockService = Mockito.mock(ScanService.class); 
 ```
 
 **At setUp method (on unit test class):**
