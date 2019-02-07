@@ -34,7 +34,7 @@ for (Object valueDetail : rawDetails) {
     valueList.add(StringValue.of(((StringValue) valueDetail).get()));
 }
 ```
-**Distinct filter on a List using stream() and predicate.**
+**Distinct filter on a List using stream() and predicate. (Duplicate values)**
 ```java
 // List -> List<Door> doorList
 List<Door> distinctListDoor = doorList.stream()
