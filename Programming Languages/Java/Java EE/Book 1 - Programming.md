@@ -31,6 +31,14 @@ _.equals & .equalsIgnoreCase_
 "blablabla".equalsIgnoreCase("Blablabla") //Retorna TRUE
 ```
 
+### Date
+**Finding difference in days**
+e.g:
+```java
+long diffInMillies = Math.abs(secondDate.getTime() - firstDate.getTime());
+long diff = TimeUnit.DAYS.convert(diffInMillies, TimeUnit.MILLISECONDS);
+```
+
 ### List<?> - Unknown Objects
 **List with unknow objects**
 
@@ -120,8 +128,6 @@ if (sortOrder.toUpperCase().equals("ASC")) {
                 if (value1.compareTo(value2) == -1) {
                     comparatorValue = 1;
                 } else {
-27
-```java
                     comparatorValue = -2;
                 }
             }
@@ -151,7 +157,7 @@ List<String> someList = new ArrayList<String>();
 for (String item : someList) 
 {
    System.out.println(item);
-}_
+}
 ```
 
 **For each with Elements**
