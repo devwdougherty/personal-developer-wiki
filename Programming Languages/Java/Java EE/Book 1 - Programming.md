@@ -189,6 +189,16 @@ mimeType = URLConnection.guessContentTypeFromName(fileName);
 // mimeType output: application/pdf
 ```
 
+### Object
+**Casting a object in a Entity/Model/Class**
+```java
+City city = null;
+
+Object objEntity = cityService.getCityByState(state);
+
+city = ((City) objEntity);
+```
+
 # Q&A
 
 **Handle with Optional<T> request? :** Use get() instead handle with not found exception.
