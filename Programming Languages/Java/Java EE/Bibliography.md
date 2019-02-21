@@ -5,6 +5,9 @@ Help it with Fork and Pull Request!
 ## Collections
 - [Java Collections](https://www.edureka.co/blog/java-collections/)
 
+## Objects
+- [Object Type Casting](https://www.baeldung.com/java-type-casting)
+
 # Blogs
 
 - [VLAD MIHALCEA](https://vladmihalcea.com)
