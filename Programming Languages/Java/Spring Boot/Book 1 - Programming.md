@@ -87,8 +87,12 @@ Problem: The dependencies of some of the beans in the application context form a
 - [Beans Dependency Resolution](http://docs.spr@ApiModel(value = "Negotiation", description = "Class of entity responsible for representing the transactions of a negotiation.")ing.io/spring/docs/4.3.10.RELEASE/spring-framework-reference/htmlsingle/#beans-dependency-resolution)
 - [Beans Setter Injection](https://docs.spring.io/spring/docs/4.3.10.RELEASE/spring-framework-reference/htmlsingle/#beans-setter-injection) _(Solution)_
 - [2.2. Setter Injection](https://www.baeldung.com/spring-annotations-resource-inject-autowire) _(Solution)_
+- [Spring @Lazy annotation](https://www.baeldung.com/spring-lazy-annotation) _(Solution)_
 
-**Solution**
+**Solutions**
+
+##### Using SI
+
 Use SI (Setter Injection) instead Dependency Injection: Declare, build a set method with @Resource annotation
 Use @Resource
 ```java
@@ -100,3 +104,16 @@ public void setPurchaseService(PurchaseService purchaseService) {
 }
 ```
 _Explanation: @Resource annotation forces Spring initialize the class service with it dependecy. Don't forget that your @Resource component is still a @Service class._
+
+##### Using @Lazy
+Use @Autowired and @Lazy together in your service/component dependency:
+```java
+/**
+ * Use of BCrypt encoder autowired.
+ *
+ * @author Willian Barbosa
+ */
+@Autowired
+@Lazy
+private PasswordEncoder passwordEncoder;
+```
