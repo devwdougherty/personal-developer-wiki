@@ -105,6 +105,13 @@ _Explanation: With this approach, the unit test will test only the desired metho
 **First Option:** Use thenCallRealMethod() at your method that you don't want a mock. 
 
 **Second Option:** Use a Spy() at your class. 
+**e.g:**
+```java
+Street street = spy(new Street());
+
+doReturn(any(Thing.class)).when(street).getNumber();
+```
+_Explanation: With spy and doReturn you could 'mock' a specific method. Be aware: the real method will be called._
 
 ## How to get a private method to test 
 ```java
