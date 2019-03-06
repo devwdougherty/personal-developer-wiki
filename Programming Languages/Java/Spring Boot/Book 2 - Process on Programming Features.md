@@ -55,12 +55,13 @@ public DataStorePageable(int page, int size, String cursor) {
 ```
 
 ## Errors and Solutions
-### Spring JPA Data Mistake with Two "id"s fields in a entities relationship
+### Spring JPA Data Mistake with Two "id"s fields in a 
+s relationship
 #### About ####
 Both the classes involved in the JPA relationship have an "id" field resulting in Spring Data problems.
 
 #### Solutions ####
-At the second entitie/model on the top declare externally:
+At the second entity/model on the top declare externally:
 ```java
 @JsonIdentityInfo(
         generator = ObjectIdGenerators.PropertyGenerator.class,
@@ -153,6 +154,19 @@ public class CustomJsonDeserializer extends JsonDeserializer<String> {
         return p.hasToken(JsonToken.VALUE_STRING) ? p.getText().trim() : null;
     }
 }
+```
+
+# General
+## How to get standard values from properties of the project
+```java
+**
+* The name of property.
+*
+* @author Willian Barbosa
+* @since 19/10/2018
+*/
+@org.springframework.beans.factory.annotation.Value("${example.name.entity.store}")
+private String kindStoreName;
 ```
 
 # Q&A
