@@ -66,6 +66,7 @@ At the second entitie/model on the top declare externally:
         generator = ObjectIdGenerators.PropertyGenerator.class,
         property = "id"
 )
+public class Example {
 // The rest remain unchanged
 ```
 
