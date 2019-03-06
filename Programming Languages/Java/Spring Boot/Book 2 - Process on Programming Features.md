@@ -54,6 +54,9 @@ public DataStorePageable(int page, int size, String cursor) {
 }
 ```
 
+## Errors and Solutions
+
+
 # JPA Operation and Actions
 
 ## About EntityManager
