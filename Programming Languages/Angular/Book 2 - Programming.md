@@ -78,4 +78,5 @@ At your **page.html**: (Date and Value examples)
 <td class="col-data">{{ venda.dataCadastro | date: 'dd/MM/yyyy' }}</td>
 <td class="col-numero">{{ venda.valorTotal | number: '1.2-2' }}</td>
 ```
-
+# Q & A
+**Need Currency Mask?**: Install -> npm install ng2-currency-mask --save
