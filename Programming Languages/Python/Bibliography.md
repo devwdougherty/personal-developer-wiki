@@ -4,3 +4,11 @@
 
 # About Print Formating
 - [PyFormat](https://pyformat.info/)
+
+# Practice!
+
+- Basic Practice: http://codingbat.com/python
+- More Mathematical (and Harder) Practice: https://projecteuler.net/archives
+- List of Practice Problems: http://www.codeabbey.com/index/task_list
+- A SubReddit Devoted to Daily Practice Problems: https://www.reddit.com/r/dailyprogrammer
+- A very tricky website with very few hints and touch problems (Not for beginners but still interesting): http://www.pythonchallenge.com/
