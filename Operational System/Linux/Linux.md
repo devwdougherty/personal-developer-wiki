@@ -5,10 +5,22 @@ Help it with Fork and Pull Request!
 1. Kernel 
 2. Apps and GUI. 
 
-# Linux Envirnonment
+GNOME / KDE
+
+# Linux Environment
+
+## Get the Sources (Repositories) List:
+```
+cat /etc/apt/sources.list 
+```
+
+## Original Locations
+**Linux Headers:** /usr/src
+
+## Recomended Locations
+**To install software:** /opt/
 
 ## Configure Environment Variables
-
 
 # Web Server and Network
 
@@ -37,13 +49,9 @@ sudo systemctl enable apache2
 ```
 _disable: By default, Apache is configured to start automatically when the server boots. If this is not what you want, disable this behavior_
 
-## Terminal
+## Terminal General Operations
 
 ### File Explorer
-
-#### Directory Structure
-
-- /opt/ - _To install software_
 
 #### To unzip and install a TARGZ
 ```
@@ -66,6 +74,16 @@ _Explanation:_
 ```
 $ sudo mv package_java/ /opt/directory_package_java(You choose) 
 $ sudo cp file directory/you/choose 
+```
+### Handle DEB packages:
+**Install:**
+```
+sudo dpkg -i linux-headers-4.13.0-36-generic_4.13.0-36.40_16.04.1_amd64.deb
+```
+**Remove:**
+```
+sudo dpkg -r linux-headers-4.13.0-36-generic_4.13.0-36.40_16.04.1_amd64.deb
+``` 
 
 #### To change file permissions 
 ```
@@ -73,7 +91,6 @@ $ chmod +x /path/to/yourscript.sh
 ```
 Explanation: _x (execute) r (read) w (write) - Or 777_
  
-
 #### Change the proprietary of the Folder and SubFolders 
 ```
 $ sudo chown -R nameuser:namegroup /directory 
@@ -112,9 +129,6 @@ $ rm //remove
 
 $ cd ~ //return to home
 ```
-
-
-
 
 ### Your IP Address
 ```
