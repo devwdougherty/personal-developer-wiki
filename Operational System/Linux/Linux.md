@@ -51,7 +51,7 @@ _disable: By default, Apache is configured to start automatically when the serve
 
 ## Terminal General Operations
 
-### File Explorer
+### Handling Packages
 
 #### To unzip and install a TARGZ
 ```
@@ -70,12 +70,7 @@ _Explanation:_
 
 **v:** makes tar talk a lot. Verbose output shows you all the files being extracted. 
 
-#### Move and Copy the unzip package to a root directory 
-```
-$ sudo mv package_java/ /opt/directory_package_java(You choose) 
-$ sudo cp file directory/you/choose 
-```
-### Handle DEB packages:
+#### Handle DEB packages:
 **Install:**
 ```
 sudo dpkg -i linux-headers-4.13.0-36-generic_4.13.0-36.40_16.04.1_amd64.deb
@@ -84,6 +79,14 @@ sudo dpkg -i linux-headers-4.13.0-36-generic_4.13.0-36.40_16.04.1_amd64.deb
 ```
 sudo dpkg -r linux-headers-4.13.0-36-generic_4.13.0-36.40_16.04.1_amd64.deb
 ``` 
+
+### File Explorer
+
+#### Move and Copy the unzip package to a root directory 
+```
+$ sudo mv package_java/ /opt/directory_package_java(You choose) 
+$ sudo cp file directory/you/choose 
+```
 
 #### To change file permissions 
 ```
