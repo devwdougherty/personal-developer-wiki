@@ -119,7 +119,14 @@ Procure por algo em seu código (área de trabalho):
 $ git grep "foo()"
 ```
 
-## Remotes
+## Operações diversas 
+### Juntar vários commits em um só (rebase & squash)
+```
+$ git rebase commit_code_first_commit
+```
+Da lista de commits, deixe o primeiro como p (pick). Coloque s (squash) nos commits abaixo. Escreva a nova mensagem para o commit unificado.
+
+### Remotes
 
 Para adicionar um remote
 ```
@@ -146,7 +153,7 @@ Baixar todas as branchs do repositório servidor para o local
 $ git remote update
 ```
 
-#### Creating Branch on GIT BASH
+### Creating Branch on GIT BASH
 ```
 1. $ git fetch origin -> updating the local repository with the latest dev
 2. $ git checkout dev -> go to dev branch
@@ -155,7 +162,7 @@ $ git remote update
 5. $ git checkout -b NAME-BRANCH -> it creates and switches
 ```
 
-#### Removing a Wrong File from your Commit
+### Removing a Wrong File from your Commit
 ```
 $ git reset --soft HEAD^ -> To return your commit
 $ git reset WrongFile.cs
@@ -168,14 +175,14 @@ $git push -u -f YOUR_BRANCH
 - Fork: é a maneira de você clonar um repositório para ter uma cópia privada, assim pode-se alterá-la sem prejudicar o projeto original. No final pode-se fazer um 'pull request' para submeter o merge com o original.
 
 ## Merge and Conflicts
-#### Git Stash
+### Git Stash
 - https://git-scm.com/docs/git-stash
 ```
 $ git stash pop -> It command will back your staged changes on branch (deleting the last staged changes from the tree). If occurs conflict, you must resolve, commit, push and continue your work.
 $ git stash apply -> It command will back your staged changes on branch (maintaining the staged changes available). If occurs conflict, you must resolve, commit, push and continue your work.
 ```
 
-#### Git Reset
+### Git Reset
 Reset your modifications (doesn't committed yet) on current branch to 1 commit behind (HEAD -> First of the GIT Tree) 
 ```
 $ git reset --hard HEAD
@@ -202,13 +209,13 @@ _It merge your new alteration inside your last pull request ._
 $ git add .
 $ git commit --amend
 ```
-#### Local branch and remote branch conflict tags:
+### Local branch and remote branch conflict tags:
 ```
 <<<<<<<< HEAD -> Your Code/Branch
 >>>>>>>> e592fa8391d8a0f25f7e887d2071b7da2ffa9e95 -> The Code/Branch that you are merging
 ```
 
-#### Basic Conflict Workflow
+### Basic Conflict Workflow
 1. Resolve Conflict
 2. Add and commit just the files that have been in conflict
 3. Push it
@@ -228,6 +235,12 @@ git branch -a -> All branches
 git pull origin dev -> updating the local dev with server dev
 j - > Dowside line by line
 k -> Upside line by line
+```
+
+# Basic Commands GIT no Nano
+```
+Ctrl ^ O = Write Out
+Ctrl ^ X = Exit
 ```
 
 # Bibiliografia
