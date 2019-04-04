@@ -204,11 +204,17 @@ $ git stash apply
 ```
 
 Adding new simple code to Pull Request
-_It merge your new alteration inside your last pull request ._
+_It merge your new alteration inside your last pull request.
+Obs: Your remote branch could diverge your local branch. Amend is supposed to replace, if you are certain of your code force it._
 ```
 $ git add .
 $ git commit --amend
 ```
+or
+```
+$ git commit --amend -f
+```
+Obs: Your remote branch will could diverge your local branch. Amend is supposed to replace, if you are certain of your code force it.
 ### Local branch and remote branch conflict tags:
 ```
 <<<<<<<< HEAD -> Your Code/Branch
