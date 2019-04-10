@@ -1,3 +1,0 @@
-# personal-developer-wiki
-
-* Cloud
