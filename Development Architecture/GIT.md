@@ -122,8 +122,10 @@ $ git grep "foo()"
 ## Operações diversas 
 ### Juntar vários commits em um só (rebase & squash)
 ```
-$ git rebase commit_code_first_commit
+$ git rebase -i HEAD~2
 ```
+_Obs: The number after HEAD~ refers to the quantity of commits that you want to join._
+
 Da lista de commits, deixe o primeiro como p (pick). Coloque s (squash) nos commits abaixo. Escreva a nova mensagem para o commit unificado.
 
 ### Remotes
