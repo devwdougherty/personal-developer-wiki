@@ -8,7 +8,7 @@ _Key words: Material2, Prime NG, NG Bootstrap, Vaadin Components, NG2 Charts_
 
 - [Component Lifecycle](https://angular.io/guide/lifecycle-hooks)
 
-_Key words: NgOnInit
+_Key words: NgOnInit_
 
 # How To
 
