@@ -6,6 +6,8 @@ Help it with Fork and Pull Request!
 
 _Key words: Material2, Prime NG, NG Bootstrap, Vaadin Components, NG2 Charts_
 
+- [Component Lifecycle](https://angular.io/guide/lifecycle-hooks)
+
 # How To
 
 ## Datatables
