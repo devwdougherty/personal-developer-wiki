@@ -10,3 +10,7 @@
 
 ## Logging
 - [ASP.NET Core Logging Tutorial – What Still Works and What Changed?](https://stackify.com/asp-net-core-logging-what-changed/)
+- [Logging in ASP.NET Core](https://docs.microsoft.com/pt-br/aspnet/core/fundamentals/logging/?view=aspnetcore-2.2)
+
+## CORS
+- [Enable Cross-Origin Requests (CORS) in ASP.NET Core](https://docs.microsoft.com/pt-br/aspnet/core/security/cors?view=aspnetcore-2.2)
