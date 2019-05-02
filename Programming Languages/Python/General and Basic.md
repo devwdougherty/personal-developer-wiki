@@ -8,10 +8,9 @@ with open('myfile.txt') as my_new_file:
 	contents = my_new_file.read()
 ```
 
-# Basic Math Operations
-
-### Integer division
-//
+# Basic
+## Integer
+**Integer division**
 e.g.:
 ```python
  a = int(input()) # 4
@@ -19,3 +18,11 @@ e.g.:
 
  print(a//b)
 ```
+
+## String
+**encode()**: Encode the string with pattern UTF-8 python.
+
+**hexdigest()**: From hashlib library, turns the string to a string with only hexadecimal values.
+
+# Q&A
+**Python Flask Framework - Why I would need?** Easily map endpoints to Python functions.
