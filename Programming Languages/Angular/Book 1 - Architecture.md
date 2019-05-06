@@ -16,12 +16,18 @@ $ npm start
 $ ng new nome-project
 ```
 
-#### To create a new component / service
+#### To create a new component / service / model class
 ```
 $ ng generate component 'nameComponent'
 $ ng generate service 'nameService'
+$ ng generate class 'nameClass' --type=model
 ```
 _Example: $ ng generate component navbar_
+
+#### Flags
+**--spec--false** or **skipTests**: to not create a test file.
+
+**--s**: create without style.
 
 #### Build ways to become Angular build faster
 ```
@@ -29,12 +35,6 @@ $ ng build --source-map=false
 $ ng build --watch=true
 $ ng build --build-optimizer=false
 ```
-
-#### To generate a new service on the app
-```
-$ ng generate service vendas/vendas --spec--false
-```
-_About --spec--false: to not create a test file._
 
 #### To install new package (functions)
 ```
