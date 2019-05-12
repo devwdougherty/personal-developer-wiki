@@ -1,3 +1,10 @@
 # Q&A
 
-**Why not use NPM with sudo?** Answer and solution: https://medium.com/@ExplosionPills/dont-use-sudo-with-npm-still-66e609f5f92
+**Why not use NPM with sudo?** Answer and solution: 
+_Step 1: npm config set prefix ~/.npm
+Step 2: Go to your ~/.profile and add/set:
+export PATH="$HOME/.npm/bin:$PATH"_
+
+See: https://medium.com/@ExplosionPills/dont-use-sudo-with-npm-still-66e609f5f92
+
+
