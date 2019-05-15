@@ -20,9 +20,34 @@ e.g.:
 ```
 
 ## String
+
+### Methods, Functions and Format
+#### Medium Complexity
 **encode()**: Encode the string with pattern UTF-8 python.
 
 **hexdigest()**: From hashlib library, turns the string to a string with only hexadecimal values.
+
+#### Small Complexity
+
+**.replace("w", "d")**
+**stringWord[n], stringWord[-n], stringWord[n:], stringWord[:n], stringWord[n:n], stringWord * n**
+
+**Python 3 String formatting**
+```python
+test = "Willian"
+print(f"hello his name is {test}")**
+
+print('This is my ten-character, two-decimal number:%10.2f' %13.579)
+print('This is my ten-character, two-decimal number:{0:10.2f}'.format(13.579))
+
+print('This is my ten-character, two-decimal number:%.2f' %13.579)
+
+num = 23.45678
+print(f"My 10 character, four decimal number is:{num:{10}.{6}}")
+
+my_string = "Dougherty"
+my_string += " Do Nascimento Barbosa"
+```
 
 # Functions
 Arbitrary number of arguments:
