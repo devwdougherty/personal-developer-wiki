@@ -30,6 +30,7 @@ e.g.:
 #### Small Complexity
 
 **.replace("w", "d")**
+
 **stringWord[n], stringWord[-n], stringWord[n:], stringWord[:n], stringWord[n:n], stringWord * n**
 
 **Python 3 String formatting**
