@@ -22,6 +22,9 @@ e.g.:
 ## String
 
 ### Methods, Functions and Format
+#### Basic Complexity
+**split():** Split a string into a list where each word is a list item.
+
 #### Medium Complexity
 **encode()**: Encode the string with pattern UTF-8 python.
 
@@ -62,6 +65,10 @@ def myDoughertyFunction(*args, **kwargs):
 
 myDoughertyFunction(1,5,8,9,first_name='Willian',second_name='Dougherty')
 ```
+
+# Libs
+## Strings
+* [Textwrap](https://docs.python.org/2/library/textwrap.html)
 
 # Q&A
 **Python Flask Framework - Why I would need?** Easily map endpoints to Python functions.
