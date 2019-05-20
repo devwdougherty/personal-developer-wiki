@@ -66,6 +66,15 @@ def myDoughertyFunction(*args, **kwargs):
 myDoughertyFunction(1,5,8,9,first_name='Willian',second_name='Dougherty')
 ```
 
+# Loops
+## For
+```python
+tup = (1,2,3,4,5)
+
+for t in tup:
+    print(t)
+```
+
 # Libs
 ## Strings
 * [Textwrap](https://docs.python.org/2/library/textwrap.html)
