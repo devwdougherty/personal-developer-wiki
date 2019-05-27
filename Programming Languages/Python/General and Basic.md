@@ -30,6 +30,31 @@ e.g.:
 
 **hexdigest()**: From hashlib library, turns the string to a string with only hexadecimal values.
 
+## List
+
+### Methods, Functions and Format
+#### Copy a list to another
+
+Not a copy, refer to the same object:
+```python
+>>> a = [1, 2, 3, 4, 5]
+>>> b = a
+>>> a
+[1, 2, 3, 4, 5]
+>>> b
+[1, 2, 3, 4, 5]
+``` 
+Right way
+Python 2
+```python
+>>> b = a[:]
+```
+Python 3
+```python
+>>> b = a.copy()
+```
+
+
 #### Small Complexity
 
 **.replace("w", "d")**
