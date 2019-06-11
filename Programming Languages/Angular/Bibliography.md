@@ -35,4 +35,4 @@ https://github.com/algaworks - Algaworks
 
 # Setup and Environment
 
-- [To install/update Node and NPM on Ubuntu by Node Source Repository (Ubuntu and others OS)(https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions)
+- [To install/update Node and NPM on Ubuntu by Node Source Repository (Ubuntu and others OS](https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions)
