@@ -1,10 +1,10 @@
 Help it with Fork and Pull Request!
 
-# Angular
+# Angular Environment
 
 ## CLI
 
-#### Install and Start app
+### Install and Start app
 ```
 $ npm install
 $ ng serve
