@@ -49,3 +49,15 @@ See: https://angular.io/guide/router
 ## Variables and elements Server and Client Side
 **You can refer a typescript variable or object on HTML page this way: {{ yourvar_on_ts }} or {{ data.field }}**
 
+**You can get a variable/object value to your field on HTML page with [value] Angular notation.**
+e.g.:
+```html
+<input class="demo" [value]="myObject.lastField">
+```
+
+## Events
+**On the HTML element, put your event inside ().**
+e.g.:
+```html
+<img width=300 (click)="onLogoClicked()" src="data/img/ok/img.png">
+```
