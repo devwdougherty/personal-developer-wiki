@@ -32,3 +32,7 @@ https://github.com/algaworks - Algaworks
 # Libraries
 
 - [Moment.js](http://momentjs.com/) - Parse, validate, manipulate, and display dates and times in JavaScript
+
+# Setup and Environment
+
+- [To install/update Node and NPM on Ubuntu by Node Source Repository (Ubuntu and others OS)(https://github.com/nodesource/distributions/blob/master/README.md#installation-instructions)
