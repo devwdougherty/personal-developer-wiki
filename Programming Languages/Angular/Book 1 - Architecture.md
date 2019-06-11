@@ -45,3 +45,7 @@ $ npm install ng2-currency-mask --save
 
 ## Router and Routes
 See: https://angular.io/guide/router
+
+## Variables and elements Server and Client Side
+**You can refer a typescript variable or object on HTML page this way: {{ yourvar_on_ts }} or {{ data.field }}**
+
