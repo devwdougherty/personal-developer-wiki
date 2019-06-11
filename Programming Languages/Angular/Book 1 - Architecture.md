@@ -40,3 +40,8 @@ $ ng build --build-optimizer=false
 ```
 $ npm install ng2-currency-mask --save
 ```
+
+# Angular Application
+
+## Router and Routes
+See: https://angular.io/guide/router
