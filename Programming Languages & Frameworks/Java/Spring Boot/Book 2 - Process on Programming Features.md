@@ -30,7 +30,20 @@ private Store store;
 _Be careful with infinite loop class appoint to another recursively, to deal with that:_
 [Jackson – Bidirectional Relationships](https://www.baeldung.com/jackson-bidirectional-relationships-and-infinite-recursion)
 
-# Interface and Implementation
+# Inherit (extends) % Interface (implements)
+
+## Inherit
+
+A class can inherit properties and characteristics from another.
+
+e.g:
+```java
+public class SonClass extends FatherClass {
+	// content
+}
+```
+
+## Interface
 
 **Example:** DataStorePageable (Your custom class) implements the Pageable (Java) interface:
 ```java
