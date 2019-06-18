@@ -24,7 +24,8 @@ When the project have two or more Entities that interact each other. Example: Us
 [Range(1.01, 2, ErrorMessage = "Field should be in range [1.01, 2].")]
 ```
 
-## Regular Expression to specifies which values are accept in the field.
+## REGEX - Regular Expression
+### Regular Expression to specifies which values are accept in the field.
 ```c#
 [RegularExpression(@"^([1-9]|1[0-9]|20)$", ErrorMessage = "Neighbors should be in range [1, 20] integer.")]
 ```
@@ -48,6 +49,11 @@ It allows any character except /\\() ~!@#$%^&*
 **[ ]** Inside indicates what will be filtered. 
 
 **^** inside [ ] indicates what won't be allowed.
+
+### Password input with upper case, lower case, numbers and special characters (no spaces)
+```c#
+[RegularExpression(@"^((?=.*?[^a-zA-Z0-9]))(?=.*\d)\S{8,30}$", ErrorMessage = "Invalid passoword. Passwords must be between 8 and 30 characters, could contain: upper case (A-Z), lower case (a-z), number (0-9) and special character (e.g. !@#$%^&*)")]
+```
 
 ## Remote with Adittional Fields to validation functions
 ```c#
