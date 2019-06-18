@@ -19,6 +19,12 @@ Help it with Fork and Pull Request!
 
 - [About EF Relationships](https://docs.microsoft.com/pt-br/ef/core/modeling/relationships)
 
+# Regex
+
+- [ASP.NET Core Password Complexity Validation using a Regular Expression in a View Model](https://liftcodeplay.com/2017/07/15/asp-net-core-password-complexity-validation-using-a-regular-expression-in-a-view-model/)
+
+- [How to have Password Regex?](https://forums.asp.net/t/2143881.aspx?How+to+have+Password+Regex+)
+
 # How to
 
 - [How to implement password reset with ASP NET Identity](https://www.youtube.com/watch?v=LcMaO170oec)
