@@ -18,3 +18,7 @@ Help it with Fork and Pull Request!
 - [About Regular Expression (Advanced)](https://stackoverflow.com/questions/19281420/regex-no-special-characters)
 
 - [About EF Relationships](https://docs.microsoft.com/pt-br/ef/core/modeling/relationships)
+
+# How to
+
+- [How to implement password reset with ASP NET Identity](https://www.youtube.com/watch?v=LcMaO170oec)
