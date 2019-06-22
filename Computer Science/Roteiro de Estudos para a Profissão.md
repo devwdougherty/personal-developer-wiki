@@ -1,5 +1,3 @@
-Para contribuir faça um Fork e submeta um Pull Request!
-
 ### Programação
 	Para R ou Python:
 	- fluência na sintaxe básica
@@ -72,3 +70,6 @@ Para contribuir faça um Fork e submeta um Pull Request!
 	- deep learning e tensor flow
 	- reconhecimento de imagens
 	- speech analytics
+	
+### Matemática
+[Be a Better Programmer with these 45 Mathematics Courses](https://hackernoon.com/be-a-better-programmer-with-these-40-mathematics-courses-d8ca48a2f8a2)
