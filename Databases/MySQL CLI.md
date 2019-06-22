@@ -14,3 +14,8 @@ $ sudo mysql -u root –p
 ```
 Ctrl + D
 ```
+
+**Check status of service (Ubuntu)**
+```
+$ sudo service mysql status
+```
