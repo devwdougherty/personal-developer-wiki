@@ -22,7 +22,23 @@ $ sudo service mysql status
 
 # Solving Problems
 
-## MySql Workbench doesn't connect with root user ('Access denied for user 'root'@'localhost')
+## Uninstall MySQL
+
+**Use apt to uninstall and remove all MySQL packages:**
+
+    $ sudo apt-get remove --purge mysql-server mysql-client mysql-common -y
+    $ sudo apt-get autoremove -y
+    $ sudo apt-get autoclean
+
+**Remove the MySQL folder:**
+
+    $ rm -rf /etc/mysql
+
+**Delete all MySQL files on your server:**
+
+    $ sudo find / -iname 'mysql*' -exec rm -rf {} \;
+
+## MySQL Workbench doesn't connect with root user ('Access denied for user 'root'@'localhost')
 
 Try:
 
