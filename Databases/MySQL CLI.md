@@ -53,3 +53,7 @@ or
       UPDATE user SET plugin='mysql_native_password' WHERE User='root';
       FLUSH PRIVILEGES;
       exit;
+
+# About
+
+[A Quick Guide to Using the MySQL APT Repository](https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/#repo-qg-apt-replacing)
