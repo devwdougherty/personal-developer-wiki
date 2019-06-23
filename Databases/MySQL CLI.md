@@ -7,7 +7,7 @@ $ show databases;
 
 **To log root user**
 ```
-$ sudo mysql -u root –p
+$ mysql -u root –p
 ```
 
 **Exit MySql**
