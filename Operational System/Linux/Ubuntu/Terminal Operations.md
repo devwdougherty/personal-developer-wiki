@@ -88,11 +88,16 @@ $ sudo kill $(sudo lsof -t -i:8080)
 $ sudo netstat -plnt
 ```
  
-# Ubuntu Install, Update and Delete
+# Ubuntu Show, Install, Update and Delete
 
 ## List your installed packages
 ```
 $ dpkg --list
+```
+
+## Locate folders and files on terminal:
+```
+$ locate your_folder_or_file
 ```
 
 ## To update SO and it Packages 
