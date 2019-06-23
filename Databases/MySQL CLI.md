@@ -5,7 +5,7 @@ $ drop database name-database;
 $ show databases;
 ```
 
-**To log root user without password**
+**To log root user**
 ```
 $ sudo mysql -u root –p
 ```
