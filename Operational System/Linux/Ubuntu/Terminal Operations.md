@@ -88,7 +88,12 @@ $ sudo kill $(sudo lsof -t -i:8080)
 $ sudo netstat -plnt
 ```
  
-# Ubuntu Install and Update
+# Ubuntu Install, Update and Delete
+
+## List your installed packages
+```
+$ dpkg --list
+```
 
 ## To update SO and it Packages 
 ```
@@ -96,6 +101,20 @@ $ sudo apt-get update -y
 
 $ sudo apt-get upgrade –y 
 ```
+
+## To delete programs and package using APT commands
+```
+$ sudo apt-get remove package_name
+```
+or
+```
+$ sudo apt-get purge package_name
+```
+**Clean the mess:*
+```
+$ sudo apt-get autoremove
+```
+
  
 # Development Problems on Ubuntu
 
