@@ -45,6 +45,16 @@ List<Monitor> monitors //Explanation: Monitor is a Model
 var ListUidName = new SelectList(monitors, "MonitorId", "MonitorName");
 ```
 
+## SecureString
+**String to SecureString**
+```c#
+SecureString theSecureString = new NetworkCredential("", "myPass").SecurePassword;
+```
+**SecureString to String**
+```c#
+string theString = new NetworkCredential("", theSecureString).Password;
+```
+
 # About Classes
 
 ## Static
