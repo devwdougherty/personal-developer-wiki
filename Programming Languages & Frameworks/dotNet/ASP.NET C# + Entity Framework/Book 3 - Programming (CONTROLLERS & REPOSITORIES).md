@@ -1,6 +1,7 @@
 Help it with Fork and Pull Request!
 
-# Getting Data of Table to Validation or Display
+
+# Getting Data of Database
 
 ## With Repository and ActionResult
 
@@ -19,7 +20,7 @@ e.g.:
 Operator registrationNumber = repository.GetRegistrationNumber(model.RegistrationNumber);
 ```
 
-## LINQ
+## Using LINQ
 
 ### Select on SelectList
 e.g.:
@@ -55,6 +56,48 @@ var errors = ModelState.Select(x => x.Value.Errors)
                                                      .ToList().First();
 string errorMsg = errors.ElementAt(0).ErrorMessage.ToString();
 //ElementAt(Number of Element) -> It acess a list element to get it properties
+```
+
+# Transfering information between a View and a Controller
+## Using Request Form Params (HTML and Javascript)
+**HTML View:**
+```cshtml
+@Html.Hidden("optionLogin", "")
+
+<input type="submit" value="Log in with LDAP/AD" class="btn btn-lg btn-primary btn-block" onclick="LoginOption(0)" />
+<input type="submit" value="Log in with User and Password" class="btn btn-lg btn-primary btn-block" onclick="LoginOption(1)" />
+
+
+<script type="text/javascript">
+    function LoginOption(optionLoginBtn) {
+        var opt = optionLogin;
+
+        optionLogin = optionLoginBtn
+
+        $('#optionLogin').val(optionLogin);
+    };
+</script>
+```
+
+**Controller ActionResult:**
+```c#
+ string optLgn = Request.Form["optionLogin"].ToString();
+```
+
+## Using ActionResult method params (HTML and ViewBag)
+**Controller ActionResult View:**
+```c#
+ViewBag.UserId = userId;
+```
+
+**HTML View:**
+```cshtml
+@Html.Hidden("userId", (string) ViewBag.UserId)
+```
+
+**Controller ActionResult:**
+```c#
+public async Task<ActionResult> ResetPassword(string userId, ResetPasswordViewModel model)
 ```
 
 # Error Messages
