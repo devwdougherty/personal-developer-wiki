@@ -52,7 +52,7 @@ It allows any character except /\\() ~!@#$%^&*
 
 ### Password input with upper case, lower case, numbers and special characters (no spaces)
 ```c#
-[RegularExpression(@"^((?=.*?[^a-zA-Z0-9]))(?=.*\d)\S{8,30}$", ErrorMessage = "Invalid passoword. Passwords must be between 8 and 30 characters, could contain: upper case (A-Z), lower case (a-z), number (0-9) and special character (e.g. !@#$%^&*)")]
+[RegularExpression(@"^((?=.*?[^a-zA-Z0-9]))(?=.*\d)\S{8,30}$", ErrorMessage = "Invalid password. Passwords must be between 8 and 30 characters, could contain: upper case (A-Z), lower case (a-z), number (0-9) and special character (e.g. !@#$%^&*)")]
 ```
 
 ## Remote with Adittional Fields to validation functions
