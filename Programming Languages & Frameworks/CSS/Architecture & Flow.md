@@ -5,7 +5,7 @@ Help it with Fork and Pull Request!
 __Figures printed from Codeacademy free courses__
 
 ## Box Model
-![alt text](https://github.com/devwdougherty/personal-developer-wiki/blob/master/Programming%20Languages/CSS/css-flow-01.png)
+![alt text](https://github.com/devwdougherty/personal-developer-wiki/blob/master/Programming%20Languages%20%26%20Frameworks/CSS/css-flow-01.png)
 
 **Border property: thickness, type, color**
 ```css
@@ -38,10 +38,10 @@ margin-right
 ## Display
 
 ### Block and Inline
-![alt text](https://github.com/devwdougherty/personal-developer-wiki/blob/master/Programming%20Languages/CSS/css-flow-02.png)
+![alt text](https://github.com/devwdougherty/personal-developer-wiki/blob/master/Programming%20Languages%20%26%20Frameworks/CSS/css-flow-02.png)
 
 ### Flex
-![alt text](https://github.com/devwdougherty/personal-developer-wiki/blob/master/Programming%20Languages/CSS/css-flow-03.png)
+![alt text](https://github.com/devwdougherty/personal-developer-wiki/blob/master/Programming%20Languages%20%26%20Frameworks/CSS/css-flow-03.png)
 
 __On CSS:__
 ```css
@@ -50,7 +50,7 @@ flex-wrap: wrap;
 justify-content: center;
 ```
 
-![alt text](https://github.com/devwdougherty/personal-developer-wiki/blob/master/Programming%20Languages/CSS/css-flow-04.png)
+![alt text](https://github.com/devwdougherty/personal-developer-wiki/blob/master/Programming%20Languages%20%26%20Frameworks/CSS/css-flow-04.png)
 
 **flex** -> Align horizontally
 
