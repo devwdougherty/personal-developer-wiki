@@ -1,4 +1,4 @@
 # Maven
 
-* [Book 1 - Programming](Book%201%20-%20Architecture.md)
+* [Book 1 - Architecture](Book%201%20-%20Architecture.md)
 * [Bibliography](Bibliography.md)
