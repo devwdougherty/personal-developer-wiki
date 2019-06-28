@@ -1,6 +1,3 @@
-# Java
+# JUnit + Mockito
 
-* [Java EE](Java%20EE/README.md)
-* [Maven](Maven/README.md)
-* [SpringBoot](SpringBoot/README.md)
-* [Testing](Testing/README.md)
+* [JUnit + Mockito](JUnit%20%2B%20Mockito.md)

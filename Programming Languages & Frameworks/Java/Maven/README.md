@@ -1,6 +1,4 @@
-# Java
+# Maven
 
-* [Java EE](Java%20EE/README.md)
-* [Maven](Maven/README.md)
-* [SpringBoot](SpringBoot/README.md)
-* [Testing](Testing/README.md)
+* [Book 1 - Programming](Book%201%20-%20Architecture.md)
+* [Bibliography](Bibliography.md)
