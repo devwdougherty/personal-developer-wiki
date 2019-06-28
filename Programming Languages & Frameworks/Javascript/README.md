@@ -1,6 +1,6 @@
 # Javascript
 
-* [Book 1 - Field Validation & HTTP Requests](Bibliography.md)
-* [Book 2 - General Functions](Bibliography.md)
-* [Complete Examples](Bibliography.md)
+* [Book 1 - Field Validation & HTTP Requests](Book%201%20-%20Field%20Validation%20%26%20HTTP%20Request.md)
+* [Book 2 - General Functions](Book%202%20-%20General%20Functions.md)
+* [Complete Examples](Complete%20Examples.md)
 * [Bibliography](Bibliography.md)
