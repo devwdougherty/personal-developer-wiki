@@ -58,6 +58,11 @@ string errorMsg = errors.ElementAt(0).ErrorMessage.ToString();
 //ElementAt(Number of Element) -> It acess a list element to get it properties
 ```
 
+### LINQ Select and data update on a List
+```c#
+collection = collection.Select(c => {c.PropertyToSet = value; return c;}).ToList();
+```
+
 # Transfering information between a View and a Controller
 ## Using Request Form Params (HTML and Javascript)
 **HTML View:**
