@@ -326,7 +326,7 @@ Int y = x ?? - 1.
 
 The question mark indicates that the property is nullable.
 
-**=> Operator**
+**When use => Operator?**
 
 Using as lambda operator. Lambda expressions: embedded expressions used because are more flexible than anonymous methods. (Generally LINQ queries). => separate input variables (left side of lambda body). Applies the logic (right side) and input the result on the variable before operator (left side).Example: int shortestWordLength = words.Min(w => w.Length);  
 //w have a result of this logic.
