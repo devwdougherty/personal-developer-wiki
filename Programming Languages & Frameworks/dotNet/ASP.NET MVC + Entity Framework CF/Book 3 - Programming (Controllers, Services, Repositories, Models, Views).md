@@ -47,15 +47,15 @@ public string ConfirmNewPassword { get; set; }
 ```
 _Here accepts: 1 to 9, 10 to 19 and 20._
 
-	**^** indicates start of the string. 
+	^ indicates start of the string. 
 
-	**$** indicates end of string. 
+	$ indicates end of string. 
 
 	* indicates 0 or more characters.
 
 	+ indicates 1 or more characters.
 
-	**0-9, A-Z, a-z** indicates that allows that range of symbols/characters.
+	0-9, A-Z, a-z indicates that allows that range of symbols/characters.
 
 ### Regex with unacceptable symbols
 ```c#
@@ -64,13 +64,13 @@ _Here accepts: 1 to 9, 10 to 19 and 20._
 
 It allows any character except /\\() ~!@#$%^&*
 
-	**^** indicates start of the string. 
+	^ indicates start of the string. 
 
-	**$** indicates end of string.
+	$ indicates end of string.
 
-	**[ ]** Inside indicates what will be filtered. 
+	[ ] Inside indicates what will be filtered. 
 
-	**^** inside [ ] indicates what won't be allowed.
+	^ inside [ ] indicates what won't be allowed.
 
 ### Password input with upper case, lower case, numbers and special characters (no spaces)
 ```c#
@@ -313,12 +313,14 @@ e.g.:
 
 When the project have two or more Entities that interact each other. Example: Users that have roles.
 
-**?? Operator**
+**When use ?? Operator?**
+
+Returns the left-hand operand if the operand is not null; otherwiese returns the right hand operand Set y to the value of x if x is NOT null; otherwise, if x == null, set y to -1.
+
+e.g.:
 ```c#
 Int y = x ?? - 1. 
 ```
-
-Returns the left-hand operand if the operand is not null; otherwiese returns the right hand operand Set y to the value of x if x is NOT null; otherwise, if x == null, set y to -1.
 
 **Why ? After data type? (int?, string? public Grade? Grade)**
 
