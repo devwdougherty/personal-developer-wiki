@@ -310,6 +310,42 @@ e.g.:
 
 # Q&A
 
-## When use the ViewModel?
+**When use the ViewModel?** 
+
 When the project have two or more Entities that interact each other. Example: Users that have roles.
+
+**?? Operator**
+```c#
+Int y = x ?? - 1. 
+```
+
+Returns the left-hand operand if the operand is not null; otherwiese returns the right hand operand Set y to the value of x if x is NOT null; otherwise, if x == null, set y to -1.
+
+**Why ? After data type? (int?, string? public Grade? Grade)**
+
+The question mark indicates that the property is nullable.
+
+**=> Operator**
+
+Using as lambda operator. Lambda expressions: embedded expressions used because are more flexible than anonymous methods. (Generally LINQ queries). => separate input variables (left side of lambda body). Applies the logic (right side) and input the result on the variable before operator (left side).Example: int shortestWordLength = words.Min(w => w.Length);  
+//w have a result of this logic.
+
+**The application is return a error about Constructor Parameterless?**
+
+Check if your repository is on AppStart/UnityConfig and UnityConfig is called on Global file.
+
+**Concurrence problem within a database table (Add / Update state conflict) - Update Event**
+
+Add ValidateOnSaveEnabled on the Update method.
+
+e.g.:
+```c#
+public void Update(Employee op)
+{
+      db.Configuration.ValidateOnSaveEnabled = false;
+      db.Set<Employee>().AddOrUpdate(op);
+      db.SaveChanges();
+      db.Configuration.ValidateOnSaveEnabled = true;
+}
+```
 
