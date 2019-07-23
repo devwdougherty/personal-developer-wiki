@@ -24,6 +24,14 @@ When the project have two or more Entities that interact each other. Example: Us
 [Range(1.01, 2, ErrorMessage = "Field should be in range [1.01, 2].")]
 ```
 
+## Display Format (decimals, time, date, etc)
+e.g.:
+```c#
+[DataType(DataType.Time)]
+[DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:t}")]
+public DateTime TrainingTime { get; set; }
+```
+
 ## REGEX - Regular Expression
 ### Regular Expression to specifies which values are accept in the field.
 ```c#
