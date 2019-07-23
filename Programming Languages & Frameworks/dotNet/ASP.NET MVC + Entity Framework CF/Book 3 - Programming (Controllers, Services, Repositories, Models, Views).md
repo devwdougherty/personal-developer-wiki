@@ -10,6 +10,13 @@
 [DataType(DataType.Password)] // or others
 [Display(Name = "Showed in the view")]
 ```
+#### Display Format (decimals, time, date, etc)
+e.g.:
+```c#
+[DataType(DataType.Time)]
+[DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:t}")]
+public DateTime TrainingTime { get; set; }
+```
 
 ### Compare fields
 ```c#
@@ -33,14 +40,6 @@ public string ConfirmNewPassword { get; set; }
 [Range(1.01, 2, ErrorMessage = "Field should be in range [1.01, 2].")]
 ```
 
-## Display Format (decimals, time, date, etc)
-e.g.:
-```c#
-[DataType(DataType.Time)]
-[DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:t}")]
-public DateTime TrainingTime { get; set; }
-```
-
 ## REGEX
 ### Regex to specifies which values are accept in the field.
 ```c#
@@ -48,15 +47,15 @@ public DateTime TrainingTime { get; set; }
 ```
 _Here accepts: 1 to 9, 10 to 19 and 20._
 
-**^** indicates start of the string. 
+	**^** indicates start of the string. 
 
-**$** indicates end of string. 
+	**$** indicates end of string. 
 
-* indicates 0 or more characters.
+	* indicates 0 or more characters.
 
-+ indicates 1 or more characters.
+	+ indicates 1 or more characters.
 
-**0-9, A-Z, a-z** indicates that allows that range of symbols/characters.
+	**0-9, A-Z, a-z** indicates that allows that range of symbols/characters.
 
 ### Regex with unacceptable symbols
 ```c#
@@ -65,13 +64,13 @@ _Here accepts: 1 to 9, 10 to 19 and 20._
 
 It allows any character except /\\() ~!@#$%^&*
 
-**^** indicates start of the string. 
+	**^** indicates start of the string. 
 
-**$** indicates end of string.
+	**$** indicates end of string.
 
-**[ ]** Inside indicates what will be filtered. 
+	**[ ]** Inside indicates what will be filtered. 
 
-**^** inside [ ] indicates what won't be allowed.
+	**^** inside [ ] indicates what won't be allowed.
 
 ### Password input with upper case, lower case, numbers and special characters (no spaces)
 ```c#
