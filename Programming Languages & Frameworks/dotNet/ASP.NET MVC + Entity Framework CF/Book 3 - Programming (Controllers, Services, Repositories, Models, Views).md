@@ -1,4 +1,4 @@
-# Book 3 - Programming (Controllers, Services, Repositories, Models, Views)
+# Book 3 - Programming (Model, Repository, Service, Controller, View)
 
 # View (cshtml)
 
