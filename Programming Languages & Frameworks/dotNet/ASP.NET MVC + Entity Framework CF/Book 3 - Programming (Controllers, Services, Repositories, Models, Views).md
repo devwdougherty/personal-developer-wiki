@@ -6,7 +6,7 @@
 
 ### Comment
 e.g.:
-```c#
+```cshtml
 @* your code here *@
 ```
 
@@ -14,7 +14,7 @@ e.g.:
 
 ### HTML link to an action/method on back-end controller
 e.g.:
-```c#
+```cshtml
 @Html.ActionLink("Back to list", "Index");
 /*
 1. Your link text
@@ -22,8 +22,9 @@ e.g.:
 */
 ```
 **With parameters:**
+
 e.g.:
-```c#
+```cshtml
 @Html.ActionLink("Edit", "Edit", new { id = item.Id })
 /*
 1. Your link text
