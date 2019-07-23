@@ -1,6 +1,96 @@
 # Book 3 - Programming (Model, Repository, Service, Controller, View)
 
 
+# Model (cs)
+
+## Input and Output Validation
+
+### Display Properties
+```c#
+[DataType(DataType.Password)] // or others
+[Display(Name = "Showed in the view")]
+```
+
+### Compare fields
+```c#
+[Compare("NewPassword", ErrorMessage = "The new password and confirmation password do not match.")]
+= 5)]
+public string ConfirmNewPassword { get; set; }
+```
+
+### Maximum and Minimum Lenght to a Input Field
+```c#
+[StringLength(10, ErrorMessage = "Must be between 5 and 10 characters", MinimumLength = 5)]
+```
+
+### String Lenght to a Input Field
+```c#
+[StringLength(30)]
+```
+
+### Range of values to a Input Field
+```c#
+[Range(1.01, 2, ErrorMessage = "Field should be in range [1.01, 2].")]
+```
+
+## Display Format (decimals, time, date, etc)
+e.g.:
+```c#
+[DataType(DataType.Time)]
+[DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:t}")]
+public DateTime TrainingTime { get; set; }
+```
+
+## REGEX
+### Regex to specifies which values are accept in the field.
+```c#
+[RegularExpression(@"^([1-9]|1[0-9]|20)$", ErrorMessage = "Neighbors should be in range [1, 20] integer.")]
+```
+_Here accepts: 1 to 9, 10 to 19 and 20._
+
+**^** indicates start of the string. 
+
+**$** indicates end of string. 
+
+* indicates 0 or more characters.
+
++ indicates 1 or more characters.
+
+**0-9, A-Z, a-z** indicates that allows that range of symbols/characters.
+
+### Regex with unacceptable symbols
+```c#
+[RegularExpression(@"^[^/\\() ~!@#$%^&*]*$", ErrorMessage = "Error")]
+```
+
+It allows any character except /\\() ~!@#$%^&*
+
+**^** indicates start of the string. 
+
+**$** indicates end of string.
+
+**[ ]** Inside indicates what will be filtered. 
+
+**^** inside [ ] indicates what won't be allowed.
+
+### Password input with upper case, lower case, numbers and special characters (no spaces)
+```c#
+[RegularExpression(@"^((?=.*?[^a-zA-Z0-9]))(?=.*\d)\S{8,30}$", ErrorMessage = "Invalid password. Passwords must be between 8 and 30 characters, must contain upper/lower case letters or numbers and special characters (e.g. Fghj$3456)")]
+```
+
+## Remotes 
+### Validation input on back-end method
+```c#
+[Remote("IsIPNumberExists", "Camera", ErrorMessage = "There is already a user registered with that IP Number.", AdditionalFields = "Id")]
+```
+
+## Object Relational Mapping Data
+### Model Attribute that is not mapped into a database column
+```c#
+[NotMapped]
+public int MyProperty { get; set; }
+```
+
 # Controller & Repository (cs)
 
 ## How To
@@ -90,6 +180,7 @@ return db.Units.Where(u => u.EnterTime > cutoffDate).Select(u => u.ParentSN).Dis
 ```
 
 ### Select on a LINQ Select list
+e.g.:
 ```c#
 var errors = ModelState.Select(x => x.Value.Errors)
                                                     .Where(y => y.Count > 0)
@@ -99,6 +190,7 @@ string errorMsg = errors.ElementAt(0).ErrorMessage.ToString();
 ```
 
 ### Select and data update on a List
+e.g.:
 ```c#
 collection = collection.Select(c => {c.PropertyToSet = value; return c;}).ToList();
 ```
@@ -115,6 +207,7 @@ public ActionResult Create(EnergyViewModel model)
 ```
 
 ## Getting Error Messages from system ModelState
+e.g.:
 ```c#
 var errors = ModelState.Select(x => x.Value.Errors)
                            .Where(y => y.Count > 0)
@@ -214,3 +307,9 @@ e.g.:
 ```csthml
 @Html.EditorFor(model => model.ReplaceOrder, new { htmlAttributes = new { @id = "replace", onclick = "return false", style = "width:40%" } })
 ```
+
+# Q&A
+
+## When use the ViewModel?
+When the project have two or more Entities that interact each other. Example: Users that have roles.
+
