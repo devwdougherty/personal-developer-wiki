@@ -4,7 +4,7 @@
 
 ## Java
 
-*[Quarkus](https://quarkus.io/)
+* [Quarkus](https://quarkus.io/)
 
 # Microservices
 
