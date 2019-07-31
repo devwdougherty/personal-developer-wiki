@@ -73,3 +73,11 @@ function myFunction() {
 ```javascript
 location.reload()
 ```
+
+## JSON
+
+### Variable to JSON Object:
+```javascript
+var book_as_str = "{\"title\": \"1984\", \"author\": \"George Orwell\", \"price\": 29 }";
+var book = JSON.parse(book_as_str);
+```
