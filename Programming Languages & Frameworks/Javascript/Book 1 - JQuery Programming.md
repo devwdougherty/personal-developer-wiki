@@ -1,23 +1,14 @@
-Help it with Fork and Pull Request!
+# JQuery Programming
 
-# Javascript Environment (Set up)
-
-**To use Jquery and Ajax on script directly:**
+## Javascript Environment (Set up)
+**To use JQuery and Ajax on script directly:**
 ```javascript
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
 ```
 
-# Javascript
-## Handling Fields and it properties
-**Setting a ID**
-```javascript
-<input type="button" id="myButton">
-```
-The same approach to: value, class, events, etc. Complete list: https://www.w3schools.com/tags/att_input_type.asp
-
-# jQuery
-## Handling Fields and it properties
-### Selectors
+## Programming
+### Handling Fields and it properties
+#### Selectors
 **Reference a ID's Field**
 id. e.g.: 
 ```javascript
@@ -31,7 +22,7 @@ html element. e.g.:
 ```javascript
 :button
 ```
-### Values
+#### Values
 **Getting Value (input fields) and Text (spam fields)**
 e.g.:
 ```javascript
@@ -59,7 +50,7 @@ $('#CustomerId input:checked').each(function(){
     doorArray.push(currentValue);
 });
 ```
-### Events
+#### Events
 **.click**
 
 Event is on when the element is clicked.
@@ -91,7 +82,7 @@ $(document).bind('click', function(e){
 _Parameter 1: event type_
 _Parameter 2: handler (function that executes each time that event is triggered)._
 
-### Field Properties
+#### Field Properties
 **.prop('propertie')** and **.removeAttr('attribute')**
 
 Use to handle some propertie/attribute of a input/output field/element.
@@ -142,8 +133,7 @@ function validateActiveRegisterBool() {
 ```
 
 
-## jQuery Ajax
-Fields
+### JQuery Ajax
 **Getting a value from a AjaxObject (List)**
 e.g.:
 ```javascript
@@ -189,7 +179,7 @@ $.ajax({
 });
 ```
 
-**Post Example**
+**Post Example I**
 ```javascript
 $.ajax({
     type: 'POST',
@@ -204,6 +194,25 @@ Fields    url: 'http://localhost:8080/api/v1/cats',
     },
     error: function() {
 	$('#result').text("There was an error processing your request. Please try again.");
+    }
+});
+```
+
+**POST Example II**
+```javascript
+ var url = '/ObjectUnauthorized/CompleteJustification';
+$.ajax({
+    type: "POST",
+    url: url,
+    data: { id: jusId, text: justificationText.value },
+    dataType: "html",
+    success: function (data) {
+	alert("Complete Justification Registered!")
+	document.getElementById('myModalJustification[' + jusId + ']').style = 'display: none';
+	location.reload();
+    },
+    error: function () {
+	alert('Error occured');
     }
 });
 ```
