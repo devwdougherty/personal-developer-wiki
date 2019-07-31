@@ -22,6 +22,13 @@ html element. e.g.:
 ```javascript
 :button
 ```
+
+#### Objects
+**JSON to String**
+```javascript
+JSON.stringify(javascriptObject)
+```
+
 #### Values
 **Getting Value (input fields) and Text (spam fields)**
 e.g.:
@@ -132,8 +139,21 @@ function validateActiveRegisterBool() {
 }
 ```
 
+#### To show complete Object/Variable properties
+```javascript
+console.log($(ajaxObj));
+```
 
 ### JQuery Ajax
+**To setup every Ajax requisiton on the file to allow Cross Domain and Credentials**
+$.ajaxSetup({
+      //dataSrc: '',
+      crossDomain: true,
+      xhrFields: {
+      withCredentials: true
+      }
+});
+
 **Getting a value from a AjaxObject (List)**
 e.g.:
 ```javascript
@@ -215,4 +235,14 @@ $.ajax({
 	alert('Error occured');
     }
 });
+```
+
+### Loops and Conditional
+#### Basic IF
+```javascript
+If ($('#some_field').prop('checked') {
+		Alert("something");
+	} else {
+	    Alert("else");
+}
 ```
