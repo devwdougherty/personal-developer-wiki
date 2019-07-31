@@ -63,6 +63,10 @@ Para trabalhar com uma nova branch é necessário dar checkout (para separá-lo 
 ```
 $ git checkout nome-branch
 ```
+Apontar branch local para a do server
+```
+$ git push -u origin <branch>
+```
 Dar merge entre 2 branchs de maneira rápida
 ```
 $ git remote update (It updates your local branch list with server branches)
