@@ -2,6 +2,13 @@
 
 ## Javascript DOM HTML
 
+## Handling Fields and it properties
+**Setting a ID**
+```javascript
+<input type="button" id="myButton">
+```
+_The same approach to: value, class, events, etc. Complete list: https://www.w3schools.com/tags/att_input_type.asp_
+
 ### Input text
 **Change value:**
 ```html
