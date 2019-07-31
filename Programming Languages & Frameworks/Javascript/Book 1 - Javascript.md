@@ -4,7 +4,7 @@
 
 ### Input text
 *Change value:*
-```html/javascript
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -34,7 +34,7 @@ function myFunction() {
 
 ### Paragraph
 *Change value:*
-```html/javascript
+```html
 <!DOCTYPE html>
 <html>
 <body>
@@ -59,4 +59,10 @@ function myFunction() {
 
 </body>
 </html>
+```
+
+## Manipulate URL and Event Page
+*Reload page: *
+```javascript
+location.reload
 ```
