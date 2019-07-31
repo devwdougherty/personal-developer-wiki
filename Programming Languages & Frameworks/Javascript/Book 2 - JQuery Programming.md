@@ -1,6 +1,6 @@
 # JQuery Programming
 
-## Javascript Environment (Set up)
+## JQuery Environment (Set up)
 **To use JQuery and Ajax on script directly:**
 ```javascript
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
