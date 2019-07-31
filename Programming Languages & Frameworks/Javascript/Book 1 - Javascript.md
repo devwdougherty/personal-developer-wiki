@@ -3,7 +3,7 @@
 ## Javascript DOM HTML
 
 ### Input text
-*Change value:*
+**Change value:**
 ```html
 <!DOCTYPE html>
 <html>
@@ -33,7 +33,7 @@ function myFunction() {
 ```
 
 ### Paragraph
-*Change value:*
+**Change value:**
 ```html
 <!DOCTYPE html>
 <html>
@@ -62,7 +62,7 @@ function myFunction() {
 ```
 
 ## Manipulate URL and Event Page
-*Reload page: *
+**Reload page:**
 ```javascript
 location.reload
 ```
