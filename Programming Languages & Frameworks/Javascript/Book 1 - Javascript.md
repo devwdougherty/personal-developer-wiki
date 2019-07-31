@@ -64,5 +64,5 @@ function myFunction() {
 ## Manipulate URL and Event Page
 **Reload page:**
 ```javascript
-location.reload
+location.reload()
 ```
