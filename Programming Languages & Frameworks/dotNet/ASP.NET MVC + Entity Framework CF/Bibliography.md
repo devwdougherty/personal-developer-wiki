@@ -25,6 +25,10 @@ Help it with Fork and Pull Request!
 
 - [How to have Password Regex?](https://forums.asp.net/t/2143881.aspx?How+to+have+Password+Regex+)
 
+# MVC
+
+- [ASP.NET MVC - View() vs RedirectToAction() vs Redirect() Methods](https://www.dotnettricks.com/learn/mvc/return-view-vs-return-redirecttoaction-vs-return-redirect-vs-return-redirecttoroute)
+
 # How to
 
 - [How to implement password reset with ASP NET Identity](https://www.youtube.com/watch?v=LcMaO170oec)
