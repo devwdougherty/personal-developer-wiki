@@ -1,4 +1,4 @@
-# Book 1 - Javascript
+# Book 1 - Javascript Programming
 
 ## Javascript DOM HTML
 
