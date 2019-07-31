@@ -199,6 +199,12 @@ Object objEntity = cityService.getCityByState(state);
 city = ((City) objEntity);
 ```
 
+### Lambda (Java 8)
+**Converting a Object List to another Object List (same structure)**
+```java
+List<ObjectTwo> objectTwoList = objectOneList.stream().map(x -> new ObjectTwo(x)).collect(Collectors.toList());
+```
+
 # Q&A
 
 **Handle with Optional<T> request? :** Use get() instead handle with not found exception.
