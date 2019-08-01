@@ -1,6 +1,6 @@
 Help it with Fork and Pull Request!
 
-# Java Spring Annotations
+# Java SpringBoot Annotations
 
 ## About @RestController and @RequestMapping
 When a class is flagged as a @RestController, meaning it's ready for use by Spring MVC to handle web requests. @RequestMapping maps / to the index() method. When invoked from a browser or using curl on the command line, the method returns pure text. That's because @RestController combines @Controller and @ResponseBody, two annotations that results in web requests returning data rather than a view.
@@ -43,6 +43,14 @@ Use @Temporal to refers to Date/Calendar field, it works to determine the type o
 @Temporal(TemporalType.DATE)
 @Temporal(TemporalType.TIME)
 @Temporal(TemporalType.TIMESTAMP)
+```
+
+### @ControllerAdvice
+Use @ControllerAdvice on your class to allows you to handle exceptions across the whole application, not just to an individual controller.
+
+```java
+@ControllerAdvice
+public class ResourceExceptionHandler {
 ```
 
 ## To making JAR file executable
