@@ -156,6 +156,11 @@ public async Task<ActionResult> ResetPassword(string userId, ResetPasswordViewMo
 string nameSelected = fruitsIdsSelectList.Where(x => x.Tree.Equals(model.Tree)).First().Text.ToString();
 ```
 
+### Select to remove a element from a SelectList
+```c#
+var UserTypeLogin = new SelectList(Enum.GetValues(typeof(User.UserType)).Cast<User.UserType>().Where(x => !(x.Equals(UserType.EmailLogin))));
+```
+
 ### Select on Repository Method
 e.g.:
 ```c#
