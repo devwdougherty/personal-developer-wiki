@@ -26,7 +26,7 @@ public class ResourceExceptionHandler {
 #### @Document(collection = "user")
 Refers a entity/model class to a mongodb collection ("table").
 
-#### DBRef
+#### @DBRef
 **options: lazy (true or false)**
 
 Refers a relationship with another entity/model.
