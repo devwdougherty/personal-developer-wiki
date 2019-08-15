@@ -1,5 +1,3 @@
-Help it with Fork and Pull Request!
-
 # Java SpringBoot Annotations
 
 ## @RestController and @RequestMapping
@@ -22,6 +20,16 @@ Use @ControllerAdvice on your class to allows you to handle exceptions across th
 @ControllerAdvice
 public class ResourceExceptionHandler {
 ```
+
+## Database Notations
+### MongoDB
+#### @Document(collection = "user")
+Refers a entity/model class to a mongodb collection ("table").
+
+#### DBRef
+**options: lazy (true or false)**
+
+Refers a relationship with another entity/model.
 
 ## About Fields Notations
 ### @Lob
