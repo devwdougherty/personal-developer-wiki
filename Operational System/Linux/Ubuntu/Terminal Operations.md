@@ -7,6 +7,8 @@ nothing.
 
 ## Configure Environment Variables 
 
+### Manual Input
+
 The file that we have to edit is .bashrc on Home Directory 
 ```
 $ cd ~ (It will redirect to your home/user directory) 
@@ -47,7 +49,14 @@ $ java -version
 
 _What I'm doing? - We defined the Application and PATH Environmental Variables _
 
- 
+### Using ~/.profile file
+```
+# add this command to `~/.profile` file
+$ export PATH=$PATH:/myNewDir
+# then run the source command
+$ source ~/.profile
+```
+
 ## VI Editor 
 
 $ vi 
