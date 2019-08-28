@@ -1,4 +1,4 @@
-# Java EE
+# Java EE & SE
 
 * [Book 1 - Programming](Book%201%20-%20Programming.md)
 * [Code Flow](Code%20Flow.md)
