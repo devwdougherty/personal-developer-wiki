@@ -1,5 +1,23 @@
 Help it with Fork and Pull Request!
 
+# Dependency Injection and Beans
+
+## Create a Custom Beam to Inject Some Service/Instantion
+
+**At the Statup Application Class:**
+```java
+@Bean
+public RestTemplate getRestTemplate() {
+	return new RestTemplate();
+}
+```
+
+**At your class that needs the service:**
+```java
+@Autowired
+private RestTemplate restTemplate;
+```
+
 # Database Relations
 
 ## To Build a Relationship OneToMany – ManytoOne

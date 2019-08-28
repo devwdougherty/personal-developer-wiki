@@ -52,7 +52,8 @@ Jackson – Bidirectional Relationships
 - https://github.com/codesandnotes/restsecurity - Security
 - https://github.com/spring-cloud/spring-cloud-gcp/ - Spring Cloud
 
-# Sites
+# Sites & Blogs
 - [Callicoder](https://www.callicoder.com/categories/spring-boot/)
 - [Baeldung](https://www.baeldung.com/)
+- [Mkyong](https://www.mkyong.com/)
 

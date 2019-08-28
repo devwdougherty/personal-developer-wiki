@@ -8,13 +8,18 @@ Help it with Fork and Pull Request!
 ## Objects
 - [Object Type Casting](https://www.baeldung.com/java-type-casting)
 
-# Blogs
+## Stream
+### map()
+- [Java 8 Streams map() examples](https://www.mkyong.com/java8/java-8-streams-map-examples/)
+
+# Sites & Blogs
 
 - [VLAD MIHALCEA](https://vladmihalcea.com)
-
-# Sites
-
+- [Mkyong](https://www.mkyong.com/)
 - [Programming Tutorials and Source Code Examples](http://www.java2s.com/)
+
+
+
 # Java Notations
 
 - [Bean Validation – JSR 303](https://beanvalidation.org/1.0/spec/)
