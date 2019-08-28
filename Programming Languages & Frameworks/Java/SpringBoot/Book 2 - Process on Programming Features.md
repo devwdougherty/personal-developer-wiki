@@ -2,7 +2,7 @@ Help it with Fork and Pull Request!
 
 # Dependency Injection and Beans
 
-## Create a Custom Beam to Inject Some Service/Instantion
+## Create a Custom Bean to Inject Some Service/Instantion
 
 **At the Statup Application Class:**
 ```java
@@ -12,7 +12,7 @@ public RestTemplate getRestTemplate() {
 }
 ```
 
-**At your class that needs the service:**
+**At your classes that needs the service:**
 ```java
 @Autowired
 private RestTemplate restTemplate;
