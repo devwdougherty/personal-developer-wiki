@@ -86,7 +86,7 @@ $ a ->
 $ source 'file or it extension' 
 ```
 
-## Connectins 
+## Network Connections 
 
 ### Kill Servers on a Port 
 ```
@@ -96,6 +96,10 @@ $ sudo kill $(sudo lsof -t -i:8080)
 ### Check Listening Ports
 ```
 $ sudo netstat -plnt
+```
+or
+```
+$ netstat -tulpn | grep LISTEN
 ```
  
 # Ubuntu Show, Install, Update and Delete
