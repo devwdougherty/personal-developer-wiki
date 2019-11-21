@@ -1,7 +1,9 @@
 # Basic Commands
 
-## Basic Workflow to build, run and ship a container on Docker Desktop
+## Basic Workflow to pull, build, run and ship a container on Docker Desktop
 ```
+docker pull store/oracle/serverjre:8
+
 docker build -t devwdougherty/your_path_container .
 
 docker run -it --rm devwdougherty/your_path_container
@@ -12,13 +14,22 @@ docker login
 
 docker push devwdougherty/your_path_container
 ```
+## Basic operations
+```
+docker info
+docker image ls
+docker search your_search
+docker ps
+docker ps -l
+# inside container:
+exit
+docker stop image_id
+docker start image_id
+docker rm image_id
+docker rm container_id
 
-**Pull a container image:**
-```
-docker pull store/oracle/serverjre:8
-```
 
 # Bibliography
 
 * [Beginner’s guide to use docker (Build, Run, Push and Pull)](https://medium.com/@deepakshakya/beginners-guide-to-use-docker-build-run-push-and-pull-4a132c094d75)
-
+* [Docker For Beginners](https://medium.com/the-andela-way/docker-for-beginners-61e8e0ce6a19)
