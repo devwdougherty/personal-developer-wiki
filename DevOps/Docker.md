@@ -5,6 +5,8 @@
 docker build -t devwdougherty/your_path_container .
 
 docker run -it --rm devwdougherty/your_path_container
+# or
+docker run -i -t your_path_container:version
 
 docker login
 
