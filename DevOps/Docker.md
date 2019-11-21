@@ -9,5 +9,14 @@ docker run -it --rm devwdougherty/your_path_container
 docker login
 
 docker push devwdougherty/your_path_container
+```
 
+**Pull a container image:**
+```
+docker pull store/oracle/serverjre:8
+```
+
+# Bibliography
+
+* [Beginner’s guide to use docker (Build, Run, Push and Pull)](https://medium.com/@deepakshakya/beginners-guide-to-use-docker-build-run-push-and-pull-4a132c094d75)
 
