@@ -26,5 +26,5 @@ Actors are using the system to achieve a goal.
 * Extend - When Base Use Case is executed, Extend Use Case could be executed sometimes (with some criteria). (dash line towards Base Use Case)
 * Generalization or Inheritance - Specialized Use Cases (Children) with common behavior up to General use Case (Parent) (arrow line).
 
-![alt text](https://github.com/devwdougherty/personal-developer-wiki/blob/master/Architecture%20&%20&Software%20Engineering/Development/uml-use-case-diagram-example-01.png)
+![alt text](https://github.com/devwdougherty/personal-developer-wiki/blob/master/Architecture%20%26%20Software%20Engineering/Development/uml-use-case-diagram-example-01.png)
 _Example taken from Lucidchart Video (https://youtu.be/zid-MVo7M-E)_
