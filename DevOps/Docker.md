@@ -13,6 +13,10 @@ docker run -i -t your_path_container:version
 docker login
 
 docker push devwdougherty/your_path_container
+
+docker build -t your_container .
+
+docker run -it your_container
 ```
 ## Basic operations
 ```
