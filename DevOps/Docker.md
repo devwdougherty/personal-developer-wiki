@@ -33,4 +33,5 @@ docker rm container_id
 
 * [Beginner’s guide to use docker (Build, Run, Push and Pull)](https://medium.com/@deepakshakya/beginners-guide-to-use-docker-build-run-push-and-pull-4a132c094d75)
 * [Docker For Beginners](https://medium.com/the-andela-way/docker-for-beginners-61e8e0ce6a19)
+* [Deploy WAR in Docker tomcat container](https://medium.com/@pra4mesh/deploy-war-in-docker-tomcat-container-b52a3baea448)
 * [Docker commands](https://github.com/prameshbhattarai/docker-commands)
