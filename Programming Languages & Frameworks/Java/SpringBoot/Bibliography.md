@@ -1,5 +1,3 @@
-Help it with Fork and Pull Request!
-
 # Interesting Links and Tools
 - [Start Spring](http://start.spring.io/)
 - [Central Maven Repository](https://search.maven.org/)
@@ -15,6 +13,9 @@ Help it with Fork and Pull Request!
 - [Implementing Validation for RESTful Services With Spring Boot](https://dzone.com/articles/implementing-validation-for-restful-services-with)
 - [Spring Boot REST – Request Validation (INTERESTING)](https://lmonkiewicz.com/programming/get-noticed-2017/spring-boot-rest-request-validation/)
 - [Spring MVC Custom Validation (RECOMMENDED)](https://www.baeldung.com/spring-mvc-custom-validator)
+
+# Application Lifecycle
+- [Deploy a Spring Boot WAR into a Tomcat Server](https://www.baeldung.com/spring-boot-war-tomcat-deploy)
 
 ## HTTP 
 
