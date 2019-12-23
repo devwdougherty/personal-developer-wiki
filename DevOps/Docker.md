@@ -17,6 +17,8 @@ docker push devwdougherty/your_path_container
 docker build -t your_container .
 
 docker run -it your_container
+
+docker container exec -it my-container bash
 ```
 ## Basic operations
 ```
