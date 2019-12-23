@@ -44,3 +44,4 @@ docker rm container_id
 * [Deploy WAR in Docker tomcat container](https://medium.com/@pra4mesh/deploy-war-in-docker-tomcat-container-b52a3baea448)
 * [Docker commands](https://github.com/prameshbhattarai/docker-commands)
 * [Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+- [How to run database, backend and frontend in a single-click with Docker Compose](https://medium.com/@wkrzywiec/how-to-run-database-backend-and-frontend-in-a-single-click-with-docker-compose-4bcda66f6de)
