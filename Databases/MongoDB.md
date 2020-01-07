@@ -17,3 +17,8 @@ $ sudo service mongod stop
 $ sudo service mongod restart
 $ mongo
 ```
+
+### Verify MongoDB instace details
+```shell
+$ mongo --eval 'db.runCommand({ connectionStatus: 1 })'
+```
