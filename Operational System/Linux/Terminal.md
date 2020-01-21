@@ -12,3 +12,7 @@ $ sudo find . -name "*yoursearch*"
 $ sudo find / -name "yoursearch"
 ```
 
+### File Content
+```
+$ grep -r yoursearch
+```
