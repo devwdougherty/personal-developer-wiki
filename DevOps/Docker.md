@@ -1,5 +1,16 @@
 # Basic Commands
 
+## Build
+```
+$ docker build -t my-container .
+```
+
+## Run
+Run a previous built container:
+```
+$ docker run -it --rm --name my-running-container my-container
+```
+
 ## Basic Workflow to pull, build, run and ship a container on Docker Desktop
 ```
 docker pull store/oracle/serverjre:8
