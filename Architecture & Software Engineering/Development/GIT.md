@@ -3,16 +3,6 @@ Para contribuir faça um Fork e submeta um Pull Request!
 
 # CMD & BASH
 
-## Shortcuts
-
-Copy
-```
-Ctrl + Insert
-```
-Paste
-```
-Shift + Insert
-```
 ## Environment
 
 Change the git core editor
@@ -21,7 +11,7 @@ e.g.: (nano or vi)
 git config --global core.editor "nano"
 ```
 
-## Command Line
+## Commands
 
 Clonar repositório
 ```
@@ -123,7 +113,7 @@ Procure por algo em seu código (área de trabalho):
 $ git grep "foo()"
 ```
 
-## Operações diversas 
+## GIT Operations
 ### Juntar vários commits em um só (rebase & squash)
 ```
 $ git rebase -i HEAD~2
@@ -181,6 +171,7 @@ $git push -u -f YOUR_BRANCH
 - Fork: é a maneira de você clonar um repositório para ter uma cópia privada, assim pode-se alterá-la sem prejudicar o projeto original. No final pode-se fazer um 'pull request' para submeter o merge com o original.
 
 ## Merge and Conflicts
+
 ### Git Stash
 - https://git-scm.com/docs/git-stash
 ```
@@ -227,13 +218,21 @@ Obs: Your remote branch will could diverge your local branch. Amend is supposed 
 >>>>>>>> e592fa8391d8a0f25f7e887d2071b7da2ffa9e95 -> The Code/Branch that you are merging
 ```
 
+### Git Subtree
+*Steps to add a remote repository as subtree in your project:*
+```
+git remote add -f pistache-rest-api https://github.com/oktal/pistache.git
+git subtree add --prefix Telemetry/API pistache-rest-api master --squash
+git fetch pistache-rest-api master
+git subtree pull --prefix Telemetry/API pistache-rest-api master --squash
+```
+
 ### Basic Conflict Workflow
 1. Resolve Conflict
 2. Add and commit just the files that have been in conflict
 3. Push it
 
-# Basic Commands GIT no VI
-
+# VI Basic Commands (GIT example)
 ```
 q -> quit
 w -> write
@@ -249,7 +248,7 @@ j - > Dowside line by line
 k -> Upside line by line
 ```
 
-# Basic Commands GIT no Nano
+# Nano Basic Commands
 ```
 Ctrl ^ O = Write Out
 Ctrl ^ X = Exit
@@ -257,7 +256,7 @@ Ctrl ^ X = Exit
 
 # Bibiliografia
 
-## Artigos e Tutoriais
+## Articles and Tutorials
 - GIT em Equipe - http://joepreludian.github.io/tutorial/2014/10/01/git-em-equipe.html
 - SSH no GIT - https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-728138079.html#SetupanSSHkey-ssh1
 - SSH Keys - https://confluence.atlassian.com/bitbucket/ssh-keys-935365775.html	
@@ -271,7 +270,7 @@ Ctrl ^ X = Exit
 	
 - Basic writing and formatting syntax - Github File - https://help.github.com/articles/basic-writing-and-formatting-syntax/
 - Resolvig the conflict with GIT Branches between GIT branches - https://confluence.atlassian.com/bitbucket/resolve-merge-conflicts-704414003.html#Resolvemergeconflicts-ResolvingtheconflictwithGitbranches
-
+- [Git subtree: the alternative to Git submodule](https://www.atlassian.com/git/tutorials/git-subtree)
 
 ## Videos
 - Git & GitHub: Introduction (Codecourse) - https://www.youtube.com/watch?v=DR7MLaAKcUk&list=PLfdtiltiRHWFEbt9V04NrbmksLV4Pdf3j
