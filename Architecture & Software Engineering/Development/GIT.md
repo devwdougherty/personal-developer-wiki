@@ -166,6 +166,15 @@ $ git clean -i -> removing untracked files, choose whic will be removed
 $git push -u -f YOUR_BRANCH
 ```
 
+### Git Subtree
+Steps to add a remote repository as subtree in your project:
+```
+git remote add -f pistache-rest-api https://github.com/oktal/pistache.git
+git subtree add --prefix Telemetry/API pistache-rest-api master --squash
+git fetch pistache-rest-api master
+git subtree pull --prefix Telemetry/API pistache-rest-api master --squash
+```
+
 ## Definições básicas
 - Fluxo do GIT para mandar atualizações para um repositório: ADD -> COMMIT -> PUSH
 - Fork: é a maneira de você clonar um repositório para ter uma cópia privada, assim pode-se alterá-la sem prejudicar o projeto original. No final pode-se fazer um 'pull request' para submeter o merge com o original.
@@ -216,15 +225,6 @@ Obs: Your remote branch will could diverge your local branch. Amend is supposed 
 ```
 <<<<<<<< HEAD -> Your Code/Branch
 >>>>>>>> e592fa8391d8a0f25f7e887d2071b7da2ffa9e95 -> The Code/Branch that you are merging
-```
-
-### Git Subtree
-*Steps to add a remote repository as subtree in your project:*
-```
-git remote add -f pistache-rest-api https://github.com/oktal/pistache.git
-git subtree add --prefix Telemetry/API pistache-rest-api master --squash
-git fetch pistache-rest-api master
-git subtree pull --prefix Telemetry/API pistache-rest-api master --squash
 ```
 
 ### Basic Conflict Workflow
