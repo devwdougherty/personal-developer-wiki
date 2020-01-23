@@ -22,7 +22,7 @@ docker container exec -it my-container bash
 
 docker run -it --publish 8081:8080 your_name/some-app-image
 ```
-## Basic operations
+## Basic CRUD Operations
 ```
 docker info
 docker image ls
@@ -35,6 +35,12 @@ docker stop image_id
 docker start image_id
 docker rm image_id
 docker rm container_id
+```
+
+### Delete
+Delete an image
+```
+docker rmi image_id
 ```
 
 # Bibliography
