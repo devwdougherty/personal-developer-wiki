@@ -1,14 +1,28 @@
 # Basic Commands
 
 ## Build
+Normally:
 ```
 $ docker build -t my-container .
+```
+Build with no-cache (information/data of the previous builds)
+```
+$ docker build --no-cache -t dt:v1 .
+```
+
+Build with parent directory : -f
+```
+$ docker build --no-cache -t dt:v1 -f docker/Dockerfile API
 ```
 
 ## Run
 Run a previous built container:
 ```
 $ docker run -it --rm --name my-running-container my-container
+```
+Run and enter in your container:
+```
+sudo docker run -it dt:v1
 ```
 
 ## Basic Workflow to pull, build, run and ship a container on Docker Desktop
