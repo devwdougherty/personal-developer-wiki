@@ -76,3 +76,4 @@ docker rmi image_id
 * [Docker commands](https://github.com/prameshbhattarai/docker-commands)
 * [Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
 - [How to run database, backend and frontend in a single-click with Docker Compose](https://medium.com/@wkrzywiec/how-to-run-database-backend-and-frontend-in-a-single-click-with-docker-compose-4bcda66f6de)
+- [How To Remove Docker Images, Containers, and Volumes](https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes)
