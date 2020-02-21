@@ -1,3 +1,8 @@
+# Command Line Examples
+
+Compile with external libraries and giving a name to output file
+g++ -std=c++11 HelloWorldRest.cpp -o my_file -lboost_system -lcrypto -lssl -lcpprest
+
 # Bibliography
 
 ## Articles
