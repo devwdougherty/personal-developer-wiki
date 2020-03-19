@@ -267,9 +267,8 @@ Ctrl ^ X = Exit
 - [Configuring a remote for a fork](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
 - [Syncing a fork](https://help.github.com/articles/syncing-a-fork/)
 - [Os 4 comandos do Git que todo desenvolvedor deveria conhecer](https://imasters.com.br/desenvolvimento/os-4-comandos-git-que-todo-desenvolvedor-deveria-conhecer)
-	
 - [Basic writing and formatting syntax - Github File](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
-- [Resolvig the conflict with GIT Branches between GIT branches] - https://confluence.atlassian.com/bitbucket/resolve-merge-conflicts-704414003.html#Resolvemergeconflicts-ResolvingtheconflictwithGitbranches)
+- [Resolvig the conflict with GIT Branches between GIT branches](https://confluence.atlassian.com/bitbucket/resolve-merge-conflicts-704414003.html#Resolvemergeconflicts-ResolvingtheconflictwithGitbranches)
 - [Git subtree: the alternative to Git submodule](https://www.atlassian.com/git/tutorials/git-subtree)
 - [How to merge two or multiple git repositories into one](https://medium.com/altcampus/how-to-merge-two-or-multiple-git-repositories-into-one-9f8a5209913f)
 
