@@ -271,6 +271,7 @@ Ctrl ^ X = Exit
 - Basic writing and formatting syntax - Github File - https://help.github.com/articles/basic-writing-and-formatting-syntax/
 - Resolvig the conflict with GIT Branches between GIT branches - https://confluence.atlassian.com/bitbucket/resolve-merge-conflicts-704414003.html#Resolvemergeconflicts-ResolvingtheconflictwithGitbranches
 - [Git subtree: the alternative to Git submodule](https://www.atlassian.com/git/tutorials/git-subtree)
+- [How to merge two or multiple git repositories into one](https://medium.com/altcampus/how-to-merge-two-or-multiple-git-repositories-into-one-9f8a5209913f)
 
 ## Videos
 - Git & GitHub: Introduction (Codecourse) - https://www.youtube.com/watch?v=DR7MLaAKcUk&list=PLfdtiltiRHWFEbt9V04NrbmksLV4Pdf3j
