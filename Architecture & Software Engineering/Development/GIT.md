@@ -112,6 +112,10 @@ Procure por algo em seu código (área de trabalho):
 ```
 $ git grep "foo()"
 ```
+Visualizar os arquivos de um repositório git
+```
+$ git-ls-files
+```
 
 ## GIT Operations
 ### Juntar vários commits em um só (rebase & squash)
@@ -159,11 +163,27 @@ $ git remote update
 ```
 
 ### Removing a Wrong File from your Commit
+**Undoing your changes**
 ```
 $ git reset --soft HEAD^ -> To return your commit
 $ git reset WrongFile.cs
 $ git clean -i -> removing untracked files, choose whic will be removed
-$git push -u -f YOUR_BRANCH
+$ git push -u -f YOUR_BRANCH
+```
+
+**Without undoing your changes**
+```
+$ git reset --soft HEAD~1
+$ git reset HEAD <file>
+$ git rm --cached <file>
+$ git commit --amend
+```
+OR
+```
+$ git checkout HEAD^ -- /path/to/file
+$ git commit -am "revert changes on this file, not finished with it yet"
+$ git push
+$ git checkout HEAD^ -- /path/to/file
 ```
 
 ### Git Subtree
@@ -271,6 +291,10 @@ Ctrl ^ X = Exit
 - [Resolvig the conflict with GIT Branches between GIT branches](https://confluence.atlassian.com/bitbucket/resolve-merge-conflicts-704414003.html#Resolvemergeconflicts-ResolvingtheconflictwithGitbranches)
 - [Git subtree: the alternative to Git submodule](https://www.atlassian.com/git/tutorials/git-subtree)
 - [How to merge two or multiple git repositories into one](https://medium.com/altcampus/how-to-merge-two-or-multiple-git-repositories-into-one-9f8a5209913f)
+### Fixing Commits
+- [Git: Remove committed file after push](https://stackoverflow.com/questions/18357511/git-remove-committed-file-after-push)
+- [How To Remove Files From Git Commit](https://devconnected.com/how-to-remove-files-from-git-commit/)
+- [Numerous undo possibilities in Git](https://docs.gitlab.com/ee/topics/git/numerous_undo_possibilities_in_git/#undo-remote-changes-without-changing-history)
 
 ## Videos
 - Git & GitHub: Introduction (Codecourse) - https://www.youtube.com/watch?v=DR7MLaAKcUk&list=PLfdtiltiRHWFEbt9V04NrbmksLV4Pdf3j
