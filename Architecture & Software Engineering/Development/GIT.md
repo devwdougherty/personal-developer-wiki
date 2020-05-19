@@ -186,6 +186,14 @@ $ git push
 $ git checkout HEAD^ -- /path/to/file
 ```
 
+**Remove a committed file included on a new .gitignore
+```
+$ git rm -r --cached . (remove all the files from the index)
+$ git add . (add all the files again, but now, the specified file does`nt,  because it is already inclued on .gitignore.
+OR
+git rm --cached <arquivo> (if you`re certain that you want to remove it specified file)
+```
+
 ### Git Subtree
 Steps to add a remote repository as subtree in your project:
 ```
