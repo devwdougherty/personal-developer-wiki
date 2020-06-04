@@ -68,6 +68,34 @@ Delete an image
 docker rmi image_id
 ```
 
+## DockerFile example
+```
+FROM frolvlad/alpine-gcc
+
+RUN apk add --no-cache g++
+RUN apk add --no-cache cmake
+RUN apk add --no-cache make
+RUN apk add --no-cache curl
+RUN apk add --no-cache nano
+RUN apk add --no-cache openssh
+
+COPY /API/ /usr/src/project/API
+COPY /Serial/ /usr/src/mate/Serial
+COPY ./start.sh /usr/src/project/start.sh
+COPY ./Makefile /usr/src/project/Makefile
+
+WORKDIR /usr/src/project
+
+RUN make local -C /usr/src/project
+
+EXPOSE 9080
+
+# WORKDIR /usr/src/project
+
+# RUN g++ -o myapp API/test.cpp
+# CMD ["./myapp"]
+```
+
 # Bibliography
 
 * [Beginner’s guide to use docker (Build, Run, Push and Pull)](https://medium.com/@deepakshakya/beginners-guide-to-use-docker-build-run-push-and-pull-4a132c094d75)
