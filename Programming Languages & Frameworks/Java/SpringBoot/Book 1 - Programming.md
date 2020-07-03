@@ -1,4 +1,24 @@
-# Java SpringBoot Annotations
+# SpringBoot Annotations
+
+## Spring Beans
+
+### @Qualifier
+By default, Spring resolve autowired entries by type. Use @Qualifier to avoid SpringBoot misunderstanding about which Bean would be injected on Dependency Injection. Create a dependency with a @Qualifier or call a @Qualifier in your injection.e.g.:
+```java
+@Component
+@Qualifier("myBeanSameTypeA")
+...
+
+@Component
+@Qualifier("myBeanSameTypeB")
+...
+```
+or
+```java
+@Autowired
+@Qualifier("myBeanSameTypeB")
+...
+```
 
 ## @RestController and @RequestMapping
 When a class is flagged as a @RestController, meaning it's ready for use by Spring MVC to handle web requests. @RequestMapping maps / to the index() method. When invoked from a browser or using curl on the command line, the method returns pure text. That's because @RestController combines @Controller and @ResponseBody, two annotations that results in web requests returning data rather than a view.
