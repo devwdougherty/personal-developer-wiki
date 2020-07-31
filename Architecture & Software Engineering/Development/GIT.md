@@ -204,22 +204,22 @@ git rm --cached <arquivo> (if you`re certain that you want to remove it specifie
 
 **1 - Undo commit and keep all the files staged**
 ```bash
-git reset --soft HEAD~;
+$ git reset --soft HEAD~;
 ```
 
 **2 - Undo commit and unstage all files**
 ```bash
-git reset HEAD~;
+$ git reset HEAD~;
 ```
 
 **3 - Undo commit and completely remove all changes**
 ```bash
-git reset --hard HEAD~;
+$ git reset --hard HEAD~;
 ```
 
 **Just to rewrite the commit meessage use:**
 ```bash
-git -amend
+$ git -amend
 ```
 
 ### Git Subtree
