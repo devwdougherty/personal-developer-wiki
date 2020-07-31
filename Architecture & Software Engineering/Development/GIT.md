@@ -1,6 +1,3 @@
-Help it with Fork and Pull Request!
-Para contribuir faça um Fork e submeta um Pull Request!
-
 # CMD & BASH
 
 ## Environment
@@ -10,6 +7,11 @@ e.g.: (nano or vi)
 ```
 git config --global core.editor "nano"
 ```
+
+### Difference between ~ (tilde) and caret (^)
+
+~ Use on local git -> Go back a number of commits in a "straight line".
+^ Use on merge commits  ->  Go back a number of commits in a tree of forks and merges.
 
 ## Commands
 
@@ -118,7 +120,9 @@ $ git-ls-files
 ```
 
 ## GIT Operations
+
 ### Juntar vários commits em um só (rebase & squash)
+
 ```
 $ git rebase -i HEAD~2
 ```
@@ -154,6 +158,7 @@ $ git remote update
 ```
 
 ### Creating Branch on GIT BASH
+
 ```
 1. $ git fetch origin -> updating the local repository with the latest dev
 2. $ git checkout dev -> go to dev branch
@@ -163,6 +168,7 @@ $ git remote update
 ```
 
 ### Removing a Wrong File from your Commit
+
 **Undoing your changes**
 ```
 $ git reset --soft HEAD^ -> To return your commit
@@ -186,12 +192,34 @@ $ git push
 $ git checkout HEAD^ -- /path/to/file
 ```
 
-**Remove a committed file included on a new .gitignore
+**Remove a committed file included on a new .gitignore**
 ```
 $ git rm -r --cached . (remove all the files from the index)
 $ git add . (add all the files again, but now, the specified file does`nt,  because it is already inclued on .gitignore.
 OR
 git rm --cached <arquivo> (if you`re certain that you want to remove it specified file)
+```
+
+### Undo a git commit that was not pushed
+
+**1 - Undo commit and keep all the files staged**
+```bash
+git reset --soft HEAD~;
+```
+
+**2 - Undo commit and unstage all files**
+```bash
+git reset HEAD~;
+```
+
+**3 - Undo commit and completely remove all changes**
+```bash
+git reset --hard HEAD~;
+```
+
+**Just to rewrite the commit meessage use:**
+```bash
+git -amend
 ```
 
 ### Git Subtree
@@ -204,6 +232,7 @@ git subtree pull --prefix Telemetry/API pistache-rest-api master --squash
 ```
 
 ## Definições básicas
+
 - Fluxo do GIT para mandar atualizações para um repositório: ADD -> COMMIT -> PUSH
 - Fork: é a maneira de você clonar um repositório para ter uma cópia privada, assim pode-se alterá-la sem prejudicar o projeto original. No final pode-se fazer um 'pull request' para submeter o merge com o original.
 
@@ -261,6 +290,7 @@ Obs: Your remote branch will could diverge your local branch. Amend is supposed 
 3. Push it
 
 # VI Basic Commands (GIT example)
+
 ```
 q -> quit
 w -> write
@@ -285,6 +315,7 @@ Ctrl ^ X = Exit
 # Bibiliografia
 
 ## Articles and Tutorials
+
 - [GIT em Equipe](http://joepreludian.github.io/tutorial/2014/10/01/git-em-equipe.html)
 - [SSH no GIT](https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-728138079.html#SetupanSSHkey-ssh1)
 - [SSH Keys](https://confluence.atlassian.com/bitbucket/ssh-keys-935365775.html)
@@ -305,5 +336,5 @@ Ctrl ^ X = Exit
 - [Numerous undo possibilities in Git](https://docs.gitlab.com/ee/topics/git/numerous_undo_possibilities_in_git/#undo-remote-changes-without-changing-history)
 
 ## Videos
-- Git & GitHub: Introduction (Codecourse) - https://www.youtube.com/watch?v=DR7MLaAKcUk&list=PLfdtiltiRHWFEbt9V04NrbmksLV4Pdf3j
 
+- Git & GitHub: Introduction (Codecourse) - https://www.youtube.com/watch?v=DR7MLaAKcUk&list=PLfdtiltiRHWFEbt9V04NrbmksLV4Pdf3j
