@@ -1,5 +1,3 @@
-Help it with Fork and Pull Request!
-
 # Linux Architecture 
 
 1. Kernel 
@@ -7,24 +5,40 @@ Help it with Fork and Pull Request!
 
 GNOME / KDE
 
-# Linux Environment
+# Linux Terminal Operations
 
-## Get the Sources (Repositories) List:
+## Linux Environment
+
+### Get the Sources (Repositories) List:
 ```
 cat /etc/apt/sources.list 
 ```
 
-## Original Locations
+### Your IP Address
+```
+$ hostname -I
+```
+
+### Original Locations
 **Linux Headers:** /usr/src
 
-## Recomended Locations
+### Recomended Locations
 **To install software:** /opt/
 
-## Configure Environment Variables
+### User and Privileges Management
 
-# Web Server and Network
+**Log as root**
+```
+$ sudo su
+```
+**Transfer the ownership of a session to any other user**
+```
+$ su nameuser
+```
 
-## Setup
+## Web Server and Network
+
+### Setup
 - [Initial Server Setup with Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04)
 
 _Key words: Root, ssh connection, basic firewall_
@@ -37,7 +51,7 @@ _Key words: Web server, apache_
 
 _Key words: Linux firewall_
 
-## Managing the Apache Process
+### Managing the Apache Process
 ```
 sudo systemctl stop apache2
 sudo systemctl start apache2
@@ -49,11 +63,19 @@ sudo systemctl enable apache2
 ```
 _disable: By default, Apache is configured to start automatically when the server boots. If this is not what you want, disable this behavior_
 
-## Terminal General Operations
+## Handling Packages
 
-### Handling Packages
+### Installed
+```
+$ apt list --installed
+```
 
-#### To unzip and install a TARGZ
+### Locate Directory
+```
+$ dpkg -L your-package
+```
+
+### To unzip and install a TARGZ
 ```
 $ tar -xvzf package_java.targz 
 ```
@@ -70,7 +92,7 @@ _Explanation:_
 
 **v:** makes tar talk a lot. Verbose output shows you all the files being extracted. 
 
-#### Handle DEB packages:
+### Handle DEB packages:
 **Install:**
 ```
 sudo dpkg -i linux-headers-4.13.0-36-generic_4.13.0-36.40_16.04.1_amd64.deb
@@ -80,27 +102,27 @@ sudo dpkg -i linux-headers-4.13.0-36-generic_4.13.0-36.40_16.04.1_amd64.deb
 sudo dpkg -r linux-headers-4.13.0-36-generic_4.13.0-36.40_16.04.1_amd64.deb
 ``` 
 
-### File Explorer
+## File/Directory Explorer
 
-#### Move and Copy the unzip package to a root directory 
+### Move and Copy the unzip package to a root directory 
 ```
 $ sudo mv package_java/ /opt/directory_package_java(You choose) 
 $ sudo cp file directory/you/choose 
 ```
 
-#### To change file permissions 
+### To change file permissions 
 ```
 $ chmod +x /path/to/yourscript.sh 
 ```
 Explanation: _x (execute) r (read) w (write) - Or 777_
  
-#### Change the proprietary of the Folder and SubFolders 
+### Change the proprietary of the Folder and SubFolders 
 ```
 $ sudo chown -R nameuser:namegroup /directory 
 $ ls –l To see the result 
 ```
 
-#### To install a SH package file 
+### To install a SH package file 
 ```
 $ bash file_package_name 
 ```
@@ -109,12 +131,12 @@ After terms accept and PATH edited automatically go to: $ cd .. and:
 $ source .bashrc 
 ```
 
-#### To Run a .sh File 
+### To Run a .sh File 
 ```
 $ ./file-name.sh 
 ```
 
-#### Directory Commands 
+### Directory Commands 
 ```
 $ pwd //currently directory 
 
@@ -133,27 +155,7 @@ $ rm //remove
 $ cd ~ //return to home
 ```
 
-### Your IP Address
-```
-$ hostname -I
-```
-
-# User and Privileges Management
-
-**Log as root**
-```
-$ sudo su
-```
-**Transfer the ownership of a session to any other user**
-```
-$ su nameuser
-```
-
-
-
-# File/Directory Explorer
-
-## Find
+### Find
 -type f -> file search
 
 -type d -> directory search
@@ -170,7 +172,7 @@ $ find ./ -type d -name "mydir"
 $ find ./ -type d -name "mydir*"
 ```
 
-## DIFF
+### DIFF
 ```
 $ diff file1.txt file2.txt
 ```
@@ -184,17 +186,5 @@ rm -rf: remove empty directory
 ### See Content
 ```
 $ grep -r yoursearch
-```
-
-## Packages
-
-### Installed
-```
-$ apt list --installed
-```
-
-### Locate Directory
-```
-$ dpkg -L your-package
 ```
 
