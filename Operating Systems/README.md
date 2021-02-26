@@ -1,3 +1,3 @@
-# Operational System
+# Operating System
 
 * [Linux](Linux/README.md)
