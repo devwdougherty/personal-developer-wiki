@@ -2,8 +2,11 @@
 
 ## Find
 -type f -> file search
+
 -type d -> directory search
+
 "*" -> all possible characters/words
+
 "." -> hidden file
 ```
 $ find . f -name "*yoursearch*"
