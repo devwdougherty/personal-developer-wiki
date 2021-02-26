@@ -1,49 +1,43 @@
-# File Explorer
+# File/Directory Explorer
 
-## Find files and directories related to your search
-
-## Files
+## Find
+-type f -> file search
+-type d -> directory search
+* -> all possible characters/words
+. -> hidden file
 ```
-$ sudo find . -name "*yoursearch*"
+$ find . f -name "*yoursearch*"
+$ find ./ -type f -name "myfilename"
+$ find ./ -type f -name "myfilename*"
+$ find ./ -type f -name ".*"
+$ find ./ -type d -name "mydir"
+$ find ./ -type d -name "mydir*"
 ```
 
-FIND
+## DIFF
+```
+$ diff file1.txt file2.txt
+```
 
-find ./ -type f -name "myfilename"
-find ./ -type f -name "myfilename*"
+## CRUD DIRECTORY
 
-Hidden
-find ./ -type f -name ".*"
-
-find ./ -type d -name "mydir"
-find ./ -type d -name "mydir*"
-
-DIFF
-
-diff file1.txt file2.txt
-
-REMOVE DIRECTORY
-
+### Remove
 rmdir: remove directory
 rm -rf: remove empty directory
 
-#### Directories
-```
-$ sudo find / -name "yoursearch"
-```
-
-### File Content
+### See Content
 ```
 $ grep -r yoursearch
 ```
 
 ## Packages
+
+### Installed
 ```
 $ apt list --installed
 ```
 
-### Directory installed
+### Locate Directory
 ```
 $ dpkg -L your-package
 ```
-
