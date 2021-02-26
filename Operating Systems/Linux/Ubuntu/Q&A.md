@@ -9,5 +9,3 @@ _Step 2: Go to your ~/.profile and add/set:_
 _export PATH="$HOME/.npm/bin:$PATH"_
 
 See: https://medium.com/@ExplosionPills/dont-use-sudo-with-npm-still-66e609f5f92
-
-
