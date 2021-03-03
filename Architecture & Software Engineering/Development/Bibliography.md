@@ -30,6 +30,10 @@ _Keywords: Microservices example, circuit breaker_
 
 # Web
 
+## CORS and CORB
+- [Cross-Origin Read Blocking for Web Developers](https://www.chromium.org/Home/chromium-security/corb-for-developers)
+- [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+
 ## HTTP
 
 - [Content-Disposition](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition)
