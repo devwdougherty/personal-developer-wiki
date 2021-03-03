@@ -312,6 +312,19 @@ Ctrl ^ O = Write Out
 Ctrl ^ X = Exit
 ```
 
+# Q&A
+
+*Q: How to apply a new gitignore on an existing repository?*
+
+*A:*
+```
+$ git rm -r --cached .
+
+$ gid add .
+
+$ git commit -m ".gitignore is now working"
+```
+
 # Bibiliografia
 
 ## Articles and Tutorials
