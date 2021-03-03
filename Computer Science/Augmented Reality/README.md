@@ -1,3 +1,3 @@
 # Augmented Reality
 
-*[Bibliography](Bibliography.md)
+- Bibliography](Bibliography.md)
