@@ -37,4 +37,5 @@ $ mongo --eval 'db.runCommand({ connectionStatus: 1 })'
 
 ### Q&A
 *Q: What should I use to llimit the amount of data that MongoDB sends to applications or return only specified fields?*
+
 A: [Include a projection document in your queries](https://docs.mongodb.com/manual/tutorial/project-fields-from-query-results/)
