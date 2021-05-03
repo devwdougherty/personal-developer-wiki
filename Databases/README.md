@@ -1,4 +1,4 @@
 # Databases
 
-* [MySQL CLI](MySQL%20CLI.md)
-* [Mongo](MongoDB.md)
+* [MySQL](MySQL%20CLI.md)
+* [MongoDB](MongoDB.md)
