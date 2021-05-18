@@ -7,19 +7,16 @@ See about: https://madusudanan.com/blog/scala-articles-index/
 ### ExecutionContext
 + The `import ExecutionContext.Implicits.global` statement in your Scala code imports the "default global execution context". Execution context = threadh pool, a simple way to get access to a thread pool.
 
-### Futures
+### FUTURES
 + A `Future[T]` is a container that runs a computation concurrently, and at some future time may return either a result of `type T` or (b) and `exception`.
 + The algorithm processing starts at some nondeterministic time after the future is created, running on a thread assigned to it by the *execution context*.
 + Future returns *eventually*, at some *nondeterministic* time.
 + A Future could be considered *completed* as the result is returned (successfully or failed).
 + Callback methods: The order in which callbacks are executed is not guaranteeed.
++ Callback methods: onComplete, onSuccess, and onFailure have the result type `Unit`.
 
-#### References
-- [Scala Futures](https://hello-scala.com/920-scala-futures.html)
-- [Simple Concurrency with Scala Futures](https://alvinalexander.com/scala/concurrency-with-scala-futures-tutorials-examples/#the-onsuccess-and-onfailure-callback-methods)
-
-### Using the Future
-#### Types
+#### USING FUTURE
+##### Types
 `Future` is an instace of `Try` types: `Success` and `Failure`
 
 *e.g.:*
@@ -28,7 +25,7 @@ case Success(value) => dothis
 case Failure(e) => dothat
 ```
 
-#### Returns and Useful Methods
+##### Returns and Useful Methods
 **Commom Callback Methods:**
 + onComplete
 + onSuccess
@@ -39,6 +36,11 @@ case Failure(e) => dothat
 + andThen
 + fallbackTo
 + recoverWith
+
+
+#### REFERENCES
+- [Scala Futures](https://hello-scala.com/920-scala-futures.html)
+- [Simple Concurrency with Scala Futures](https://alvinalexander.com/scala/concurrency-with-scala-futures-tutorials-examples/#the-onsuccess-and-onfailure-callback-methods)
 
 ## BASIC CODE
 ### KEYWORDS
