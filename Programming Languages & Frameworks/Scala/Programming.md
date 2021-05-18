@@ -3,6 +3,12 @@
 ## UNDERSTANDING THE SCALA LANGUAGE
 See about: https://madusudanan.com/blog/scala-articles-index/
 
+## SCALA CONCEPTS
+### Futures
+- [Scala Futures](https://hello-scala.com/920-scala-futures.html)
+- [Simple Concurrency with Scala Futures](https://alvinalexander.com/scala/concurrency-with-scala-futures-tutorials-examples/#the-onsuccess-and-onfailure-callback-methods)
+
+
 ## BASIC CODE
 ### KEYWORDS
 **implicit** - could be applied in functions parameters and functions. Basically: the compiler always will use or call what was defined as 'implicit', addressing itself by the types.
