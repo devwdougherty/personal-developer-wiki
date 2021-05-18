@@ -47,6 +47,56 @@ object FuturesDevWDougherty extends App {
     println("N ..."); sleep(100)
     sleep(2000)
 
+    val futureFailureAndSuccess = Future { 
+
+        sleep(Random.nextInt(500))
+        if (Random.nextInt(500) > 250) throw new Exception("Yikes!")
+    }
+
+    /* Seems that onSuccess and onFailure methos are both deprecated in Scala 2.12 and removed in Scala 2.13
+       We need to use onComplete instead. */
+    /*futureFailureAndSuccess.onSuccess {
+
+        case result => println(s"Success: $result")
+    }
+
+    futureFailureAndSuccess.onFailure {
+
+        case t => println(s"Exception: ${t.getMessage}")
+    }*/
+
+    // do whatever you want - your work
+    println("D ..."); sleep(100)
+    println("E ..."); sleep(100)
+    println("V..."); sleep(100)
+    println("W ..."); sleep(100)
+    println("D ..."); sleep(100)
+    sleep(2000)
+
+    def longRunningComputation(i: Int): Future[Int] = {
+
+        sleep(100)
+        Future(i + 1) // We could return a Future basic type that has inside: Success or Failure.
+    }
+
+    // No Bloking - Using future callback methods
+    longRunningComputation(11).onComplete {
+
+        case Success(result) => println(s"result = $result")
+        case Failure(e) => e.printStackTrace
+    }
+
+    // keeping the JVM from shutting down.
+    sleep(2000)
+
+    // do whatever you want - your work
+    println("F ..."); sleep(100)
+    println("S ..."); sleep(100)
+    println("S ..."); sleep(100)
+    println("P ..."); sleep(100)
+    println("X ..."); sleep(100)
+    sleep(1000)
+
     def sleep(time: Long) { Thread.sleep(time) }
 }
 
