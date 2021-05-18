@@ -5,7 +5,7 @@ See about: https://madusudanan.com/blog/scala-articles-index/
 
 ## SCALA CONCEPTS
 ### ExecutionContext
-+ The ExecutionContext.Implicits.global import statement in your Scala code imports the "default global execution context". Execution context = threadh pool, a simple way to get access to a thread pool.
++ The `import ExecutionContext.Implicits.global` statement in your Scala code imports the "default global execution context". Execution context = threadh pool, a simple way to get access to a thread pool.
 
 ### Futures
 + Future returns *eventually*, at some *nondeterministic* time.
