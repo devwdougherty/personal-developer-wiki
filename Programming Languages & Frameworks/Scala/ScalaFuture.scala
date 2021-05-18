@@ -53,6 +53,4 @@ object MultipleFuturesWithDebugOutput extends App {
 
     def currentTime = System.currentTimeMillis()
     def deltaTime(t0: Long) = System.currentTimeMillis() - t0
-
-
 }
