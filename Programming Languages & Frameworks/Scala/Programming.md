@@ -8,6 +8,27 @@ See about: https://madusudanan.com/blog/scala-articles-index/
 - [Scala Futures](https://hello-scala.com/920-scala-futures.html)
 - [Simple Concurrency with Scala Futures](https://alvinalexander.com/scala/concurrency-with-scala-futures-tutorials-examples/#the-onsuccess-and-onfailure-callback-methods)
 
+### Using the Future
+#### Types
+`Future` is an instace of `Try` types: `Success` and `Failure`
+
+*e.g.:*
+```scala
+case Success(value) => dothis
+case Failure(e) => dothat
+```
+
+#### Returns and Useful Methods
+*Commom Callback Methods:*
++ onComplete
++ onSuccess
++ onFailure
++ filter
++ foreach
++ map
++ andThen
++ fallbackTo
++ recoverWith
 
 ## BASIC CODE
 ### KEYWORDS
