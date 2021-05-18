@@ -97,6 +97,22 @@ object FuturesDevWDougherty extends App {
     println("X ..."); sleep(100)
     sleep(1000)
 
+    // fallbackTo and andThen examples
+    val meaning = calculateMeaningOfLife().fallbackTo(42)
+
+    var meaningTwo = 0
+
+    Future {
+
+        meaningTwo = calculateMeaningOfLife()
+    } andThen {
+
+        println(s"Meaning of life is $meaningTwo")
+    }
+
+    sleep(5000)
+
+    def calculateMeaningOfLife(): Int = { throw new Exception("You will not get the meaning of life here on the internet...") }
     def sleep(time: Long) { Thread.sleep(time) }
 }
 
