@@ -19,7 +19,7 @@ case Failure(e) => dothat
 ```
 
 #### Returns and Useful Methods
-*Commom Callback Methods:*
+**Commom Callback Methods:**
 + onComplete
 + onSuccess
 + onFailure
