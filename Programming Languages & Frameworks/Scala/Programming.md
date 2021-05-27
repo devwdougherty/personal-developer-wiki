@@ -1,7 +1,8 @@
 # Programming
 
 ## UNDERSTANDING THE SCALA LANGUAGE
-See about: https://madusudanan.com/blog/scala-articles-index/
+
+See about: <https://madusudanan.com/blog/scala-articles-index/>
 
 ## SCALA CONCEPTS
 ### ExecutionContext
