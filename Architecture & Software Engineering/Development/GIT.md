@@ -8,6 +8,13 @@ e.g.: (nano or vi)
 git config --global core.editor "nano"
 ```
 
+### SSH
+
+Get your currently SSH public key (assuming the name)
+```
+$ cat ~/.ssh/id_ed25519.pub
+```
+
 ### Difference between ~ (tilde) and caret (^)
 
 ~ Use on local git -> Go back a number of commits in a "straight line".
