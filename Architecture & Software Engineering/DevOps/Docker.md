@@ -21,8 +21,8 @@ $ docker build --no-cache -t dt:v1 -f docker/Dockerfile API
 
 First tutorial container
 
-```shell
-docker run -d -p 80:80 docker/getting-started
+```Shell
+$ docker run -d -p 80:80 docker/getting-started
 ```
 
 **Flags:**
