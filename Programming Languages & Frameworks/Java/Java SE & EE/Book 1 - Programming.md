@@ -1,17 +1,19 @@
+# Programming
 
-Help it with Fork and Pull Request!
+## Hibernate and JPA
 
-# Hibernate and JPA
+### About FetchType (LAZY and EAGER)
 
-## About FetchType (LAZY and EAGER)
 In a database transaction between two tables/entities, LAZY will load just the records that are requested by the program. Instead, EAGER will load all the data related to its transaction (independently, if the system/user will use or not).
 
-## CascadeType
+### CascadeType
+
 ALL: All cascade operations will be applied to the parent entity’s related entity. All is equivalent to specifying cascade={DETACH, MERGE, PERSIST, REFRESH, REMOVE}
 
-# Data Structures and It Operations
+## Data Structures and It Operations
 
 ## General notes
+
 **Vector instead ArrayList:**
 	• For applications thread-safe (It's syncronized)
 	• Vector double it allocations  when is fully (good when you need to increase your allocation size many times)

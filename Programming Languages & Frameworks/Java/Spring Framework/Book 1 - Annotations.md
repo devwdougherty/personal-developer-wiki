@@ -1,4 +1,4 @@
-# SpringBoot Annotations
+# Book 1 - Annotations
 
 ## Spring Beans
 
