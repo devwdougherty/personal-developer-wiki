@@ -1,6 +1,8 @@
-# Basic Commands
+# Docker
 
-## Build
+## Basic Commands
+
+### Build
 Normally:
 ```
 $ docker build -t my-container .
@@ -15,7 +17,20 @@ Build with parent directory : -f
 $ docker build --no-cache -t dt:v1 -f docker/Dockerfile API
 ```
 
-## Run
+### Run
+
+First tutorial container
+
+```shell
+docker run -d -p 80:80 docker/getting-started
+```
+
+**Flags:**
+
++ -d run the container in detached mode (in the background)
++ -p 80:80 map port 80 of the host to port 80 in the container
++ docker/getting-started the image to use.
+
 Run a previous built container:
 ```
 $ docker run -it --rm --name my-running-container my-container
@@ -25,7 +40,7 @@ Run and enter in your container:
 sudo docker run -it dt:v1
 ```
 
-## Basic Workflow to pull, build, run and ship a container on Docker Desktop
+### Basic Workflow to pull, build, run and ship a container on Docker Desktop
 ```
 docker pull store/oracle/serverjre:8
 
@@ -47,7 +62,7 @@ docker container exec -it my-container bash
 
 docker run -it --publish 8081:8080 your_name/some-app-image
 ```
-## Basic CRUD Operations
+### Basic CRUD Operations
 ```
 docker info
 docker image ls
@@ -96,7 +111,7 @@ EXPOSE 9080
 # CMD ["./myapp"]
 ```
 
-# Bibliography
+## Bibliography
 
 * [Beginner’s guide to use docker (Build, Run, Push and Pull)](https://medium.com/@deepakshakya/beginners-guide-to-use-docker-build-run-push-and-pull-4a132c094d75)
 * [Docker For Beginners](https://medium.com/the-andela-way/docker-for-beginners-61e8e0ce6a19)
@@ -105,3 +120,4 @@ EXPOSE 9080
 * [Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
 - [How to run database, backend and frontend in a single-click with Docker Compose](https://medium.com/@wkrzywiec/how-to-run-database-backend-and-frontend-in-a-single-click-with-docker-compose-4bcda66f6de)
 - [How To Remove Docker Images, Containers, and Volumes](https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes)
++ [Quick Start for Apache Kafka using Confluent Platform Community Components (Docker)](https://docs.confluent.io/platform/current/quickstart/cos-docker-quickstart.html)
