@@ -39,6 +39,26 @@ long diffInMillies = Math.abs(secondDate.getTime() - firstDate.getTime());
 long diff = TimeUnit.DAYS.convert(diffInMillies, TimeUnit.MILLISECONDS);
 ```
 
+#### Joda Time Library
+
+**Round Date (minutes), put 0s (floor) on seconds and milliseconds, UTC DateTimeZone**
+e.g.:
+
+```java
+// DateTime.now
+var endDateApi = (DateTime.now(DateTimeZone.UTC).minusMinutes(10))
+
+//Manual DateTime Build
+var endDateApi = new DateTime(2021, 5, 27, 21, 11, 30, 834, DateTimeZone.UTC)
+
+endDateApi = endDateApi
+                .withMinuteOfHour((endDateApi.getMinuteOfHour/intervalRoundDown)*intervalRoundDown) // Round down the minutes considering intervalRoundDown multiple.
+                .withSecondOfMinute(endDateApi.getSecondOfMinute*0) // Put 0's on the seconds to following Serenova API request interval rule.
+                .minuteOfDay().roundFloorCopy() // Put 0's on the milliseconds to following Serenova API request interval rule.
+
+val startDateApi = endDateApi.minusMinutes(15)
+```
+
 ### List<?> - Unknown Objects
 **List with unknow objects**
 
