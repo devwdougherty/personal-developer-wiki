@@ -1,9 +1,19 @@
 # Book 1 - Annotations
 
-## Spring Beans
+## Context
 
-### @Qualifier
-By default, Spring resolve autowired entries by type. Use @Qualifier to avoid SpringBoot misunderstanding about which Bean would be injected on Dependency Injection. Create a dependency with a @Qualifier or call a @Qualifier in your injection.e.g.:
++ `@Configuration`: Indicates that a class declares one or more @Bean methods and may be processed by Spring container to generate bean definitions and service requests for those beans at runtime.
+
+## Stereoptypes
+
++ `@Component`: When definied in some place of the code, indicates that an annotated class is a "component". Those classes are considered as candidates for auto-detecntion when using annotation-based configuration and classpath scanning.
+
+## Factory
+
++ `@Autowired`: Apply dependecy injection of a necessary bean in your class. Also called "field injection". It's considered a bad way to declare your class dependencies directly.
+
++ `@Qualifier`: By default, Spring resolve autowired entries by type. Use @Qualifier to avoid SpringBoot misunderstanding about which Bean would be injected on Dependency Injection. Create a dependency with a @Qualifier or call a @Qualifier in your injection.e.g.:
+
 ```java
 @Component
 @Qualifier("myBeanSameTypeA")
@@ -13,7 +23,9 @@ By default, Spring resolve autowired entries by type. Use @Qualifier to avoid Sp
 @Qualifier("myBeanSameTypeB")
 ...
 ```
+
 or
+
 ```java
 @Autowired
 @Qualifier("myBeanSameTypeB")
