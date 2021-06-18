@@ -23,6 +23,10 @@
 
 - [https://dzone.com/articles/spring-di-patterns-the-good-the-bad-and-the-ugly](https://dzone.com/articles/spring-di-patterns-the-good-the-bad-and-the-ugly)
 
+## Web Client Implementations
+
+- [RestTemplate vs. WebClient](https://dzone.com/articles/resttemplate-vs-webclient)
+
 ## Application Lifecycle
 
 - [Deploy a Spring Boot WAR into a Tomcat Server](https://www.baeldung.com/spring-boot-war-tomcat-deploy)
