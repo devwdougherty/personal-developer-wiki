@@ -1,4 +1,4 @@
-# Linux Architecture 
+# Linux - Fundamentals 
 
 1. Kernel 
 2. Apps and GUI. 
@@ -177,14 +177,38 @@ $ find ./ -type d -name "mydir*"
 $ diff file1.txt file2.txt
 ```
 
-## CRUD DIRECTORY
+## DIRECTORIES OPERATIONS
 
-### Remove
-rmdir: remove directory
-rm -rf: remove empty directory
+### Remove Content
 
-### See Content
-```
-$ grep -r yoursearch
-```
+Remove directory: `rmdir`
 
+Remove empty directory: `rm -rf`
+
+Remove directory and subdirectories: `rm -r`
+
+### Search Content
+
+We can use grep or fgrep (fastest and only look into strings and words).
+
+Search any line that contains the word in filename: `grep 'word' filename`
+
+Search any words in files: `grep -w "boo" file` / Two different words: `egrep -w "word1|word2" /path/to/file`
+
+Count the number of lines when words has been matched: `grep -c "word" /path/to/file`
+
+Search and list (word-to-search proper word and part of others) any word inside a file: `fgrep 'word-to-search' file.txt`
+
+Search and list (only word california) inside a file: `fgrep -w California address.txt`
+
+Search any word inside a file content: `cat otherfile | grep 'something'`
+
+Perform a case-insensitive search for the word 'bar': `grep -i 'bar' file1`
+
+Look for all files in the current directory and in all of its subdirectories for the word 'httpd': `grep -R 'httpd' .`
+
+Search a file (/etc/passwd) for user boo: `grep boo /etc/passwd`
+
+To run searches recursively use -r parameter and the directory: `grep -r "myword" /etc/`
+
+See more on: [How To Use grep Command In Linux / UNIX With Practical Examples](https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/)
