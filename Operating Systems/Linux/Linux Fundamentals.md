@@ -1,4 +1,4 @@
-# Linux - Fundamentals 
+# LINUX - FUNDAMENTALS
 
 1. Kernel 
 2. Apps and GUI. 
