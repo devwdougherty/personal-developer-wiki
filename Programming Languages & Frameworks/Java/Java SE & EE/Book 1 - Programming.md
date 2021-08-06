@@ -62,9 +62,11 @@ val startDateApi = endDateApi.minusMinutes(15)
 ```
 
 ### List<?> - Unknown Objects
-**List with unknow objects**
+
+#### List with unknow objects**
 
 _In this case, getList will return a String list with unknown properties._
+
 ```java
 List<?> rawDetails = cloudEntity.getList(detail);
 ArrayList valueList = new ArrayList<>();
@@ -73,12 +75,13 @@ for (Object valueDetail : rawDetails) {
     valueList.add(StringValue.of(((StringValue) valueDetail).get()));
 }
 ```
-**Distinct filter on a List using stream() and predicate. (Duplicate values)**
+
+#### Distinct filter on a List using stream() and predicate. (Duplicate values)
+
 ```java
 // List -> List<Door> doorList
 List<Door> distinctListDoor = doorList.stream()
                 .filter(distinctByKey(o -> o.getDoorMaterialEnum())).collect(Collectors.toList());
-		
 // Distinct filter method
 /**
 * Auxiliary method to filter duplicate values in a list.
@@ -88,11 +91,10 @@ List<Door> distinctListDoor = doorList.stream()
 * @return Predicate filter
 */
 public static <T> Predicate<T> distinctByKey(Function<? super T,Object> keyExtractor) {
-	Map<Object,Boolean> seen = new ConcurrentHashMap<>();
-	return t -> seen.putIfAbsent(keyExtractor.apply(t), Boolean.TRUE) == null;
+    Map<Object,Boolean> seen = new ConcurrentHashMap<>();
+    return t -> seen.putIfAbsent(keyExtractor.apply(t), Boolean.TRUE) == null;
 }
 ```
-
 
 ### MAP<dataType, dataType>
 
@@ -222,7 +224,9 @@ city = ((City) objEntity);
 ```
 
 ### Lambda (Java 8)
-**Converting a Object List to another Object List (same structure)**
+
+#### Converting a Object List to another Object List (same structure)**
+
 ```java
 List<ObjectTwo> objectTwoList = objectOneList.stream().map(x -> new ObjectTwo(x)).collect(Collectors.toList());
 ```

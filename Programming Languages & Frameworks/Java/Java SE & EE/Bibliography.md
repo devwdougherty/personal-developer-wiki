@@ -3,14 +3,22 @@ Help it with Fork and Pull Request!
 # General
 
 ## Collections
+
 - [Java Collections](https://www.edureka.co/blog/java-collections/)
 
 ## Objects
+
 - [Object Type Casting](https://www.baeldung.com/java-type-casting)
 
 ## Stream
-### map()
+
+### Map()
+
 - [Java 8 Streams map() examples](https://www.mkyong.com/java8/java-8-streams-map-examples/)
+
+### Filter
+
+- [Java Stream Filter with Lambda Expression](https://www.baeldung.com/java-stream-filter-lambda)
 
 # Sites & Blogs
 
