@@ -109,6 +109,10 @@ Salvar suas credenciais (password)
 ```
 git config credential.helper store
 ```
+Atualizar o nome do seu repositório localmente para bater com o origin
+```
+git remote set-url origin https://bitbucket.org/williandougherty/meu-app.git
+```
 Para forçar um push no server (branch específica)
 ```
 $ git push -f origin nome-branch
