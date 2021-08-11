@@ -230,7 +230,7 @@ $ git reset --hard HEAD~;
 
 **Just to rewrite the commit meessage use:**
 ```bash
-$ git -amend
+$ git commit --amend -m "an updated commit message"
 ```
 
 ### Git Subtree
