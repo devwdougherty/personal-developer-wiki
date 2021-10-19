@@ -8,6 +8,11 @@ e.g.: (nano or vi)
 git config --global core.editor "nano"
 ```
 
+Change the git config of your environment (username, name, etc)
+```
+git config --global --edit
+```
+
 ### SSH
 
 Get your currently SSH public key (assuming the name)
