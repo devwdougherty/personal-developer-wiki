@@ -1,14 +1,18 @@
 # JQuery Programming
 
 ## JQuery Environment (Set up)
+
 **To use JQuery and Ajax on script directly:**
 ```javascript
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
 ```
 
 ## Programming
+
 ### Handling Fields and it properties
+
 #### Selectors
+
 **Reference a ID's Field**
 id. e.g.: 
 ```javascript
@@ -24,12 +28,15 @@ html element. e.g.:
 ```
 
 #### Objects
+
 **JSON to String**
+
 ```javascript
 JSON.stringify(javascriptObject)
 ```
 
 #### Values
+
 **Getting Value (input fields) and Text (spam fields)**
 e.g.:
 ```javascript
@@ -57,7 +64,9 @@ $('#CustomerId input:checked').each(function(){
     doorArray.push(currentValue);
 });
 ```
+
 #### Events
+
 **.click**
 
 Event is on when the element is clicked.
@@ -90,6 +99,7 @@ _Parameter 1: event type_
 _Parameter 2: handler (function that executes each time that event is triggered)._
 
 #### Field Properties
+
 **.prop('propertie')** and **.removeAttr('attribute')**
 
 Use to handle some propertie/attribute of a input/output field/element.
@@ -140,11 +150,13 @@ function validateActiveRegisterBool() {
 ```
 
 #### To show complete Object/Variable properties
+
 ```javascript
 console.log($(ajaxObj));
 ```
 
 ### JQuery Ajax
+
 **To setup every Ajax requisiton on the file to allow Cross Domain and Credentials**
 $.ajaxSetup({
       //dataSrc: '',
@@ -238,7 +250,9 @@ $.ajax({
 ```
 
 ### Loops and Conditional
+
 #### Basic IF
+
 ```javascript
 If ($('#some_field').prop('checked') {
 		Alert("something");
