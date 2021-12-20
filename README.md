@@ -1,6 +1,6 @@
 # Personal Developer Wiki
 
-Hi! 
+Hi, Dev! 
 
 This repository represents my efforts to learn and apply some concepts of information technology (programming, software testing, architecture, and research). It will evolve continuously with new improvements and validation.
 
