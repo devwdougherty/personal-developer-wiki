@@ -1,313 +1,319 @@
-# CMD & BASH
+# GIT Command Line
 
 ## Environment
 
-Change the git core editor
-e.g.: (nano or vi)
-```
-git config --global core.editor "nano"
+### Properties
+
+Change the git core editor e.g.: (nano or VI)
+
+```bash
+$ git config --global core.editor "nano"
 ```
 
-Change the git config of your environment (username, name, etc)
+Change the git config properties of your environment (username, name, etc)
+
+```bash
+$ git config --global --edit
 ```
-git config --global --edit
+
+Checking the current git user
+
+```bash
+git config user.name
+git config user.email
+```
+
+Changing the git user
+
+```bash
+$ git config --global user.email "mynewuser@fsspx.com"
+```
+
+Saving your credentials (password)
+
+```bash
+git config credential.helper store
+```
+
+Updating your local repository name to matches origin name (server)
+
+```bash
+git remote set-url origin https://bitbucket.org/williandougherty/my-app.git
 ```
 
 ### SSH
 
 Get your currently SSH public key (assuming the name)
-```
+
+```bash
 $ cat ~/.ssh/id_ed25519.pub
 ```
 
-### Difference between ~ (tilde) and caret (^)
+### Syntax 
 
-~ Use on local git -> Go back a number of commits in a "straight line".
-^ Use on merge commits  ->  Go back a number of commits in a tree of forks and merges.
+Difference between ```~``` (tilde) and ```^``` (caret)
 
-## Commands
+- ```~``` Use on local git => Go back a number of commits in a "straight line".
+- ```^``` Use on merge commits =>  Go back a number of commits in a tree of forks and merges.
 
-Clonar repositório
+## Common Commands in Dev Flow
+
+```bash
+$ git clone https://willian-dougherty@bitbucket.org/barbosa/java-aw.git # Clone a repository
+$ git init # Initialize a local repository
+$ git status # Get a repository/content status
+$ git add Something.java  || git add . || git add -A # Prepare one specified or all the files to be committed.
+$ git commit -m "fsspx" # Commit with message
+$ git push origin master # Push to server repository (branch master) a commit from local repository.
+$ git pull origin master # Pull server repository commits (branch master) to local repository
+$ git checkout -b nome-branch # Create a new local branch from the current one and already checkout to it
+$ git push -u origin fsspx_new_branch # Appoint and push the local branch content to a new/existent one in server repository.
+$ git push --set-upstream origin fsspx_new_branch 
+$ git branch # To see all the branches
 ```
-$ git clone https://willian-dougherty@bitbucket.org/barbosa/java-aw.git
-```
-Criar um repositório
-```
-$ git init
-```
-Status do seu repositório git
-```
-$ git status
-```
-Preparar o arquivo para commit
-```
-$ git add / $ git add . || $ git add -A (all)
-```
-Commit com mensagem
-```
-$ git commit -m "Mensagem"
-```
-Commitar o repositório local para o servidor (branch master)
-```
-$ git push origin master
-```
-Puxar os commits do servidor (branch master) para o repositório local
-```
-$ git pull origin master
-```
-Puxar todos os commits para atualizar o repositório local
-```
-$ git pull -all
-```
-Criar um novo branch
-```
-$ git branch nome-branch
-```
-Para trabalhar com uma nova branch é necessário dar checkout (para separá-lo do master)
-```
-$ git checkout nome-branch
-```
-Apontar branch local para a do server
-```
-$ git push -u origin <branch>
-```
-Dar merge entre 2 branchs de maneira rápida
-```
-$ git remote update (It updates your local branch list with server branches)
+
+Merge two branches in a quick way
+
+```bash
+$ git remote update # It updates your local branch list with server branches
 $ git checkout BRANCH-YOU-WANT-TO-MERGE-IN
 $ git pull
 $ git checkout YOUR-BRANCH-TO-MERGE
 $ git pull
 $ git merge BRANCH-YOU-WANT-TO-MERGE-IN
 ```
-Deletar um branch
+
+Deleting a branch
+
+```bash
+$ git branch -d branch-name
 ```
-$ git branch -d nome-branch
-$ git diff
-```
-Se referir a tudo no git (código, parâmetro, etc)
-```
-$ .
-```
-Para voltar um commit para o topo da árvore
-```
+
+To back a commit to the top of git tree
+
+```bash
 $ git cherry-pick commit-code
 ```
-Retornar a versão do código para um commit específico
-```
+
+Return the code version to a specific commit
+
+```bash
 $ git checkout commit_code
 ```
-Atualizar (hard) a branch origin com a dev local
-```
+
+Forcing the update of an origin branch with the version of local branch
+
+```bash
 $ git push -u -f origin
+$ git push -u -f origin branch-name
 ```
-Visualizar o usuário atual do git
+
+Force your local repository to be equal the server
+
+```bash
+$ git fetch origin dev # dev -> it's branch name
 ```
-git config user.name
-git config user.email
-```
-Mudar de usuário no git
-```
-$ git config --global user.email "myemail@gmail.com"
-```
-Salvar suas credenciais (password)
-```
-git config credential.helper store
-```
-Atualizar o nome do seu repositório localmente para bater com o origin
-```
-git remote set-url origin https://bitbucket.org/williandougherty/meu-app.git
-```
-Para forçar um push no server (branch específica)
-```
-$ git push -f origin nome-branch
-```
-Para forçar que seu repositório local esteja igual ao do server
-```
-$ git fetch origin dev
-```
-Procure por algo em seu código (área de trabalho):
-```
+
+Search for something in your code
+
+```bash
 $ git grep "foo()"
-```
-Visualizar os arquivos de um repositório git
-```
-$ git-ls-files
 ```
 
 ## GIT Operations
 
-### Juntar vários commits em um só (rebase & squash)
+### Rebase & Squash
 
-```
-$ git rebase -i HEAD~2
-```
-_Obs: The number after HEAD~ refers to the quantity of commits that you want to join._
+Join a number of commits into a master on (rebase & squash)
 
-Da lista de commits, deixe o primeiro como p (pick). Coloque s (squash) nos commits abaixo. Escreva a nova mensagem para o commit unificado.
+```bash
+$ git rebase -i HEAD~2 # Note: The number after HEAD~ refers to the quantity of commits that you want to join.
+```
+
+From the commit list, leave the first on as 'p' (pick). Put 's' (squash) in the below commits. Write a new message for the 
+unified commit.
 
 ### Remotes
 
-Para adicionar um remote
-```
-$ git remote add <nome-do-remote><URL do repositório>
-```
-_Ex: git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git_
+To add a new remote
 
-Para ver os remotes e URLS associadas
+```bash
+$ git remote add <nome-do-remote><URL do repositório>
+# ex: git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
 ```
+
+To check the remote list and its URLs
+
+```bash
 $ git remote -v
 ```
-Para deletar um remote
-```
+
+To delete a remote
+
+```bash
 $ git remote rm <nome-do-remote>
 ```
-Para mergear seu repositório local com seu remote principal (FORK)
-```
-$ git fetch upstream <nome do seu remote>
+
+To merge your local repository into your remote (FORK)
+
+```bash
+$ git fetch upstream <remote-name>
 $ git checkout master
-$ git merge upstream/master <remote>/<sua branch de trabalho>
+$ git merge upstream/master <remote>/<your-work-branch>
 ```
-Baixar todas as branchs do repositório servidor para o local
-```
+
+Download all branches from server repository to local
+
+```bash
 $ git remote update
 ```
 
-### Creating Branch on GIT BASH
+### Undoing or Resetting GIT
 
-```
-1. $ git fetch origin -> updating the local repository with the latest dev
-2. $ git checkout dev -> go to dev branch
-3. $ git branch -> to see all the branches
-4. $ git branch -D -> delete your oldest branch if is necessary
-5. $ git checkout -b NAME-BRANCH -> it creates and switches
-```
+Removing a wrong file from your previous commit
 
-### Removing a Wrong File from your Commit
-
-**Undoing your changes**
-```
-$ git reset --soft HEAD^ -> To return your commit
+```bash
+# undoing your changes - forcing push
+$ git reset --soft HEAD^ # To return your commit
 $ git reset WrongFile.cs
-$ git clean -i -> removing untracked files, choose whic will be removed
+$ git clean -i # removing untracked files, choose which one will be removed
 $ git push -u -f YOUR_BRANCH
 ```
 
-**Without undoing your changes**
-```
+
+```bash
+# Without undoing your changes
 $ git reset --soft HEAD~1
 $ git reset HEAD <file>
 $ git rm --cached <file>
 $ git commit --amend
 ```
 OR
-```
+```bash
 $ git checkout HEAD^ -- /path/to/file
-$ git commit -am "revert changes on this file, not finished with it yet"
+$ git commit -am "reverting changes at this file, not finished yet"
 $ git push
 $ git checkout HEAD^ -- /path/to/file
 ```
 
-**Remove a committed file included on a new .gitignore**
-```
-$ git rm -r --cached . (remove all the files from the index)
-$ git add . (add all the files again, but now, the specified file does`nt,  because it is already inclued on .gitignore.
-OR
-git rm --cached <arquivo> (if you`re certain that you want to remove it specified file)
-```
+Undoing commit Using **ORIG_HEAD (2022)**
 
-### Undo a git commit that was not pushed
-
-**1 - Undo commit and keep all the files staged**
 ```bash
+$ git commit -m "Something terribly misguided"
+$ git reset HEAD^
+[ Edit files as necessary ]
+$ git add .
+$ git commit -c ORIG_HEAD
+```
+
+Remove a committed file included at a new ```.gitignore```
+
+```bash
+$ git rm -r --cached . # remove all the files from the index
+$ git add . # add all the files again, but now, not the specified file, because it is already included at .gitignore.
+[ OR ]
+git rm --cached <file> # if you're certain that you want to remove it specified file
+```
+
+Undo a git commit that was not pushed
+
+```bash
+# Undo commit and keep all the files staged
 $ git reset --soft HEAD~;
-```
-
-**2 - Undo commit and unstage all files**
-```bash
+# Undo commit and unstage all files**
 $ git reset HEAD~;
-```
-
-**3 - Undo commit and completely remove all changes**
-```bash
+# Undo commit and completely remove all changes**
 $ git reset --hard HEAD~;
 ```
 
-**Just to rewrite the commit meessage use:**
+To rewrite the commit message
+
 ```bash
 $ git commit --amend -m "an updated commit message"
 ```
 
 ### Git Subtree
+
 Steps to add a remote repository as subtree in your project:
-```
+
+```bash
 git remote add -f pistache-rest-api https://github.com/oktal/pistache.git
 git subtree add --prefix Telemetry/API pistache-rest-api master --squash
 git fetch pistache-rest-api master
 git subtree pull --prefix Telemetry/API pistache-rest-api master --squash
 ```
 
-## Definições básicas
+### Merge and Conflicts
 
-- Fluxo do GIT para mandar atualizações para um repositório: ADD -> COMMIT -> PUSH
-- Fork: é a maneira de você clonar um repositório para ter uma cópia privada, assim pode-se alterá-la sem prejudicar o projeto original. No final pode-se fazer um 'pull request' para submeter o merge com o original.
+Basic Conflict Workflow
+1. Resolve the code conflicts
+2. Add the fixed files and commit just the files that have been in conflict
+3. Push it
 
-## Merge and Conflicts
+Git stash
 
-### Git Stash
-- https://git-scm.com/docs/git-stash
-```
-$ git stash pop -> It command will back your staged changes on branch (deleting the last staged changes from the tree). If occurs conflict, you must resolve, commit, push and continue your work.
-$ git stash apply -> It command will back your staged changes on branch (maintaining the staged changes available). If occurs conflict, you must resolve, commit, push and continue your work.
-```
-
-### Git Reset
-Reset your modifications (doesn't committed yet) on current branch to 1 commit behind (HEAD -> First of the GIT Tree) 
-```
-$ git reset --hard HEAD
-```
-^ -> the number of carets determine how many commits you will back.
-```
-$ git reset --hard HEAD ^^
-```
-Reset your branch with the modifications that have been last committed on current branch
-```
-$ git reset --soft HEAD^
+```bash
+$ git stash # save temporary in the memory your changes
+[ and ]
+$ git stash pop # This command will back your staged changes on branch (deleting the last staged changes from the tree). 
+                # If occurs conflict, you must resolve, commit, push and continue your work.
+$ git stash apply # This command will back your staged changes on branch (maintaining the staged changes available). 
+                  # If occurs conflict, you must resolve, commit, push and continue your work.
 ```
 
-Transfering your code to another branch
-```
+Transferring your code to another branch
+
+```bash
 $ git stash
-$ git checkout nova_branch
+$ git checkout new branch
 $ git stash apply
 ```
 
-Adding new simple code to Pull Request
-_It merge your new alteration inside your last pull request.
-Obs: Your remote branch could diverge your local branch. Amend is supposed to replace, if you are certain of your code force it._
-```
+Adding a new piece of code to your last commit => Pull Request
+
+```bash
+# It merge your new alteration inside your last commit => pull request.
+# Note: Your remote branch could diverge from your local branch. Amend is supposed to replace, if you are certain of your code force it.
 $ git add .
 $ git commit --amend
 ```
+
 or
-```
+
+```bash
 $ git commit --amend -f
 ```
-Obs: Your remote branch will could diverge your local branch. Amend is supposed to replace, if you are certain of your code force it.
-### Local branch and remote branch conflict tags:
-```
+
+Local and remote branch conflict tags:
+
+```bash
 <<<<<<<< HEAD -> Your Code/Branch
 >>>>>>>> e592fa8391d8a0f25f7e887d2071b7da2ffa9e95 -> The Code/Branch that you are merging
 ```
 
-### Basic Conflict Workflow
-1. Resolve Conflict
-2. Add and commit just the files that have been in conflict
-3. Push it
+### Git Reset
 
-# VI Basic Commands (GIT example)
+Reset your modifications (doesn't committed yet) on current branch to 1 commit behind (HEAD -> First of the GIT Tree) 
 
+```bash
+$ git reset --hard HEAD
 ```
+
+```^``` => the number of carets determine how many commits you will back.
+
+```bash
+$ git reset --hard HEAD^^
+```
+
+Reset your branch with the modifications that have been last committed on current branch
+
+```bash
+$ git reset --soft HEAD^
+```
+
+## VI Basic Commands (GIT example)
+
+```bash
 q -> quit
 w -> write
 : -> to command line (to digit)
@@ -322,18 +328,20 @@ j - > Dowside line by line
 k -> Upside line by line
 ```
 
-# Nano Basic Commands
-```
+## Nano Basic Commands
+
+```bash
 Ctrl ^ O = Write Out
 Ctrl ^ X = Exit
 ```
 
-# Q&A
+## Q&A
 
 *Q: How to apply a new gitignore on an existing repository?*
 
 *A:*
-```
+
+```bash
 $ git rm -r --cached .
 
 $ gid add .
@@ -341,9 +349,9 @@ $ gid add .
 $ git commit -m ".gitignore is now working"
 ```
 
-# Bibiliografia
+## References
 
-## Articles and Tutorials
+### Articles and Tutorials
 
 - [GIT em Equipe](http://joepreludian.github.io/tutorial/2014/10/01/git-em-equipe.html)
 - [SSH no GIT](https://confluence.atlassian.com/bitbucket/set-up-an-ssh-key-728138079.html#SetupanSSHkey-ssh1)
@@ -366,6 +374,6 @@ $ git commit -m ".gitignore is now working"
 - [How To Remove Files From Git Commit](https://devconnected.com/how-to-remove-files-from-git-commit/)
 - [Numerous undo possibilities in Git](https://docs.gitlab.com/ee/topics/git/numerous_undo_possibilities_in_git/#undo-remote-changes-without-changing-history)
 
-## Videos
+### Videos
 
 - Git & GitHub: Introduction (Codecourse) - https://www.youtube.com/watch?v=DR7MLaAKcUk&list=PLfdtiltiRHWFEbt9V04NrbmksLV4Pdf3j
