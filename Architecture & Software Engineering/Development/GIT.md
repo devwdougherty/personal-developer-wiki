@@ -168,6 +168,20 @@ Download all branches from server repository to local
 $ git remote update
 ```
 
+### Local GIT Maintenance 
+
+Cleanup unnecessary files and optimizing the local repository
+
+```bash
+$ git-gc [--aggressive] [--auto] [--quiet] [--prune=<date> | --no-prune]
+```
+
+    Runs a number of housekeeping tasks within the current repository, such as compressing file revisions
+    (to reduce disk space and increase performance) and removing unreachable objects which may have been
+    created from prior invocations of git add.
+    
+    Users are encouraged to run this task on a regular basis within 
+
 ### Undoing or Resetting GIT
 
 Removing a wrong file from your previous commit
