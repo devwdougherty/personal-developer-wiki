@@ -3,17 +3,19 @@
 ## Basic Commands
 
 ### Build
+
 Normally:
-```
+```bash
 $ docker build -t my-container .
 ```
+
 Build with no-cache (information/data of the previous builds)
-```
+```bash
 $ docker build --no-cache -t dt:v1 .
 ```
 
 Build with parent directory : -f
-```
+```bash
 $ docker build --no-cache -t dt:v1 -f docker/Dockerfile API
 ```
 
@@ -31,16 +33,23 @@ $ docker run -d -p 80:80 docker/getting-started
 + -p 80:80 map port 80 of the host to port 80 in the container
 + docker/getting-started the image to use.
 
+Run your container in a silent mode (without get control of terminal)
+```bash
+$ docker run -d -p 80:80 my-image
+```
+
 Run a previous built container:
 ```
 $ docker run -it --rm --name my-running-container my-container
 ```
+
 Run and enter in your container:
 ```
 sudo docker run -it dt:v1
 ```
 
 ### Basic Workflow to pull, build, run and ship a container on Docker Desktop
+
 ```
 docker pull store/oracle/serverjre:8
 
@@ -62,8 +71,10 @@ docker container exec -it my-container bash
 
 docker run -it --publish 8081:8080 your_name/some-app-image
 ```
+
 ### Basic CRUD Operations
-```
+
+```bash
 docker info
 docker image ls
 docker search your_search
@@ -78,13 +89,16 @@ docker rm container_id
 ```
 
 ### Delete
+
 Delete an image
-```
+
+```bash
 docker rmi image_id
 ```
 
 ## DockerFile example
-```
+
+```dockerfile
 FROM frolvlad/alpine-gcc
 
 RUN apk add --no-cache g++
@@ -110,6 +124,12 @@ EXPOSE 9080
 # RUN g++ -o myapp API/test.cpp
 # CMD ["./myapp"]
 ```
+
+Difference between ```CMD``` and ```RUN```
+
+- ```CMD```: The commands using CMD will occur every time the image starts
+- ```RUN```: The commands using CMD will occur every time the image compiles
+
 
 ## Bibliography
 
