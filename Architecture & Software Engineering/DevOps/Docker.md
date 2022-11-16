@@ -69,6 +69,8 @@ docker run -it your_container
 
 docker container exec -it my-container bash
 
+docker exec it container-id bash -l
+
 docker run -it --publish 8081:8080 your_name/some-app-image
 ```
 
